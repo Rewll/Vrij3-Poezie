@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SpelerBeweging : MonoBehaviour
 {
-    Rigidbody2D RB;
-    float horizontaal;
-    float verticaal;
-    float moveLimiter = 0.7f;
-
+    public InputActionReference inputActie;
+    [Space]
+    public Vector2 beweegRichting;
     public float beweegSnelheid = 20.0f;
+
+    Rigidbody2D RB;
 
     void Start()
     {
@@ -18,18 +19,11 @@ public class SpelerBeweging : MonoBehaviour
 
     void Update()
     {
-        horizontaal = Input.GetAxisRaw("Horizontal"); 
-        verticaal = Input.GetAxisRaw("Vertical"); 
+        beweegRichting = inputActie.action.ReadValue<Vector2>();
     }
 
     void FixedUpdate()
     {
-        if (horizontaal != 0 && verticaal != 0) // Check for diagonal movement
-        {
-            // limit movement speed diagonally, so you move at 70% speed
-            horizontaal *= moveLimiter;
-            verticaal *= moveLimiter;
-        }
-        RB.velocity = new Vector2(horizontaal * beweegSnelheid, verticaal * beweegSnelheid);
+        RB.velocity = new Vector2(beweegRichting.x * beweegSnelheid, beweegRichting.y * beweegSnelheid);
     }
 }

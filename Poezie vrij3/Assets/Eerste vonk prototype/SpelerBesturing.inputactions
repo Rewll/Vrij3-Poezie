@@ -1,0 +1,154 @@
+{
+    "name": "SpelerBesturing",
+    "maps": [
+        {
+            "name": "Eerste Vonk spelspeel",
+            "id": "d97f451e-b11f-4671-9177-6ad6642cf81f",
+            "actions": [
+                {
+                    "name": "Speler1 Beweging",
+                    "type": "PassThrough",
+                    "id": "ac89215c-ae81-4072-af55-cddcde511abf",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Speler2 Beweging",
+                    "type": "PassThrough",
+                    "id": "d7f39f62-0eef-4645-be4b-0a153ae781fc",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "a212b8ec-4c0d-44ea-9def-68c5f923f4b8",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Speler1 Beweging",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "aa5d0d55-d8a9-41e6-845a-4a73dcca1ab5",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler1 Beweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "b5c85739-9a1c-40f2-9eef-6da41aeeeb9e",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler1 Beweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "2f075c2d-dfa8-4b46-90dd-30260840aa3c",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler1 Beweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "386b315e-6417-45da-9dbd-173d35416b0e",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler1 Beweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "b008f90a-5160-45aa-9473-722c95eb0465",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Speler2 Beweging",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "41f5ca76-e924-49e9-87b9-e33ba0da670f",
+                    "path": "<Keyboard>/numpad8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler2 Beweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "7826cf29-f04f-4329-9d6e-2375f9553de9",
+                    "path": "<Keyboard>/numpad5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler2 Beweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "2992fef5-7a57-4171-bea5-31ac5d5e626b",
+                    "path": "<Keyboard>/numpad4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler2 Beweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "91a0a62d-5833-4d54-bcba-207c24cc417c",
+                    "path": "<Keyboard>/numpad6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler2 Beweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Toetsenbord",
+            "bindingGroup": "Toetsenbord",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
