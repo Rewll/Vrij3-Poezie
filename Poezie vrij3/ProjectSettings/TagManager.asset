@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Bloem
+    uniqueID: 300074563
+    locked: 0
+  - name: Speler
+    uniqueID: 3633208303
+    locked: 0
