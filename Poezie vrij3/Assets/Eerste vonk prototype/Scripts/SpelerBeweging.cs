@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpelerBesturing : MonoBehaviour
+public class SpelerBeweging : MonoBehaviour
 {
     Rigidbody2D RB;
     float horizontaal;
