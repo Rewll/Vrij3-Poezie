@@ -980,7 +980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   headerSettings:
-    headerText: Level1
+    headerText: Tutorial
     headerColor: {r: 0.75059533, g: 0.764151, b: 0.27806035, a: 1}
     textAlignmentOptions: 0
     fontStyleOptions: 0
@@ -1000,9 +1000,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1548116813}
   - {fileID: 560746830}
   - {fileID: 996762197}
-  - {fileID: 1548116813}
   - {fileID: 206980727}
   - {fileID: 2079583887}
   - {fileID: 1900037380}
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   headerSettings:
-    headerText: TutorialPlek2
+    headerText: Level1
     headerColor: {r: 0.7735849, g: 0.40555865, b: 0.40555865, a: 1}
     textAlignmentOptions: 0
     fontStyleOptions: 0
@@ -1249,6 +1249,22 @@ PrefabInstance:
     - target: {fileID: 7866958621839582412, guid: 8a554eefdd0cd574b8fd4bb894aff4bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930367670696129798, guid: 8a554eefdd0cd574b8fd4bb894aff4bd, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930367670696129798, guid: 8a554eefdd0cd574b8fd4bb894aff4bd, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930367670696129798, guid: 8a554eefdd0cd574b8fd4bb894aff4bd, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930367670696129798, guid: 8a554eefdd0cd574b8fd4bb894aff4bd, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1656,12 +1672,12 @@ GameObject:
   - component: {fileID: 629683876}
   - component: {fileID: 629683875}
   m_Layer: 0
-  m_Name: Tutorial camera
+  m_Name: Level1Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &629683874
 Camera:
   m_ObjectHideFlags: 0
@@ -1704,7 +1720,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 1
   m_AllowMSAA: 0
@@ -2347,6 +2363,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b0950df45452d49b34baf4ceef475c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TutorialCamera: {fileID: 0}
+  speler1Input: {fileID: -7738195956418392941, guid: a11f73289115cbb4b919f7f052e23819, type: 3}
+  speler2Input: {fileID: -6334552589087717364, guid: a11f73289115cbb4b919f7f052e23819, type: 3}
+  looptekst1: {fileID: 1597160540}
+  looptekst2: {fileID: 1462197039}
+  plukTekst1: {fileID: 957713734}
+  pluktekst2: {fileID: 1318952872}
+  bloem1: {fileID: 1283442259}
+  bloem2: {fileID: 1565152333}
 --- !u!4 &910895757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6057231274049549303, guid: b33cc8fd959f9a448ac2dad3ec4ed0a1, type: 3}
@@ -2433,8 +2458,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2570,6 +2595,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bloem 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6680520943713573300, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680520943713573300, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680520943713573300, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680520943713573300, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.25
@@ -2700,7 +2741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1027983247
 Transform:
   m_ObjectHideFlags: 0
@@ -3216,6 +3257,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6887873180136802430, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
   m_PrefabInstance: {fileID: 1963494734}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1283442259 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7930367670696129798, guid: 8a554eefdd0cd574b8fd4bb894aff4bd, type: 3}
+  m_PrefabInstance: {fileID: 560746829}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1318952870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3282,8 +3328,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3684,8 +3730,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3972,7 +4018,7 @@ GameObject:
   - component: {fileID: 1548116815}
   - component: {fileID: 1548116814}
   m_Layer: 0
-  m_Name: Level1Camera
+  m_Name: Tutorialcamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4087,7 +4133,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 1
   m_AllowMSAA: 0
@@ -4096,6 +4142,11 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!212 &1565152333 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6680520943713573300, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+  m_PrefabInstance: {fileID: 996762196}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1597160538
 GameObject:
   m_ObjectHideFlags: 0
@@ -4162,8 +4213,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5321,6 +5372,6 @@ SceneRoots:
   - {fileID: 903821781}
   - {fileID: 9154308405052890825}
   - {fileID: 483236012}
-  - {fileID: 1544842285}
   - {fileID: 471298222}
   - {fileID: 479268629}
+  - {fileID: 1544842285}
