@@ -48,9 +48,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1935089034798755936, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935089034798755936, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.49778083
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935089034798755936, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.25031784
+      objectReference: {fileID: 0}
     - target: {fileID: 5280333312265270558, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: m_Name
-      value: Blauwe bloem
+      value: Bloem 3
       objectReference: {fileID: 0}
     - target: {fileID: 8226609962335798069, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: bloemVariant

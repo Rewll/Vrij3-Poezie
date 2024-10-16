@@ -5,9 +5,10 @@ using TMPro;
 
 public enum bloemVarianten
 {
-    Rood,
-    Geel,
-    Blauw
+    Bloem1,
+    Bloem2,
+    Bloem3,
+    Bloem4
 }
 public class bloem : MonoBehaviour
 {
@@ -33,14 +34,17 @@ public class bloem : MonoBehaviour
     {
         switch (bloemVariant)
         {
-            case bloemVarianten.Rood:
-                SR.color = Color.red;
+            case bloemVarianten.Bloem1:
+                //SR.color = Color.red;
                 break;
-            case bloemVarianten.Geel:
-                SR.color = Color.yellow;
+            case bloemVarianten.Bloem2:
+                //SR.color = Color.yellow;
                 break;
-            case bloemVarianten.Blauw:
-                SR.color = Color.blue;
+            case bloemVarianten.Bloem3:
+                //SR.color = Color.blue;
+                break;
+            case bloemVarianten.Bloem4:
+                //SR.color = Color.blue;
                 break;
         }
     }
@@ -51,6 +55,4 @@ public class bloem : MonoBehaviour
         canvas.SetActive(false);
         GetComponent<CircleCollider2D>().enabled = false;
     }
-
-
 }
