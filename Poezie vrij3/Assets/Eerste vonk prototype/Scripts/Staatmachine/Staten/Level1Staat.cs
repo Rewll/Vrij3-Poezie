@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class StartStaat : BaseState
+public class Level1Staat : BaseState
 {
-
     public override void OnEnter()
     {
-        owner.SwitchState(typeof(Level1Staat));
+        Debug.Log("hoi");
     }
 
     public override void OnUpdate()
