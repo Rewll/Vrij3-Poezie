@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Level1Staat : BaseState
 {
+    public GameObject Level1Camera;
+
     public override void OnEnter()
     {
         Debug.Log("hoi");

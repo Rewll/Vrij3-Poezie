@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpelerOpraap : MonoBehaviour
 {
     public bloemVarianten opraapVariant;
+    public UnityEvent opraap;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -16,8 +18,14 @@ public class SpelerOpraap : MonoBehaviour
                 {
                     collision.GetComponent<bloem>().opgeraapt();
                     collision.transform.parent = transform;
+                    opraap.Invoke();
                 }
             }
         }
+    }
+
+    public void opraapLogica()
+    {
+        Debug.Log("Test");
     }
 }

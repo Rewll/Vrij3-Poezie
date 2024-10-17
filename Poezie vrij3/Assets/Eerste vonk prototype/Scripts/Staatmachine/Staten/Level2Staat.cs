@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Level2Staat : BaseState
 {
+    public GameObject Level2Camera;
+
     public override void OnEnter()
     {
         //spelers verplaatsen

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using DG.Tweening;
 using TMPro;
+using UnityEngine.UI;
 
 public class TutorialStaat : BaseState
 {
@@ -19,8 +20,14 @@ public class TutorialStaat : BaseState
     public SpriteRenderer bloem1;
     public SpriteRenderer bloem2;
     [Space]
-    private bool gedrukt1;
-    private bool gedrukt2;
+    private bool gedrukt1 = false;
+    private bool gedrukt2 = false;
+    public bool Speler1Opgeraapt;
+    public bool Speler2Opgeraapt;
+    public int opraapTeller;
+    [Space]
+    public Image fadeVlak1;
+    public Image fadeVlak2;
     public override void OnEnter()
     {
         DOTween.SetTweensCapacity(2000, 100);
@@ -31,20 +38,45 @@ public class TutorialStaat : BaseState
 
     public override void OnUpdate()
     {
-        if (speler1Input.action.ReadValue<Vector2>().x >= 1 && !gedrukt1)
+        //Debug.Log("tweens = "+ DOTween.TotalActiveTweens());
+        if (speler1Input.action.ReadValue<Vector2>().y != 0 && !gedrukt1)
         {
-            gedrukt2 = true;
+            gedrukt1 = true;
             plukTekst1.DOFade(1, 2);
-            bloem1.DOFade(1, 2);
+            //bloem1.DOFade(1, 2);
+            bloem1.GetComponent<bloem>().faden();
             Debug.Log("1");
         }
-        if (speler2Input.action.ReadValue<Vector2>().x >= 1 && !gedrukt2)
+        if (speler2Input.action.ReadValue<Vector2>().y != 0 && !gedrukt2)
         {
             gedrukt2 = true;
             pluktekst2.DOFade(1, 2);
-            bloem2.DOFade(1, 2);
+            //bloem2.DOFade(1, 2);
+            bloem2.GetComponent<bloem>().faden();
             Debug.Log("2");
         }
+
+        if (Speler1Opgeraapt)
+        {
+            //Debug.Log("Speler 1 opgeraapt");
+            opraapTeller++;
+            Speler1Opgeraapt = false;
+            fadeVlak1.DOFade(1, 2);
+        }
+        if (Speler2Opgeraapt)
+        {
+            //Debug.Log("Speler 2 opgeraapt");
+            opraapTeller++;
+            Speler2Opgeraapt = false;
+            fadeVlak2.DOFade(1, 2);
+        }
+        int tmp = DOTween.TotalActiveTweens();
+        if (opraapTeller >=2 && tmp == 0)
+        {
+            Debug.Log("De wereld draait doorrrrrrrrrrrrrrrr");
+            opraapTeller = 0;
+        }
+
         //Als lopen: pluk tekst verschijn
         //Als speler plukt: fade zwart
         //Als Beide spelers geplukt hebben: naar volgende staat
@@ -53,5 +85,16 @@ public class TutorialStaat : BaseState
     public override void OnExit()
     {
         //Camerauit
+        TutorialCamera.SetActive(false);
+    }
+
+    public void opraap1OpTrue()
+    {
+        Speler1Opgeraapt = true;
+    }
+
+    public void opraap2OpTrue()
+    {
+        Speler2Opgeraapt = true;
     }
 }
