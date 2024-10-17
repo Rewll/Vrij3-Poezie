@@ -9,10 +9,11 @@ public class Level1Staat : BaseState
     public override void OnEnter()
     {
         Debug.Log("hoi");
-        //Verplaats spelers
         //Camera aan
-        //Fade in
-        // Laat bloem verschijnen
+        Level1Camera.SetActive(true);
+        //Verplaats spelers
+        //Fade de vlakken weg
+        //Laat bloem verschijnen
     }
 
     public override void OnUpdate()
@@ -24,5 +25,6 @@ public class Level1Staat : BaseState
     public override void OnExit()
     {
         //Camerauit
+        //fade de vlakken terug
     }
 }
