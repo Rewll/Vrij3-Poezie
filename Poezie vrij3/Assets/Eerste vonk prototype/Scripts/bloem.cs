@@ -65,7 +65,7 @@ public class bloem : MonoBehaviour
 
     public void opgeraapt()
     {
-        Debug.Log(bloemVariant.ToString() + "Kleurige bloem met knop: " + bloemKnop.ToString() + " is opgeraapt");
+        //Debug.Log(bloemVariant.ToString() + "Kleurige bloem met knop: " + bloemKnop.ToString() + " is opgeraapt");
         canvas.SetActive(false);
         GetComponent<CircleCollider2D>().enabled = false;
     }
