@@ -49,20 +49,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1935089034798755936, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e3b618fdbd238594ab14b5812327c170, type: 3}
-    - target: {fileID: 1935089034798755936, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.21756597
       objectReference: {fileID: 0}
     - target: {fileID: 1935089034798755936, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.21756597
       objectReference: {fileID: 0}
     - target: {fileID: 1935089034798755936, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.8679245
       objectReference: {fileID: 0}
     - target: {fileID: 5280333312265270558, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: m_Name
@@ -70,14 +66,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8226609962335798069, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: bloemVariant
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9219696787470797508, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
-      propertyPath: m_Radius
-      value: 0.71460557
-      objectReference: {fileID: 0}
-    - target: {fileID: 9219696787470797508, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
-      propertyPath: m_Offset.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
