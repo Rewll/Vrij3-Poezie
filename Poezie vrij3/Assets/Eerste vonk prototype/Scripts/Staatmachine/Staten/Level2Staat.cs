@@ -13,6 +13,21 @@ public class Level2Staat : BaseState
     public Transform speler2StartPlek;
     [Space]
     public Image fadeVlak1;
+    [Space]
+    public KeyCode dichtbijKnop1;
+    public KeyCode dichtbijKnop2;
+    [Space]
+    public int dichtbijKlikTeller;
+    public List<GameObject> stukjesPoezie = new List<GameObject>();
+    public Tween poezieFade;
+
+    private void Start()
+    {
+        foreach (GameObject tekst in stukjesPoezie)
+        {
+            tekst.GetComponent<TMP_Text>().DOFade(0, 0.001f);
+        }
+    }
 
     public override void OnEnter()
     {
@@ -27,10 +42,24 @@ public class Level2Staat : BaseState
     public override void OnUpdate()
     {
         //Verschijn poezie bij elke samenpluk
+        if (Input.GetKey(dichtbijKnop1) && Input.GetKey(dichtbijKnop2))
+        {
+            //volgende stukje poezie reveal
+            alsDichtBijKlik();
+        }
     }
 
     public override void OnExit()
     {
 
+    }
+
+    void alsDichtBijKlik()
+    {        
+        if (false)
+        {
+            dichtbijKlikTeller++;
+            stukjesPoezie[dichtbijKlikTeller].GetComponent<TMP_Text>().DOFade(1, 2);
+        }
     }
 }

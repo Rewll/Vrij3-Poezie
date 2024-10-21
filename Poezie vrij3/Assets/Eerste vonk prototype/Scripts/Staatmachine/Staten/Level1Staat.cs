@@ -34,11 +34,11 @@ public class Level1Staat : BaseState
 
     IEnumerator bloemFadeCoroutine()
     {
-        Tween fade1 = fadeVlak1.DOFade(0, 4);
-        Tween fade2 = fadeVlak2.DOFade(0, 4);
+        Tween fade1 = fadeVlak1.DOFade(0, 2);
+        Tween fade2 = fadeVlak2.DOFade(0, 2);
         //Debug.Log(DOTween.TotalActiveSequences());
         //yield return new WaitUntil(() => fade1.() && fade2.IsComplete());
-        yield return fade1.WaitForKill();
+        yield return fade1.WaitForCompletion();
         bloem1.GetComponent<bloem>().faden();
         bloem2.GetComponent<bloem>().faden();
         Debug.Log("bloem tijd");
