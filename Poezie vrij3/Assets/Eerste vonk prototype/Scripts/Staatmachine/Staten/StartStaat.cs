@@ -8,7 +8,7 @@ public class StartStaat : BaseState
 
     public override void OnEnter()
     {
-        owner.SwitchState(typeof(TutorialStaat));
+        owner.SwitchState(typeof(Level2Staat));
     }
 
     public override void OnUpdate()

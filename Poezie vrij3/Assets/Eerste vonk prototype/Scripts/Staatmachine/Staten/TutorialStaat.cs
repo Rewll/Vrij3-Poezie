@@ -29,6 +29,7 @@ public class TutorialStaat : BaseState
 
     public override void OnEnter()
     {
+        TutorialCamera.SetActive(true);
         DOTween.SetTweensCapacity(2000, 100);
         //LoopTekst verschijn
         looptekst1.DOFade(1, 2);

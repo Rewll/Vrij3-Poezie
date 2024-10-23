@@ -45,7 +45,8 @@ public class Level2Staat : BaseState
         if (Input.GetKey(dichtbijKnop1) && Input.GetKey(dichtbijKnop2))
         {
             //volgende stukje poezie reveal
-            alsDichtBijKlik();
+            //alsDichtBijKlik();
+            Debug.Log("DichtbijKlik!");
         }
     }
 
@@ -56,10 +57,9 @@ public class Level2Staat : BaseState
 
     void alsDichtBijKlik()
     {        
-        if (false)
-        {
-            dichtbijKlikTeller++;
-            stukjesPoezie[dichtbijKlikTeller].GetComponent<TMP_Text>().DOFade(1, 2);
-        }
+
+       // dichtbijKlikTeller++;
+       // stukjesPoezie[dichtbijKlikTeller].GetComponent<TMP_Text>().DOFade(1, 2);
+        
     }
 }
