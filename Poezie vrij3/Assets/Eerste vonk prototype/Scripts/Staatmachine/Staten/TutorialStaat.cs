@@ -31,7 +31,17 @@ public class TutorialStaat : BaseState
     {
         TutorialCamera.SetActive(true);
         DOTween.SetTweensCapacity(2000, 100);
-        //LoopTekst verschijn
+
+        StartCoroutine(startRoutine());
+    }
+
+    IEnumerator startRoutine()
+    {
+        yield return new WaitForSeconds(2f);
+        Tween fade1 = fadeVlak1.DOFade(0, 2);
+        Tween fade2 = fadeVlak2.DOFade(0, 2);
+        yield return fade1.WaitForCompletion();
+        yield return new WaitForSeconds(.5f);
         looptekst1.DOFade(1, 2);
         looptekst2.DOFade(1, 2);
     }
@@ -47,6 +57,8 @@ public class TutorialStaat : BaseState
             bloem1.GetComponent<bloem>().faden();
             //Debug.Log("1");
         }
+
+
         if (speler2Input.action.ReadValue<Vector2>().y != 0 && !gedrukt2)
         {
             gedrukt2 = true;
@@ -55,6 +67,9 @@ public class TutorialStaat : BaseState
             bloem2.GetComponent<bloem>().faden();
             //Debug.Log("2");
         }
+
+
+
 
         if (GetComponent<GameManagerOpslag>().Speler1Opgeraapt)
         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.Events;
 
 public enum bloemVarianten
 {
@@ -13,13 +14,16 @@ public enum bloemVarianten
 }
 public class bloem : MonoBehaviour
 {
-    public KeyCode bloemKnop = KeyCode.G;
+    public KeyCode bloemKnop;
     public bloemVarianten bloemVariant;
     public TMP_Text knopTekst;
     public SpriteRenderer SR;
     public GameObject canvas;
     [Space]
     public bool verstoppen;
+    public bool isOpgeraapt;
+    [Space]
+    public UnityEvent onOpraap;
 
     private void Start()
     {
@@ -41,7 +45,26 @@ public class bloem : MonoBehaviour
     }
     public void tekstKnopSet()
     {
-        knopTekst.text = bloemKnop.ToString();
+        if (bloemKnop == KeyCode.Alpha7)
+        {
+            knopTekst.text = "Num\n7";
+        }
+        else if (bloemKnop == KeyCode.PageDown)
+        {
+            knopTekst.text = "Page \n Down";
+        }
+        else if (bloemKnop == KeyCode.Semicolon)
+        {
+            knopTekst.text = ";";
+        }
+        else if (bloemKnop == KeyCode.Question)
+        {
+            knopTekst.text = "?";
+        }
+        else
+        {
+            knopTekst.text = bloemKnop.ToString();
+        }
     }
 
     public void bloemSpriteSet()
@@ -65,6 +88,7 @@ public class bloem : MonoBehaviour
 
     public void opgeraapt()
     {
+        isOpgeraapt = true;
         //Debug.Log(bloemVariant.ToString() + "Kleurige bloem met knop: " + bloemKnop.ToString() + " is opgeraapt");
         canvas.SetActive(false);
         GetComponent<CircleCollider2D>().enabled = false;

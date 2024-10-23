@@ -41,13 +41,7 @@ public class Level2Staat : BaseState
 
     public override void OnUpdate()
     {
-        //Verschijn poezie bij elke samenpluk
-        if (Input.GetKey(dichtbijKnop1) && Input.GetKey(dichtbijKnop2))
-        {
-            //volgende stukje poezie reveal
-            //alsDichtBijKlik();
-            Debug.Log("DichtbijKlik!");
-        }
+        
     }
 
     public override void OnExit()
@@ -55,11 +49,12 @@ public class Level2Staat : BaseState
 
     }
 
-    void alsDichtBijKlik()
-    {        
-
-       // dichtbijKlikTeller++;
-       // stukjesPoezie[dichtbijKlikTeller].GetComponent<TMP_Text>().DOFade(1, 2);
-        
+    public void volgendePoezie()
+    {
+        if (dichtbijKlikTeller < stukjesPoezie.Count)
+        {
+            stukjesPoezie[dichtbijKlikTeller].GetComponent<TMP_Text>().DOFade(1, 2);
+            dichtbijKlikTeller++;
+        }
     }
 }

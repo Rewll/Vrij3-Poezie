@@ -16,7 +16,7 @@ public class SpelerOpraap : MonoBehaviour
             {
                 if (Input.GetKey(collision.GetComponent<bloem>().bloemKnop))
                 {
-                    collision.GetComponent<bloem>().opgeraapt();
+                    collision.GetComponent<bloem>().onOpraap.Invoke();
                     collision.transform.parent = transform;
                     opraap.Invoke();
                 }

@@ -5,10 +5,9 @@ using UnityEngine.Events;
 
 public class StartStaat : BaseState
 {
-
     public override void OnEnter()
     {
-        owner.SwitchState(typeof(Level2Staat));
+        
     }
 
     public override void OnUpdate()
@@ -19,5 +18,10 @@ public class StartStaat : BaseState
     public override void OnExit()
     {
 
+    }
+
+    public void begin()
+    {
+        owner.SwitchState(typeof(TutorialStaat));
     }
 }
