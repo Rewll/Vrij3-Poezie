@@ -43,9 +43,10 @@ public class bloem : MonoBehaviour
             knopTekst.color = tmp2;
         }
     }
+
     public void tekstKnopSet()
     {
-        if (bloemKnop == KeyCode.Alpha7)
+        if (bloemKnop == KeyCode.Keypad7)
         {
             knopTekst.text = "Num\n7";
         }
@@ -60,6 +61,10 @@ public class bloem : MonoBehaviour
         else if (bloemKnop == KeyCode.Question)
         {
             knopTekst.text = "?";
+        }
+        else if (bloemKnop == KeyCode.Period)
+        {
+            knopTekst.text = "> \n .";
         }
         else
         {

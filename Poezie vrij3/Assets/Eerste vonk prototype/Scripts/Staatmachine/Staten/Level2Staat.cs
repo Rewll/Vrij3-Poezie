@@ -14,9 +14,6 @@ public class Level2Staat : BaseState
     [Space]
     public Image fadeVlak1;
     [Space]
-    public KeyCode dichtbijKnop1;
-    public KeyCode dichtbijKnop2;
-    [Space]
     public int dichtbijKlikTeller;
     public List<GameObject> stukjesPoezie = new List<GameObject>();
     public Tween poezieFade;

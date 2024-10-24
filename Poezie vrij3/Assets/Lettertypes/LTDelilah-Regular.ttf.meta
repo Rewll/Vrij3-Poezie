@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 9e4b7c6b18ed7c5459f8469636eb9d57
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - LT Delilah
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 903838861a696664bb7260f55472e820, type: 3}
+  - {fileID: 12800000, guid: b5b1610f3095f2d44846e0fc7f86784b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
