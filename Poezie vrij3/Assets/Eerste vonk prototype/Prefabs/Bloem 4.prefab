@@ -64,6 +64,14 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 7642116819769183987, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e6bf1c75e92f4c3419c107d392991368, type: 3}
+    - target: {fileID: 8226609962335798069, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
+      propertyPath: SR
+      value: 
+      objectReference: {fileID: 3197955529193645863}
     - target: {fileID: 8226609962335798069, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: bloemVariant
       value: 3
@@ -73,3 +81,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
+--- !u!212 &3197955529193645863 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7642116819769183987, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
+  m_PrefabInstance: {fileID: 5075322988794227156}
+  m_PrefabAsset: {fileID: 0}

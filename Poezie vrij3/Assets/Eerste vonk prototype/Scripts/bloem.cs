@@ -58,7 +58,7 @@ public class bloem : MonoBehaviour
         {
             knopTekst.text = ";";
         }
-        else if (bloemKnop == KeyCode.Question)
+        else if (bloemKnop == KeyCode.Slash)
         {
             knopTekst.text = "?";
         }

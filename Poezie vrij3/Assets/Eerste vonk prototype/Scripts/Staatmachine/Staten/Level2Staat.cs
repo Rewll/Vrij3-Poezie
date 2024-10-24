@@ -38,7 +38,7 @@ public class Level2Staat : BaseState
 
     public override void OnUpdate()
     {
-        
+
     }
 
     public override void OnExit()
