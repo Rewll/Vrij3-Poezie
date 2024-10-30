@@ -22,6 +22,6 @@ public class StartStaat : BaseState
 
     public void begin()
     {
-        owner.SwitchState(typeof(Level2Staat));
+        owner.SwitchState(typeof(TutorialStaat));
     }
 }
