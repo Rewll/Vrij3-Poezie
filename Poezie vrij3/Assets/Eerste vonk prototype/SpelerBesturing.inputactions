@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Speler2 AltBeweging",
+                    "type": "PassThrough",
+                    "id": "8fd14186-4201-4f03-9b46-e63a46e1e67d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -132,6 +141,61 @@
                     "processors": "",
                     "groups": "Toetsenbord",
                     "action": "Speler2 Beweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "aabe84bb-71e7-4dd1-ac8a-f0c39a4896ce",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Speler2 AltBeweging",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "0edf0ced-473a-4614-95c6-0a1026657f2c",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler2 AltBeweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "0d328f52-011d-408e-80b4-83f1c14fcbec",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler2 AltBeweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "2b5e093f-4397-4d0e-99a3-2b409ce36072",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler2 AltBeweging",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "c28cc614-dc7b-4f2f-ad9a-c81552f36428",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Speler2 AltBeweging",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

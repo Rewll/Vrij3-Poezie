@@ -153,7 +153,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.DefaultCompany.Poezie-vrij3
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -605,8 +606,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Poezie vrij3
-  metroPackageVersion: 
+  metroPackageName: Poezievrij3
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -614,7 +615,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Poezie vrij3
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Poezie vrij3
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
