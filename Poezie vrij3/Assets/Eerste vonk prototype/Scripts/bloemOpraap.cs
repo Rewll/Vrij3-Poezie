@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class SpelerOpraap : MonoBehaviour
+public class bloemOpraap : MonoBehaviour
 {
     public bloemVarianten opraapVariant;
     public UnityEvent opraap;

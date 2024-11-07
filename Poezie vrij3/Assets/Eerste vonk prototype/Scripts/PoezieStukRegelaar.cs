@@ -17,7 +17,7 @@ public class PoezieStukRegelaar : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<SpelerOpraap>() && !klaar)
+        if (collision.GetComponent<bloemOpraap>() && !klaar)
         {
             //poezieInloop.Invoke();
             stukjePoezie.DOFade(1, 3);
