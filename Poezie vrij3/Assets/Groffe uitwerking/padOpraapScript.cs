@@ -5,7 +5,7 @@ using UnityEngine;
 public class padOpraapScript : MonoBehaviour
 {
     public KeyCode opraapKnop;
-    public GameObject stukjeInHand;
+    //public GameObject stukjeInHand;
     public bool handGevuld;
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -13,12 +13,16 @@ public class padOpraapScript : MonoBehaviour
         {
             if (Input.GetKey(opraapKnop) && !handGevuld)
             {
-                stukjeInHand = collision.gameObject;
+                //stukjeInHand = collision.gameObject;
                 collision.transform.parent = transform;
                 handGevuld = true;
             }
         }
     }
 
-
+    public void leegHand()
+    {
+        Destroy(transform.GetChild(0).gameObject);
+        handGevuld = false;
+    }
 }

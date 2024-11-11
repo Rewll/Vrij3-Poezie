@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class LenteVeld : BaseState2
 {
     public GameObject speler1;
@@ -28,6 +28,6 @@ public class LenteVeld : BaseState2
     }
     public void lenteKlaar()
     {
-        Debug.Log("Zomertijd!");
+        SceneManager.LoadScene(1);
     }
 }
