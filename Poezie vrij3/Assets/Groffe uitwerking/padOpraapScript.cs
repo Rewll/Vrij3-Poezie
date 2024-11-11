@@ -6,16 +6,19 @@ public class padOpraapScript : MonoBehaviour
 {
     public KeyCode opraapKnop;
     public GameObject stukjeInHand;
-
+    public bool handGevuld;
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.GetComponent<padStukje>())
         {
-            if (Input.GetKey(opraapKnop))
+            if (Input.GetKey(opraapKnop) && !handGevuld)
             {
                 stukjeInHand = collision.gameObject;
                 collision.transform.parent = transform;
+                handGevuld = true;
             }
         }
     }
+
+
 }
