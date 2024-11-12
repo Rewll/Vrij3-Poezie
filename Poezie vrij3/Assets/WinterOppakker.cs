@@ -7,9 +7,10 @@ public class WinterOppakker : MonoBehaviour
     public KeyCode opraapKnop;
     //public GameObject stukjeInHand;
     public bool handGevuld;
+    public string OppakTag;
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.GetComponent<winterStuk>())
+        if (collision.gameObject.tag == OppakTag)
         {
             if (Input.GetKey(opraapKnop) && !handGevuld)
             {
@@ -21,12 +22,10 @@ public class WinterOppakker : MonoBehaviour
     }
     private void Update()
     {
-        if (handGevuld)
+        if (handGevuld && Input.GetKey(opraapKnop))
         {
-            if (Input.GetKey(opraapKnop))
-            {
-                leegHand();
-            }
+            Debug.Log("hoi");
+            //leegHand();
         }
     }
     public void leegHand()
