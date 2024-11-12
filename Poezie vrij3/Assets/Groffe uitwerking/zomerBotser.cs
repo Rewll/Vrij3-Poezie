@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class botser : MonoBehaviour
+public class zomerBotser : MonoBehaviour
 {
     public UnityEvent padBouw;
     [Space]
