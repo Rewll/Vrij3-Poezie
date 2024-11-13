@@ -1394,6 +1394,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1028154746
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2695566315268985736, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 40ffbb4e0f0e71b45af7d5bffe38a781, type: 3}
+    - target: {fileID: 7857069143566076245, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_Name
+      value: Achtegrond
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
 --- !u!1 &1057160434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,7 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a107b5f694b0249bddd9ec9b8c7e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  opraapKnop: 305
+  opraapKnop: 303
   tutorialtext: {fileID: 1975417737}
   handGevuld: 0
   OppakTag: Speler2
@@ -3647,7 +3708,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Breng stukken van het pad naar jou kleur bloem. Pak ze op met Rechter CTRL
+  m_text: Breng stukken van het pad naar jou kleur bloem. Pak ze op met Rechter Shift
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5046,3 +5107,4 @@ SceneRoots:
   - {fileID: 5150406018343807029}
   - {fileID: 2656212074544265394}
   - {fileID: 6816141607597030554}
+  - {fileID: 1028154746}

@@ -2466,6 +2466,67 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.2743926, y: 1.3772678}
   m_EdgeRadius: 0
+--- !u!1001 &1697618950
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409193525212620069, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2695566315268985736, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 9df9b3f1274b58e4584866ba4f0779ee, type: 3}
+    - target: {fileID: 7857069143566076245, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
+      propertyPath: m_Name
+      value: Achtegrond
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3f49ac0f011e7ca4b85e8b4e3e668de7, type: 3}
 --- !u!1 &1764755304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,3 +2928,4 @@ SceneRoots:
   - {fileID: 794198602}
   - {fileID: 1683708201}
   - {fileID: 261971621}
+  - {fileID: 1697618950}

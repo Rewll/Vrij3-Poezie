@@ -66,6 +66,10 @@ public class bloem : MonoBehaviour
         {
             knopTekst.text = "> \n .";
         }
+        else if (bloemKnop == KeyCode.RightShift)
+        {
+            knopTekst.text = " RShift";
+        }
         else
         {
             knopTekst.text = bloemKnop.ToString();
