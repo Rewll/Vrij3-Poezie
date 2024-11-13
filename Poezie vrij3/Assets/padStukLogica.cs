@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 public class padStukLogica : MonoBehaviour
@@ -36,6 +37,7 @@ public class padStukLogica : MonoBehaviour
     IEnumerator eindeRoutine()
     {
         yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene(3);
         Debug.Log("volgende!");
     }
 }

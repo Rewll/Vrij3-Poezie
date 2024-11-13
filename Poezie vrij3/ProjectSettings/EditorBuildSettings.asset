@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Groffe uitwerking/Zomer.unity
     guid: 5ca17e62021c7ad479b8cbcfe29bcf08
+  - enabled: 1
+    path: Assets/Scenes/Groffe uitwerking/Herfst.unity
+    guid: 864dc9fcb9a9bec4ea42ec3be4a738e0
+  - enabled: 1
+    path: Assets/Scenes/Groffe uitwerking/Winter.unity
+    guid: 560a813aba7d96541b1e51f137ac57b4
+  - enabled: 1
+    path: Assets/Scenes/Groffe uitwerking/EINDE.unity
+    guid: 49213035b93d93f458bfc1a8a6449d70
   m_configObjects: {}

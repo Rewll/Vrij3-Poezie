@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class trigjerheh : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class trigjerheh : MonoBehaviour
         if (collision.GetComponent<SpelerBeweging>())
         {
             Debug.Log("volgende scene!");
+            SceneManager.LoadScene(2);
         }
     }
 }

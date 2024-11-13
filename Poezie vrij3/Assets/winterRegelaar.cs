@@ -19,6 +19,6 @@ public class winterRegelaar : MonoBehaviour
     {
         yield return new WaitForSeconds(6);
         Debug.Log("scene klaar");
-        //SceneManager.LoadScene(1);
+        SceneManager.LoadScene(4);
     }
 }
