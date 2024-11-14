@@ -1993,9 +1993,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bloem 4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1092308134234397898, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772194831786866702, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534693431188459640, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: bloemKnop
       value: 303
+      objectReference: {fileID: 0}
+    - target: {fileID: 5705032617636456060, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2209,7 +2225,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -3124,7 +3140,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -3895,9 +3911,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bloem 1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1092308134234397898, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772194831786866702, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534693431188459640, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: bloemKnop
       value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 5705032617636456060, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3960,6 +3992,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 121a3f145ef0d6f40bb0747fca11631e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1916126148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916126150}
+  - component: {fileID: 1916126149}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1916126149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916126148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 2ed5a9f9679f33d4e8c19b5951d4755e, type: 2}
+--- !u!4 &1916126150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916126148}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.47051787, y: -0.5947746, z: -0.15710743}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2012849038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4493,3 +4574,4 @@ SceneRoots:
   - {fileID: 1335426537}
   - {fileID: 1368348287}
   - {fileID: 1366852346}
+  - {fileID: 1916126150}
