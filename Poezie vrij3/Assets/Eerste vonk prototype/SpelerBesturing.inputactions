@@ -2,7 +2,7 @@
     "name": "SpelerBesturing",
     "maps": [
         {
-            "name": "Eerste Vonk spelspeel",
+            "name": "SpelerBeweging",
             "id": "d97f451e-b11f-4671-9177-6ad6642cf81f",
             "actions": [
                 {
@@ -198,6 +198,34 @@
                     "action": "Speler2 AltBeweging",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "ZomerMapSpeler1",
+            "id": "28be7f4a-96f0-4d55-9afc-9d9e8c405005",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "fce091e5-660a-4f11-b8f9-3a915ee48f30",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "bd7e2c3f-dfa3-4e69-84fb-58fe06f7fd0d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
