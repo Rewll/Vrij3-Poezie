@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5073729009833522032}
   m_Layer: 0
   m_Name: Speler2
-  m_TagString: Untagged
+  m_TagString: Speler2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -99,6 +99,12 @@ public class LenteStartStaat : LenteBasisStaat
 
     public void VolgendeStukkie()
     {
+        StartCoroutine(eindeStaat());
+    }
+
+    IEnumerator eindeStaat()
+    {
+        yield return new WaitForSeconds(1);
         owner.SwitchState(typeof(LenteStuk1Staat));
     }
 

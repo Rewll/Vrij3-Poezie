@@ -28,4 +28,26 @@ public class bloemOpraap : MonoBehaviour
     {
         Debug.Log("Test");
     }
+
+    public void bloemSmelt()
+    {
+        //Debug.Log(transform.childCount);
+        if (transform.childCount > 1)
+        {
+            //Debug.Log(transform.childCount);
+            int teller = 0;
+            foreach (Transform kind in transform)
+            {
+                teller++;
+                if (teller == 1)
+                {
+                    continue;
+                }
+                else
+                {
+                    Destroy(kind.gameObject);
+                }
+            }
+        }
+    }
 }
