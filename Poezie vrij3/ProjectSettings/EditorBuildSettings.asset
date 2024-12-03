@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/PrototypeScene.unity
+    path: Assets/1 Eerste vonk prototype/Scenes/PrototypeScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Groffe uitwerking/Lente.unity
+    path: Assets/2 Groffe uitwerking/Scenes/Lente.unity
     guid: 1af4c40d882c57e4786ffa6437129629
   - enabled: 1
-    path: Assets/Scenes/Machine uitwerking/MachineZomer.unity
+    path: Assets/3 Machine uitwerking/Scenes/MachineZomer.unity
     guid: 16e801a2e0dfbc846a02f74360f53d60
   m_configObjects: {}

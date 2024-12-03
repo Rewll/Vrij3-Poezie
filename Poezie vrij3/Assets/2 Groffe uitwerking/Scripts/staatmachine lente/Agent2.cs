@@ -8,7 +8,7 @@ public class Agent2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fsm = new FSM2(typeof(LenteVeld), GetComponents<BaseState2>()); //Starting state, with getcomponentSSS because multiple states are being used
+        fsm = new FSM2(typeof(LenteStart), GetComponents<BaseState2>()); //Starting state, with getcomponentSSS because multiple states are being used
     }
 
     // Update is called once per frame
