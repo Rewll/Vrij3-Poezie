@@ -170,35 +170,44 @@
             "id": "eabc1a45-1def-42e3-bf26-1b88aed06cb4",
             "actions": [
                 {
-                    "name": "New action",
-                    "type": "Button",
+                    "name": "Knop1",
+                    "type": "Value",
                     "id": "f2883ea1-da68-482c-a5f5-bcb2d7813be5",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Analog",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Knop2",
+                    "type": "Value",
+                    "id": "16520a60-61e3-41d2-b377-1b93838d0ae7",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "61ceeae3-827d-4caa-b7c0-9e490013086d",
-                    "path": "",
+                    "path": "<Keyboard>/g",
                     "interactions": "",
                     "processors": "",
                     "groups": "Toetsenbord",
-                    "action": "New action",
+                    "action": "Knop1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "5ce05527-100f-49a0-8c37-e852477b9489",
-                    "path": "",
+                    "id": "8f26e1f3-afeb-4099-9d37-524916b28ed9",
+                    "path": "<Keyboard>/b",
                     "interactions": "",
                     "processors": "",
                     "groups": "Toetsenbord",
-                    "action": "New action",
+                    "action": "Knop2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -206,27 +215,211 @@
         },
         {
             "name": "ZomerSpeler1C",
-            "id": "a717792d-ecf9-4b15-aff8-64f054efe42b",
+            "id": "fce2d4be-edeb-4012-89fb-30187b8d91a2",
             "actions": [
                 {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "5323af5f-791f-473f-a105-0084d58b5452",
-                    "expectedControlType": "Button",
+                    "name": "Knop1",
+                    "type": "Value",
+                    "id": "62d86df5-dce3-4ce9-a0b7-8fd24c41b206",
+                    "expectedControlType": "Analog",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Knop2",
+                    "type": "Value",
+                    "id": "982142f7-de4a-41ab-b638-71f0877b31c4",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Knop3",
+                    "type": "Value",
+                    "id": "959bf447-1cdc-44b4-9119-45caa03b7a2b",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "d9ef7f8e-fef4-4f28-8df8-f9c6a4a03ff3",
-                    "path": "",
+                    "id": "6081c818-2dfd-425f-91ad-08f3cd187a86",
+                    "path": "<Keyboard>/g",
                     "interactions": "",
                     "processors": "",
                     "groups": "Toetsenbord",
-                    "action": "New action",
+                    "action": "Knop1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e16844c-136a-4b32-bef9-3573358188de",
+                    "path": "<Keyboard>/b",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Knop2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2ba9f985-4319-4e42-82b5-16d90455d222",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Knop3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ZomerSpeler2A",
+            "id": "4b2c50f2-c5f7-4ed9-b3d4-e75227f3ad87",
+            "actions": [
+                {
+                    "name": "Knop1",
+                    "type": "Value",
+                    "id": "7c6baacf-0d1e-43b7-a10d-213d8de50e63",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "002a3212-d3e4-4119-b8c3-588a3ea54c28",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Knop1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ZomerSpeler2B",
+            "id": "035fe114-71a7-4559-97c7-9cbccc0a4366",
+            "actions": [
+                {
+                    "name": "Knop1",
+                    "type": "Value",
+                    "id": "467249e1-c54a-4b76-8956-6e7e18f15917",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Knop2",
+                    "type": "Value",
+                    "id": "db4a5ecd-6596-4361-9dec-4d2acac56e3a",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3e29feec-fe69-40b5-a885-fe8ece0409ec",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Knop1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "311270cb-e189-44fc-be1c-41375528b614",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Knop2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ZomerSpeler2C",
+            "id": "a7aeb3b9-9064-45c9-ba15-722e7f900454",
+            "actions": [
+                {
+                    "name": "Knop1",
+                    "type": "Value",
+                    "id": "d84c0b9d-61a3-4dcd-9e1f-93797249f20f",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Knop2",
+                    "type": "Value",
+                    "id": "a77cab4c-6fa2-4f0e-a1ee-af7bb8ce3178",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Knop3",
+                    "type": "Value",
+                    "id": "ba5bc19e-2c42-42d1-b27e-de797f69a498",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8ba74d4a-56de-4cc4-b1fe-d64d75ef8e48",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Knop1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4e9ca09-2574-40bd-9219-5c75418c7ee8",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Knop2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e344096-f028-4f6d-a0a6-22df396500fa",
+                    "path": "<Keyboard>/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Knop3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

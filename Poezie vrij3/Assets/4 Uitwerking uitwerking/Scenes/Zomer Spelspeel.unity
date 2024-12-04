@@ -607,9 +607,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1210445400}
+  - component: {fileID: 1210445404}
   - component: {fileID: 1210445402}
   - component: {fileID: 1210445401}
   - component: {fileID: 1210445403}
+  - component: {fileID: 1210445406}
+  - component: {fileID: 1210445405}
   m_Layer: 0
   m_Name: SpelRegelaar
   m_TagString: Untagged
@@ -670,8 +673,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8665e655c91b58f4a96cf2d572d744b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: 0
-  mapje: {fileID: 0}
+  speler1Drukt: 0
+  speler2Drukt: 0
+--- !u!114 &1210445404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210445399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51d90d6eed170e43b42f63a8649ab7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speler1: {fileID: 1401017453}
+  speler2: {fileID: 2061313004}
+  Speler1Opgeraapt: 0
+  Speler2Opgeraapt: 0
+--- !u!114 &1210445405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210445399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee1bd07ef4aab443bc94befc84e10e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speler1Drukt: 0
+  speler2Drukt: 0
+--- !u!114 &1210445406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210445399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cf67cc313c36a499afe00455825612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speler1Drukt: 0
+  speler2Drukt: 0
 --- !u!1 &1304235977
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,6 +889,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 45.138306, y: 45.138306}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1401017453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7252195248704095739, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+  m_PrefabInstance: {fileID: 1312901283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1489562987
 GameObject:
   m_ObjectHideFlags: 0

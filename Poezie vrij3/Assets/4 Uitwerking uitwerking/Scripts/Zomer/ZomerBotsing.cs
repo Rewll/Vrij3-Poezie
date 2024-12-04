@@ -11,7 +11,7 @@ public class ZomerBotsing : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<SpelerBeweging>())
         {
-            Debug.Log("Bots!");
+            //Debug.Log("Bots!");
             bots.Invoke();
         }
     }

@@ -192,35 +192,44 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
             ""id"": ""eabc1a45-1def-42e3-bf26-1b88aed06cb4"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
+                    ""name"": ""Knop1"",
+                    ""type"": ""Value"",
                     ""id"": ""f2883ea1-da68-482c-a5f5-bcb2d7813be5"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Analog"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Knop2"",
+                    ""type"": ""Value"",
+                    ""id"": ""16520a60-61e3-41d2-b377-1b93838d0ae7"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""61ceeae3-827d-4caa-b7c0-9e490013086d"",
-                    ""path"": """",
+                    ""path"": ""<Keyboard>/g"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Toetsenbord"",
-                    ""action"": ""New action"",
+                    ""action"": ""Knop1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""5ce05527-100f-49a0-8c37-e852477b9489"",
-                    ""path"": """",
+                    ""id"": ""8f26e1f3-afeb-4099-9d37-524916b28ed9"",
+                    ""path"": ""<Keyboard>/b"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Toetsenbord"",
-                    ""action"": ""New action"",
+                    ""action"": ""Knop2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -228,27 +237,211 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
         },
         {
             ""name"": ""ZomerSpeler1C"",
-            ""id"": ""a717792d-ecf9-4b15-aff8-64f054efe42b"",
+            ""id"": ""fce2d4be-edeb-4012-89fb-30187b8d91a2"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
-                    ""id"": ""5323af5f-791f-473f-a105-0084d58b5452"",
-                    ""expectedControlType"": ""Button"",
+                    ""name"": ""Knop1"",
+                    ""type"": ""Value"",
+                    ""id"": ""62d86df5-dce3-4ce9-a0b7-8fd24c41b206"",
+                    ""expectedControlType"": ""Analog"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Knop2"",
+                    ""type"": ""Value"",
+                    ""id"": ""982142f7-de4a-41ab-b638-71f0877b31c4"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Knop3"",
+                    ""type"": ""Value"",
+                    ""id"": ""959bf447-1cdc-44b4-9119-45caa03b7a2b"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""d9ef7f8e-fef4-4f28-8df8-f9c6a4a03ff3"",
-                    ""path"": """",
+                    ""id"": ""6081c818-2dfd-425f-91ad-08f3cd187a86"",
+                    ""path"": ""<Keyboard>/g"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Toetsenbord"",
-                    ""action"": ""New action"",
+                    ""action"": ""Knop1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1e16844c-136a-4b32-bef9-3573358188de"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Toetsenbord"",
+                    ""action"": ""Knop2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2ba9f985-4319-4e42-82b5-16d90455d222"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Toetsenbord"",
+                    ""action"": ""Knop3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""ZomerSpeler2A"",
+            ""id"": ""4b2c50f2-c5f7-4ed9-b3d4-e75227f3ad87"",
+            ""actions"": [
+                {
+                    ""name"": ""Knop1"",
+                    ""type"": ""Value"",
+                    ""id"": ""7c6baacf-0d1e-43b7-a10d-213d8de50e63"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""002a3212-d3e4-4119-b8c3-588a3ea54c28"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Toetsenbord"",
+                    ""action"": ""Knop1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""ZomerSpeler2B"",
+            ""id"": ""035fe114-71a7-4559-97c7-9cbccc0a4366"",
+            ""actions"": [
+                {
+                    ""name"": ""Knop1"",
+                    ""type"": ""Value"",
+                    ""id"": ""467249e1-c54a-4b76-8956-6e7e18f15917"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Knop2"",
+                    ""type"": ""Value"",
+                    ""id"": ""db4a5ecd-6596-4361-9dec-4d2acac56e3a"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""3e29feec-fe69-40b5-a885-fe8ece0409ec"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Toetsenbord"",
+                    ""action"": ""Knop1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""311270cb-e189-44fc-be1c-41375528b614"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Toetsenbord"",
+                    ""action"": ""Knop2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""ZomerSpeler2C"",
+            ""id"": ""a7aeb3b9-9064-45c9-ba15-722e7f900454"",
+            ""actions"": [
+                {
+                    ""name"": ""Knop1"",
+                    ""type"": ""Value"",
+                    ""id"": ""d84c0b9d-61a3-4dcd-9e1f-93797249f20f"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Knop2"",
+                    ""type"": ""Value"",
+                    ""id"": ""a77cab4c-6fa2-4f0e-a1ee-af7bb8ce3178"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Knop3"",
+                    ""type"": ""Value"",
+                    ""id"": ""ba5bc19e-2c42-42d1-b27e-de797f69a498"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""8ba74d4a-56de-4cc4-b1fe-d64d75ef8e48"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Toetsenbord"",
+                    ""action"": ""Knop1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e4e9ca09-2574-40bd-9219-5c75418c7ee8"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Toetsenbord"",
+                    ""action"": ""Knop2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5e344096-f028-4f6d-a0a6-22df396500fa"",
+                    ""path"": ""<Keyboard>/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Toetsenbord"",
+                    ""action"": ""Knop3"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -278,10 +471,25 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
         m_ZomerSpeler1A_Knop1 = m_ZomerSpeler1A.FindAction("Knop1", throwIfNotFound: true);
         // ZomerSpeler1B
         m_ZomerSpeler1B = asset.FindActionMap("ZomerSpeler1B", throwIfNotFound: true);
-        m_ZomerSpeler1B_Newaction = m_ZomerSpeler1B.FindAction("New action", throwIfNotFound: true);
+        m_ZomerSpeler1B_Knop1 = m_ZomerSpeler1B.FindAction("Knop1", throwIfNotFound: true);
+        m_ZomerSpeler1B_Knop2 = m_ZomerSpeler1B.FindAction("Knop2", throwIfNotFound: true);
         // ZomerSpeler1C
         m_ZomerSpeler1C = asset.FindActionMap("ZomerSpeler1C", throwIfNotFound: true);
-        m_ZomerSpeler1C_Newaction = m_ZomerSpeler1C.FindAction("New action", throwIfNotFound: true);
+        m_ZomerSpeler1C_Knop1 = m_ZomerSpeler1C.FindAction("Knop1", throwIfNotFound: true);
+        m_ZomerSpeler1C_Knop2 = m_ZomerSpeler1C.FindAction("Knop2", throwIfNotFound: true);
+        m_ZomerSpeler1C_Knop3 = m_ZomerSpeler1C.FindAction("Knop3", throwIfNotFound: true);
+        // ZomerSpeler2A
+        m_ZomerSpeler2A = asset.FindActionMap("ZomerSpeler2A", throwIfNotFound: true);
+        m_ZomerSpeler2A_Knop1 = m_ZomerSpeler2A.FindAction("Knop1", throwIfNotFound: true);
+        // ZomerSpeler2B
+        m_ZomerSpeler2B = asset.FindActionMap("ZomerSpeler2B", throwIfNotFound: true);
+        m_ZomerSpeler2B_Knop1 = m_ZomerSpeler2B.FindAction("Knop1", throwIfNotFound: true);
+        m_ZomerSpeler2B_Knop2 = m_ZomerSpeler2B.FindAction("Knop2", throwIfNotFound: true);
+        // ZomerSpeler2C
+        m_ZomerSpeler2C = asset.FindActionMap("ZomerSpeler2C", throwIfNotFound: true);
+        m_ZomerSpeler2C_Knop1 = m_ZomerSpeler2C.FindAction("Knop1", throwIfNotFound: true);
+        m_ZomerSpeler2C_Knop2 = m_ZomerSpeler2C.FindAction("Knop2", throwIfNotFound: true);
+        m_ZomerSpeler2C_Knop3 = m_ZomerSpeler2C.FindAction("Knop3", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -443,12 +651,14 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
     // ZomerSpeler1B
     private readonly InputActionMap m_ZomerSpeler1B;
     private List<IZomerSpeler1BActions> m_ZomerSpeler1BActionsCallbackInterfaces = new List<IZomerSpeler1BActions>();
-    private readonly InputAction m_ZomerSpeler1B_Newaction;
+    private readonly InputAction m_ZomerSpeler1B_Knop1;
+    private readonly InputAction m_ZomerSpeler1B_Knop2;
     public struct ZomerSpeler1BActions
     {
         private @Besturing m_Wrapper;
         public ZomerSpeler1BActions(@Besturing wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_ZomerSpeler1B_Newaction;
+        public InputAction @Knop1 => m_Wrapper.m_ZomerSpeler1B_Knop1;
+        public InputAction @Knop2 => m_Wrapper.m_ZomerSpeler1B_Knop2;
         public InputActionMap Get() { return m_Wrapper.m_ZomerSpeler1B; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -458,16 +668,22 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_ZomerSpeler1BActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_ZomerSpeler1BActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
+            @Knop1.started += instance.OnKnop1;
+            @Knop1.performed += instance.OnKnop1;
+            @Knop1.canceled += instance.OnKnop1;
+            @Knop2.started += instance.OnKnop2;
+            @Knop2.performed += instance.OnKnop2;
+            @Knop2.canceled += instance.OnKnop2;
         }
 
         private void UnregisterCallbacks(IZomerSpeler1BActions instance)
         {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
+            @Knop1.started -= instance.OnKnop1;
+            @Knop1.performed -= instance.OnKnop1;
+            @Knop1.canceled -= instance.OnKnop1;
+            @Knop2.started -= instance.OnKnop2;
+            @Knop2.performed -= instance.OnKnop2;
+            @Knop2.canceled -= instance.OnKnop2;
         }
 
         public void RemoveCallbacks(IZomerSpeler1BActions instance)
@@ -489,12 +705,16 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
     // ZomerSpeler1C
     private readonly InputActionMap m_ZomerSpeler1C;
     private List<IZomerSpeler1CActions> m_ZomerSpeler1CActionsCallbackInterfaces = new List<IZomerSpeler1CActions>();
-    private readonly InputAction m_ZomerSpeler1C_Newaction;
+    private readonly InputAction m_ZomerSpeler1C_Knop1;
+    private readonly InputAction m_ZomerSpeler1C_Knop2;
+    private readonly InputAction m_ZomerSpeler1C_Knop3;
     public struct ZomerSpeler1CActions
     {
         private @Besturing m_Wrapper;
         public ZomerSpeler1CActions(@Besturing wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_ZomerSpeler1C_Newaction;
+        public InputAction @Knop1 => m_Wrapper.m_ZomerSpeler1C_Knop1;
+        public InputAction @Knop2 => m_Wrapper.m_ZomerSpeler1C_Knop2;
+        public InputAction @Knop3 => m_Wrapper.m_ZomerSpeler1C_Knop3;
         public InputActionMap Get() { return m_Wrapper.m_ZomerSpeler1C; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -504,16 +724,28 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_ZomerSpeler1CActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_ZomerSpeler1CActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
+            @Knop1.started += instance.OnKnop1;
+            @Knop1.performed += instance.OnKnop1;
+            @Knop1.canceled += instance.OnKnop1;
+            @Knop2.started += instance.OnKnop2;
+            @Knop2.performed += instance.OnKnop2;
+            @Knop2.canceled += instance.OnKnop2;
+            @Knop3.started += instance.OnKnop3;
+            @Knop3.performed += instance.OnKnop3;
+            @Knop3.canceled += instance.OnKnop3;
         }
 
         private void UnregisterCallbacks(IZomerSpeler1CActions instance)
         {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
+            @Knop1.started -= instance.OnKnop1;
+            @Knop1.performed -= instance.OnKnop1;
+            @Knop1.canceled -= instance.OnKnop1;
+            @Knop2.started -= instance.OnKnop2;
+            @Knop2.performed -= instance.OnKnop2;
+            @Knop2.canceled -= instance.OnKnop2;
+            @Knop3.started -= instance.OnKnop3;
+            @Knop3.performed -= instance.OnKnop3;
+            @Knop3.canceled -= instance.OnKnop3;
         }
 
         public void RemoveCallbacks(IZomerSpeler1CActions instance)
@@ -531,6 +763,168 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
         }
     }
     public ZomerSpeler1CActions @ZomerSpeler1C => new ZomerSpeler1CActions(this);
+
+    // ZomerSpeler2A
+    private readonly InputActionMap m_ZomerSpeler2A;
+    private List<IZomerSpeler2AActions> m_ZomerSpeler2AActionsCallbackInterfaces = new List<IZomerSpeler2AActions>();
+    private readonly InputAction m_ZomerSpeler2A_Knop1;
+    public struct ZomerSpeler2AActions
+    {
+        private @Besturing m_Wrapper;
+        public ZomerSpeler2AActions(@Besturing wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Knop1 => m_Wrapper.m_ZomerSpeler2A_Knop1;
+        public InputActionMap Get() { return m_Wrapper.m_ZomerSpeler2A; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ZomerSpeler2AActions set) { return set.Get(); }
+        public void AddCallbacks(IZomerSpeler2AActions instance)
+        {
+            if (instance == null || m_Wrapper.m_ZomerSpeler2AActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_ZomerSpeler2AActionsCallbackInterfaces.Add(instance);
+            @Knop1.started += instance.OnKnop1;
+            @Knop1.performed += instance.OnKnop1;
+            @Knop1.canceled += instance.OnKnop1;
+        }
+
+        private void UnregisterCallbacks(IZomerSpeler2AActions instance)
+        {
+            @Knop1.started -= instance.OnKnop1;
+            @Knop1.performed -= instance.OnKnop1;
+            @Knop1.canceled -= instance.OnKnop1;
+        }
+
+        public void RemoveCallbacks(IZomerSpeler2AActions instance)
+        {
+            if (m_Wrapper.m_ZomerSpeler2AActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IZomerSpeler2AActions instance)
+        {
+            foreach (var item in m_Wrapper.m_ZomerSpeler2AActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_ZomerSpeler2AActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public ZomerSpeler2AActions @ZomerSpeler2A => new ZomerSpeler2AActions(this);
+
+    // ZomerSpeler2B
+    private readonly InputActionMap m_ZomerSpeler2B;
+    private List<IZomerSpeler2BActions> m_ZomerSpeler2BActionsCallbackInterfaces = new List<IZomerSpeler2BActions>();
+    private readonly InputAction m_ZomerSpeler2B_Knop1;
+    private readonly InputAction m_ZomerSpeler2B_Knop2;
+    public struct ZomerSpeler2BActions
+    {
+        private @Besturing m_Wrapper;
+        public ZomerSpeler2BActions(@Besturing wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Knop1 => m_Wrapper.m_ZomerSpeler2B_Knop1;
+        public InputAction @Knop2 => m_Wrapper.m_ZomerSpeler2B_Knop2;
+        public InputActionMap Get() { return m_Wrapper.m_ZomerSpeler2B; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ZomerSpeler2BActions set) { return set.Get(); }
+        public void AddCallbacks(IZomerSpeler2BActions instance)
+        {
+            if (instance == null || m_Wrapper.m_ZomerSpeler2BActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_ZomerSpeler2BActionsCallbackInterfaces.Add(instance);
+            @Knop1.started += instance.OnKnop1;
+            @Knop1.performed += instance.OnKnop1;
+            @Knop1.canceled += instance.OnKnop1;
+            @Knop2.started += instance.OnKnop2;
+            @Knop2.performed += instance.OnKnop2;
+            @Knop2.canceled += instance.OnKnop2;
+        }
+
+        private void UnregisterCallbacks(IZomerSpeler2BActions instance)
+        {
+            @Knop1.started -= instance.OnKnop1;
+            @Knop1.performed -= instance.OnKnop1;
+            @Knop1.canceled -= instance.OnKnop1;
+            @Knop2.started -= instance.OnKnop2;
+            @Knop2.performed -= instance.OnKnop2;
+            @Knop2.canceled -= instance.OnKnop2;
+        }
+
+        public void RemoveCallbacks(IZomerSpeler2BActions instance)
+        {
+            if (m_Wrapper.m_ZomerSpeler2BActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IZomerSpeler2BActions instance)
+        {
+            foreach (var item in m_Wrapper.m_ZomerSpeler2BActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_ZomerSpeler2BActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public ZomerSpeler2BActions @ZomerSpeler2B => new ZomerSpeler2BActions(this);
+
+    // ZomerSpeler2C
+    private readonly InputActionMap m_ZomerSpeler2C;
+    private List<IZomerSpeler2CActions> m_ZomerSpeler2CActionsCallbackInterfaces = new List<IZomerSpeler2CActions>();
+    private readonly InputAction m_ZomerSpeler2C_Knop1;
+    private readonly InputAction m_ZomerSpeler2C_Knop2;
+    private readonly InputAction m_ZomerSpeler2C_Knop3;
+    public struct ZomerSpeler2CActions
+    {
+        private @Besturing m_Wrapper;
+        public ZomerSpeler2CActions(@Besturing wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Knop1 => m_Wrapper.m_ZomerSpeler2C_Knop1;
+        public InputAction @Knop2 => m_Wrapper.m_ZomerSpeler2C_Knop2;
+        public InputAction @Knop3 => m_Wrapper.m_ZomerSpeler2C_Knop3;
+        public InputActionMap Get() { return m_Wrapper.m_ZomerSpeler2C; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ZomerSpeler2CActions set) { return set.Get(); }
+        public void AddCallbacks(IZomerSpeler2CActions instance)
+        {
+            if (instance == null || m_Wrapper.m_ZomerSpeler2CActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_ZomerSpeler2CActionsCallbackInterfaces.Add(instance);
+            @Knop1.started += instance.OnKnop1;
+            @Knop1.performed += instance.OnKnop1;
+            @Knop1.canceled += instance.OnKnop1;
+            @Knop2.started += instance.OnKnop2;
+            @Knop2.performed += instance.OnKnop2;
+            @Knop2.canceled += instance.OnKnop2;
+            @Knop3.started += instance.OnKnop3;
+            @Knop3.performed += instance.OnKnop3;
+            @Knop3.canceled += instance.OnKnop3;
+        }
+
+        private void UnregisterCallbacks(IZomerSpeler2CActions instance)
+        {
+            @Knop1.started -= instance.OnKnop1;
+            @Knop1.performed -= instance.OnKnop1;
+            @Knop1.canceled -= instance.OnKnop1;
+            @Knop2.started -= instance.OnKnop2;
+            @Knop2.performed -= instance.OnKnop2;
+            @Knop2.canceled -= instance.OnKnop2;
+            @Knop3.started -= instance.OnKnop3;
+            @Knop3.performed -= instance.OnKnop3;
+            @Knop3.canceled -= instance.OnKnop3;
+        }
+
+        public void RemoveCallbacks(IZomerSpeler2CActions instance)
+        {
+            if (m_Wrapper.m_ZomerSpeler2CActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IZomerSpeler2CActions instance)
+        {
+            foreach (var item in m_Wrapper.m_ZomerSpeler2CActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_ZomerSpeler2CActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public ZomerSpeler2CActions @ZomerSpeler2C => new ZomerSpeler2CActions(this);
     private int m_ToetsenbordSchemeIndex = -1;
     public InputControlScheme ToetsenbordScheme
     {
@@ -551,10 +945,28 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
     }
     public interface IZomerSpeler1BActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnKnop1(InputAction.CallbackContext context);
+        void OnKnop2(InputAction.CallbackContext context);
     }
     public interface IZomerSpeler1CActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnKnop1(InputAction.CallbackContext context);
+        void OnKnop2(InputAction.CallbackContext context);
+        void OnKnop3(InputAction.CallbackContext context);
+    }
+    public interface IZomerSpeler2AActions
+    {
+        void OnKnop1(InputAction.CallbackContext context);
+    }
+    public interface IZomerSpeler2BActions
+    {
+        void OnKnop1(InputAction.CallbackContext context);
+        void OnKnop2(InputAction.CallbackContext context);
+    }
+    public interface IZomerSpeler2CActions
+    {
+        void OnKnop1(InputAction.CallbackContext context);
+        void OnKnop2(InputAction.CallbackContext context);
+        void OnKnop3(InputAction.CallbackContext context);
     }
 }
