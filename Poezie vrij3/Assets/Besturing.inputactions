@@ -1,5 +1,5 @@
 {
-    "name": "SpelerBesturing",
+    "name": "Besturing",
     "maps": [
         {
             "name": "SpelerBeweging",
@@ -134,6 +134,101 @@
                     "action": "Speler1 Beweging",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "ZomerSpeler1A",
+            "id": "4dcfaf54-86a2-47e4-9b75-25be7a1c656c",
+            "actions": [
+                {
+                    "name": "Knop1",
+                    "type": "Value",
+                    "id": "05babbe1-0bee-45e6-bdaa-2f4cf37ec200",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "91b075d4-a1a8-428c-aa40-9bbf99460798",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "Knop1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ZomerSpeler1B",
+            "id": "eabc1a45-1def-42e3-bf26-1b88aed06cb4",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "f2883ea1-da68-482c-a5f5-bcb2d7813be5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "61ceeae3-827d-4caa-b7c0-9e490013086d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ce05527-100f-49a0-8c37-e852477b9489",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ZomerSpeler1C",
+            "id": "a717792d-ecf9-4b15-aff8-64f054efe42b",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "5323af5f-791f-473f-a105-0084d58b5452",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d9ef7f8e-fef4-4f28-8df8-f9c6a4a03ff3",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Toetsenbord",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
