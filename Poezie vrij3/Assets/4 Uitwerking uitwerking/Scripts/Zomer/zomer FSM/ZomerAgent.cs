@@ -8,17 +8,33 @@ public class ZomerAgent : MonoBehaviour
     private ZomerFSM fsm;
     public enum ZomerFsmStaten
     {
-        ZomerStartStaat
+        ZomerStartStaat,
+        ZomerLevel1,
+        ZomerLevel2,
+        ZomerLevel3,
+        ZomerEinde
     }
 
-    public ZomerFsmStaten startStaat;
+    public ZomerFsmStaten huidigeStaat;
 
     void Start()
     {
-        switch (startStaat)
+        switch (huidigeStaat)
         {
-            case ZomerFsmStaten.ZomerStartStaat:
+            case ZomerFsmStaten.ZomerStartStaat:                            
                 startState = typeof(ZomerStartStaat);
+                break;
+            case ZomerFsmStaten.ZomerLevel1:
+                startState = typeof(ZomerLevel1);
+                break;
+            case ZomerFsmStaten.ZomerLevel2:
+                startState = typeof(ZomerLevel2);
+                break;
+            case ZomerFsmStaten.ZomerLevel3:
+                startState = typeof(ZomerLevel3);
+                break;
+            case ZomerFsmStaten.ZomerEinde:
+                startState = typeof(ZomerEinde);
                 break;
         }
         fsm = new ZomerFSM(startState, GetComponents<ZomerBasisStaat>()); //Starting state, with getcomponentSSS because multiple states are being used

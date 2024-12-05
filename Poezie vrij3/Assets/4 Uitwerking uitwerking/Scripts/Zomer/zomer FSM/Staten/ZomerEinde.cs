@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZomerEinde : MonoBehaviour
+public class ZomerEinde : ZomerBasisStaat
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnEnter()
     {
-        
+        GetComponent<ZomerAgent>().huidigeStaat = ZomerAgent.ZomerFsmStaten.ZomerEinde;
+    }
+    public override void OnUpdate()
+    {
+        throw new System.NotImplementedException();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public override void OnExit()
     {
-        
+        throw new System.NotImplementedException();
     }
 }

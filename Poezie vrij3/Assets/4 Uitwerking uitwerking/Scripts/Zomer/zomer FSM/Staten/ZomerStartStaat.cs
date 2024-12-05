@@ -20,6 +20,7 @@ public class ZomerStartStaat : ZomerBasisStaat
     public override void OnEnter()
     {
         StartCoroutine(beginCoroutine());
+        GetComponent<ZomerAgent>().huidigeStaat = ZomerAgent.ZomerFsmStaten.ZomerStartStaat;
         owner.SwitchState(typeof(ZomerLevel1));
     }
 

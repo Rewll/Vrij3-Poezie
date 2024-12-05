@@ -9,55 +9,35 @@ using UnityEngine.Events;
 
 public class ZomerLevel1 : ZomerBasisStaat
 {
-    private Besturing besturing;
+    GameManagerOpslag regelaarOpslag;
+
     [SerializeField] private bool speler1Drukt;
     [SerializeField] private bool speler2Drukt;
+    public List<KeyCode> knoppenSpeler1 = new List<KeyCode>();
+    public List<KeyCode> knoppenSpeler2 = new List<KeyCode>();
   
     private void Awake()
     {
-        besturing = new Besturing();
+        regelaarOpslag = GetComponent<GameManagerOpslag>();
     }
 
     public override void OnEnter()
     {
-        GetComponent<GameManagerOpslag>().speler2.GetComponent<ZomerBotsing>().bots.AddListener(BotsCheck);
+        regelaarOpslag.speler2.GetComponent<ZomerBotsing>().bots.AddListener(BotsCheck);
+        GetComponent<ZomerAgent>().huidigeStaat = ZomerAgent.ZomerFsmStaten.ZomerLevel1;
     }
 
     public override void OnUpdate()
-    {       
-        speler1Drukt = speler1DruktAlles();
-        speler2Drukt = speler2DruktAlles();
+    {
 
-
-        //Debug.Log(besturing.ZomerSpeler1A.Knop1.GetBindingDisplayString());        
+        speler1Drukt = regelaarOpslag.spelerDruktKnoppenInCheck(knoppenSpeler1);
+        speler2Drukt = regelaarOpslag.spelerDruktKnoppenInCheck(knoppenSpeler2);
+     
     }
 
-    bool speler1DruktAlles()
+    public void BotsCheck()
     {
-        if (besturing.ZomerSpeler1A.Knop1.ReadValue<float>() > 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-    bool speler2DruktAlles()
-    {
-        if (besturing.ZomerSpeler2A.Knop1.ReadValue<float>() > 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-    void BotsCheck()
-    {
+        //Debug.Log("Bots Check vanuit : " + this.GetType().ToString());
         if (speler1Drukt && speler2Drukt)
         {
             Debug.Log("Met knoppen gebotst!");
@@ -77,15 +57,8 @@ public class ZomerLevel1 : ZomerBasisStaat
 
     public override void OnExit()
     {
-
-    }
-    private void OnEnable()
-    {
-        besturing.Enable();
-    }
-
-    private void OnDisable()
-    {
-        besturing.Disable();
+        speler1Drukt = false;
+        speler2Drukt = false;
+        GetComponent<GameManagerOpslag>().speler2.GetComponent<ZomerBotsing>().bots.RemoveAllListeners();      
     }
 }

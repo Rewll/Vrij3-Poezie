@@ -15,6 +15,21 @@ public class GameManagerOpslag : MonoBehaviour
         speler1.transform.position = bestemmingSpeler1;
         speler2.transform.position = bestemmingSpeler2;
     }
+
+    public bool spelerDruktKnoppenInCheck(List<KeyCode> knoppenLijst)
+    {
+        foreach (KeyCode knop in knoppenLijst)
+        {
+            if (!Input.GetKey(knop))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
     public void opraap1OpTrue()
     {
         Speler1Opgeraapt = true;

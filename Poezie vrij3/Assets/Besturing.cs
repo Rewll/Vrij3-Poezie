@@ -193,18 +193,18 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Knop1"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""f2883ea1-da68-482c-a5f5-bcb2d7813be5"",
-                    ""expectedControlType"": ""Analog"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Knop2"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""16520a60-61e3-41d2-b377-1b93838d0ae7"",
-                    ""expectedControlType"": ""Analog"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -337,18 +337,18 @@ public partial class @Besturing: IInputActionCollection2, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Knop1"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""467249e1-c54a-4b76-8956-6e7e18f15917"",
-                    ""expectedControlType"": ""Analog"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Knop2"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""db4a5ecd-6596-4361-9dec-4d2acac56e3a"",
-                    ""expectedControlType"": ""Analog"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
