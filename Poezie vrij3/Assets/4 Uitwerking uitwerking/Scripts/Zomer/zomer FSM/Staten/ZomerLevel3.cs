@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ZomerLevel3 : ZomerBasisStaat
 {
-    GameManagerOpslag regelaarOpslag;
+    ZomerOpslag regelaarOpslag;
 
     [SerializeField] private bool speler1Drukt;
     [SerializeField] private bool speler2Drukt;
@@ -13,13 +13,15 @@ public class ZomerLevel3 : ZomerBasisStaat
 
     private void Awake()
     {
-        regelaarOpslag = GetComponent<GameManagerOpslag>();
+        regelaarOpslag = GetComponent<ZomerOpslag>();
     }
 
     public override void OnEnter()
     {
         regelaarOpslag.speler2.GetComponent<ZomerBotsing>().bots.AddListener(BotsCheck);
         GetComponent<ZomerAgent>().huidigeStaat = ZomerAgent.ZomerFsmStaten.ZomerLevel3;
+        regelaarOpslag.knopIndicatoren1Init(knoppenSpeler1);
+        regelaarOpslag.knopIndicatoren2Init(knoppenSpeler2);
     }
 
     public override void OnUpdate()
@@ -47,13 +49,13 @@ public class ZomerLevel3 : ZomerBasisStaat
     IEnumerator eindeRoutine()
     {
         yield return new WaitForSeconds(1f);
-        owner.SwitchState(typeof(ZomerLevel2));
+        owner.SwitchState(typeof(ZomerEinde));
     }
 
     public override void OnExit()
     {
         speler1Drukt = false;
         speler2Drukt = false;
-        GetComponent<GameManagerOpslag>().speler2.GetComponent<ZomerBotsing>().bots.RemoveAllListeners();
+        regelaarOpslag.speler2.GetComponent<ZomerBotsing>().bots.RemoveAllListeners();
     }
 }
