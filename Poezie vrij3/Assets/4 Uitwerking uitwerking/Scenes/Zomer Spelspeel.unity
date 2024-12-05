@@ -1109,8 +1109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speler1Drukt: 0
   speler2Drukt: 0
-  knoppenSpeler1: 6e000000
-  knoppenSpeler2: 62000000
+  knoppenSpeler1: 6e00000068000000
+  knoppenSpeler2: 6200000076000000
 --- !u!114 &1210445407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1501,7 +1501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb5d1b617dcb69349a16a37e810a678d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bots:
+  alsBots:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1660057539 &9223372036854775807

@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ZomerBotsing : MonoBehaviour
+public class Botsing : MonoBehaviour
 {
-    public UnityEvent bots;
+    public UnityEvent alsBots;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<SpelerBeweging>())
         {
             //Debug.Log("Bots!");
-            bots.Invoke();
+            alsBots.Invoke();
         }
     }
 }

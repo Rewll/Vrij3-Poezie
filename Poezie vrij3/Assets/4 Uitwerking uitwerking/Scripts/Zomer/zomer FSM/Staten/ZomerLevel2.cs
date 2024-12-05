@@ -23,7 +23,7 @@ public class ZomerLevel2 : ZomerBasisStaat
 
     public override void OnEnter()
     {
-        regelaarOpslag.speler2.GetComponent<ZomerBotsing>().bots.AddListener(BotsCheck);
+        regelaarOpslag.speler2.GetComponent<Botsing>().alsBots.AddListener(BotsCheck);
         GetComponent<ZomerAgent>().huidigeStaat = ZomerAgent.ZomerFsmStaten.ZomerLevel2;
         regelaarOpslag.knopIndicatoren1Init(knoppenSpeler1);
         regelaarOpslag.knopIndicatoren2Init(knoppenSpeler2);
@@ -61,6 +61,6 @@ public class ZomerLevel2 : ZomerBasisStaat
     {
         speler1Drukt = false;
         speler2Drukt = false;
-        regelaarOpslag.speler2.GetComponent<ZomerBotsing>().bots.RemoveAllListeners();
+        regelaarOpslag.speler2.GetComponent<Botsing>().alsBots.RemoveAllListeners();
     }
 }

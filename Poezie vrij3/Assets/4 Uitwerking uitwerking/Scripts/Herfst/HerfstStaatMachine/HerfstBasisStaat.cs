@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public abstract class ZomerBasisStaat : MonoBehaviour
+public abstract class HerfstBasisStaat : MonoBehaviour
 {
-    protected ZomerFSM owner;
-    public void Initalize(ZomerFSM owner)
+    protected HerfstFSM owner;
+    public void Initalize(HerfstFSM owner)
     {
         this.owner = owner;
     }
