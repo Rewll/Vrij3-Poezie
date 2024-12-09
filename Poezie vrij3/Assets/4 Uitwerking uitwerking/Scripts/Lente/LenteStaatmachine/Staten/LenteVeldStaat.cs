@@ -59,47 +59,27 @@ public class LenteVeldStaat : LenteBasisStaat
             {
                 StartCoroutine(hartOntwikkelRoutine());
             }
-            else if (hartVerschijnTeller == hartOnderdelen.Count - 1)
+            else if (hartVerschijnTeller >= hartOnderdelen.Count)
             {
-                Debug.Log("HartFinale!");
-                StartCoroutine(hartFinale());
+                //owner.SwitchState(typeof(HartPlaatsFase));
+                StartCoroutine(hartKlaar());
             }
         }
     }
     IEnumerator hartOntwikkelRoutine()
     {
         hartOntwikkelBezig = true;
+        hartOnderdelen[hartVerschijnTeller].SetActive(true);
+        hartOnderdelen[hartVerschijnTeller].transform.position = midden.position;
+        Tween beweeg = hartOnderdelen[hartVerschijnTeller].transform.DOMove(hartOnderdelenPlekken[hartVerschijnTeller].position, 1f);
+        yield return beweeg.WaitForCompletion();
+        yield return new WaitForSeconds(0.1f);
         hartVerschijnTeller++;
-        if (hartVerschijnTeller > 1)
-        {
-            for (int i = 0; i < hartOnderdelen.Count; i++)
-            {
-                if (i == hartVerschijnTeller)
-                {
-                    continue;
-                }
-                else
-                {
-                    hartOnderdelen[i].SetActive(false);
-                }
-            }
-            hartOnderdelen[hartVerschijnTeller].SetActive(true);
-            yield return new WaitForSeconds(1f);
-        }
-        else
-        {
-            hartOnderdelen[hartVerschijnTeller].SetActive(true);
-            hartOnderdelen[hartVerschijnTeller].transform.position = midden.position;
-            Tween beweeg = hartOnderdelen[hartVerschijnTeller].transform.DOMove(hartOnderdelenPlekken[hartVerschijnTeller].position, 1f);
-            yield return beweeg.WaitForCompletion();
-        }
-
         hartOntwikkelBezig = false;
     }
 
-    IEnumerator hartFinale()
+    IEnumerator hartKlaar()
     {
-        hartOnderdelen[hartVerschijnTeller].SetActive(true);
         yield return new WaitForSeconds(2);
         owner.SwitchState(typeof(LenteBloemPlaatsStaat)); 
     }

@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class hartPlaatser : MonoBehaviour
 {
-    public UnityEvent alsbloemGeplaatst;
     public GameObject bloem1;
     public GameObject bloem2;
     public bool Klaar1;
@@ -38,7 +36,7 @@ public class hartPlaatser : MonoBehaviour
     {
         if (Klaar1 && Klaar2)
         {
-            alsbloemGeplaatst.Invoke();
+            Debug.Log("HOEEUUE");
         }
     }
 }

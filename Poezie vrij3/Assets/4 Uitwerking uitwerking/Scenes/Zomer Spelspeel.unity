@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715b0eabb17a3d24aa916c4a3ca35bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  huidigeStaat: 3
+  huidigeStaat: 0
 --- !u!114 &1210445403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1077,8 +1077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speler1Drukt: 0
   speler2Drukt: 0
-  knoppenSpeler1: 74000000
-  knoppenSpeler2: 79000000
+  knoppenSpeler1: 67000000
+  knoppenSpeler2: 68000000
 --- !u!114 &1210445405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1093,8 +1093,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speler1Drukt: 0
   speler2Drukt: 0
-  knoppenSpeler1: 740000006700000076000000
-  knoppenSpeler2: 79000000680000006e000000
+  knoppenSpeler1: 74000000
+  knoppenSpeler2: 79000000
 --- !u!114 &1210445406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,8 +1109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speler1Drukt: 0
   speler2Drukt: 0
-  knoppenSpeler1: 7400000067000000
-  knoppenSpeler2: 7900000068000000
+  knoppenSpeler1: 6e00000068000000
+  knoppenSpeler2: 6200000076000000
 --- !u!114 &1210445407
 MonoBehaviour:
   m_ObjectHideFlags: 0
