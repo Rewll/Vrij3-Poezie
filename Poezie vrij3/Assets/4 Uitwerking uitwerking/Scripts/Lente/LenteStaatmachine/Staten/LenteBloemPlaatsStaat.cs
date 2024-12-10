@@ -15,6 +15,7 @@ public class LenteBloemPlaatsStaat : LenteBasisStaat
     public Transform speler2StartPlek;
     [Space]
     public GameObject hart;
+    public Animator hartAnim;
     public Transform hartPlek;
     public GameObject hartMetKleur;
     public GameObject laatsteZonderKleur;
@@ -52,6 +53,6 @@ public class LenteBloemPlaatsStaat : LenteBasisStaat
         laatsteZonderKleur.SetActive(false);
         hartMetKleur.SetActive(true);
         yield return new WaitForSeconds(1f);
-        //animatie starten 
+        hartAnim.SetBool("HartMagBewegen", true);
     }
 }

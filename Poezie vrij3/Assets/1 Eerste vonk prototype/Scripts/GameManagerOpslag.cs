@@ -28,8 +28,6 @@ public class GameManagerOpslag : MonoBehaviour
         return true;
     }
 
-
-
     public void opraap1OpTrue()
     {
         Speler1Opgeraapt = true;

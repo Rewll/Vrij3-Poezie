@@ -15,9 +15,6 @@ public class ZomerOpslag : MonoBehaviour
     [Space]
     public GameObject knopIndicator1;
     public GameObject knopIndicator2;
-    [Space]
-    public Transform terugVliegPlek1;
-    public Transform terugVliegPlek2;
 
     public bool spelerDruktKnopInCheck(KeyCode knop)
     {
@@ -33,8 +30,8 @@ public class ZomerOpslag : MonoBehaviour
 
     public void spelersTerugVliegen()
     {
-        speler1.transform.DOMoveX(terugVliegPlek1.position.x, 1f);
-        speler2.transform.DOMoveX(terugVliegPlek2.position.x, 1f);
+        speler1.GetComponent<SpelerBeweging>().beweegTerugBeetje(12);
+        speler2.GetComponent<SpelerBeweging>().beweegTerugBeetje(12);
     }
 
     public void knopIndicatorsUitZetten(float fadeSnelHeid)

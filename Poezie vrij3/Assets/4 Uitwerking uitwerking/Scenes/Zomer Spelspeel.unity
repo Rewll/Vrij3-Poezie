@@ -882,8 +882,6 @@ MonoBehaviour:
   speler2: {fileID: 2061313004}
   knopIndicator1: {fileID: 891933488}
   knopIndicator2: {fileID: 337906080}
-  terugVliegPlek1: {fileID: 1846635190}
-  terugVliegPlek2: {fileID: 761492967}
 --- !u!114 &1210445408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -944,6 +942,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4051858436773714983, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+      propertyPath: andereSpeler
+      value: 
+      objectReference: {fileID: 2061313004}
     - target: {fileID: 4051858436773714983, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
       propertyPath: beweegSnelheid
       value: 3.4
@@ -1146,6 +1148,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4051858436773714983, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+      propertyPath: andereSpeler
+      value: 
+      objectReference: {fileID: 1401017453}
     - target: {fileID: 4051858436773714983, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
       propertyPath: beweegSnelheid
       value: 3.4

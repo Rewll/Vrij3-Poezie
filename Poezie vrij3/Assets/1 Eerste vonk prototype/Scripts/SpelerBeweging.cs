@@ -9,6 +9,8 @@ public class SpelerBeweging : MonoBehaviour
     [Space]
     public Vector2 beweegRichting;
     public float beweegSnelheid = 20.0f;
+    public GameObject andereSpeler;
+    private bool magBewegen = true;
 
     Rigidbody2D RB;
 
@@ -24,6 +26,25 @@ public class SpelerBeweging : MonoBehaviour
 
     void FixedUpdate()
     {
-        RB.velocity = new Vector2(beweegRichting.x * beweegSnelheid, beweegRichting.y * beweegSnelheid);
+        if (magBewegen)
+        {
+            RB.velocity = new Vector2(beweegRichting.x * beweegSnelheid, beweegRichting.y * beweegSnelheid);
+        }
+    }
+
+    public void beweegTerugBeetje(float beweegHoeveelheid)
+    {
+        RB.velocity = Vector2.zero;
+        magBewegen = false;
+        Debug.Log("BeweegtTerug");
+        Vector2 richting = (andereSpeler.transform.position - transform.position).normalized;
+        RB.AddForce(-richting * beweegHoeveelheid, ForceMode2D.Impulse);
+        StartCoroutine(bewegingWachter());
+    }
+
+    IEnumerator bewegingWachter()
+    {
+        yield return new WaitForSeconds(1f);
+        magBewegen = true;
     }
 }

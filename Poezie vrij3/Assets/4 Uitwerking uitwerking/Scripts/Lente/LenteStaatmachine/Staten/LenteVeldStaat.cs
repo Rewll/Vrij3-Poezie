@@ -55,21 +55,24 @@ public class LenteVeldStaat : LenteBasisStaat
     {
         if (!hartOntwikkelBezig)
         {
-            if (hartVerschijnTeller < hartOnderdelen.Count)
+            if (hartVerschijnTeller <= hartOnderdelen.Count)
             {
-                StartCoroutine(hartOntwikkelRoutine());
-            }
-            else if (hartVerschijnTeller == hartOnderdelen.Count - 1)
-            {
-                Debug.Log("HartFinale!");
-                StartCoroutine(hartFinale());
+                if (hartVerschijnTeller == hartOnderdelen.Count - 1)
+                {
+                    Debug.Log("HartFinale!");
+                    StartCoroutine(hartFinale());
+                }
+                else
+                {
+                    StartCoroutine(hartOntwikkelRoutine());
+                }
             }
         }
     }
+
     IEnumerator hartOntwikkelRoutine()
     {
         hartOntwikkelBezig = true;
-        hartVerschijnTeller++;
         if (hartVerschijnTeller > 1)
         {
             for (int i = 0; i < hartOnderdelen.Count; i++)
@@ -94,11 +97,13 @@ public class LenteVeldStaat : LenteBasisStaat
             yield return beweeg.WaitForCompletion();
         }
 
+        hartVerschijnTeller++;
         hartOntwikkelBezig = false;
     }
 
     IEnumerator hartFinale()
     {
+        hartOnderdelen[hartVerschijnTeller - 1].SetActive(false);
         hartOnderdelen[hartVerschijnTeller].SetActive(true);
         yield return new WaitForSeconds(2);
         owner.SwitchState(typeof(LenteBloemPlaatsStaat)); 

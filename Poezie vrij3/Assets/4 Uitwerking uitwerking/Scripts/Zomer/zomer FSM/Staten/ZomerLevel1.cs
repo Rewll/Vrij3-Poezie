@@ -51,7 +51,6 @@ public class ZomerLevel1 : ZomerBasisStaat
     IEnumerator botsRoutine()
     {
         //bots effect!
-        //spelers vliegen terug
         regelaarOpslag.spelersTerugVliegen();
         regelaarOpslag.knopIndicatorsUitZetten(1);
         yield return new WaitForSeconds(1.5f);
