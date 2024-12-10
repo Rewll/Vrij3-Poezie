@@ -13,8 +13,8 @@ public class ZomerLevel1 : ZomerBasisStaat
 
     [SerializeField] private bool speler1Drukt;
     [SerializeField] private bool speler2Drukt;
-    public List<KeyCode> knoppenSpeler1 = new List<KeyCode>();
-    public List<KeyCode> knoppenSpeler2 = new List<KeyCode>();
+    public KeyCode knopSpeler1;
+    public KeyCode knopSpeler2;
   
     private void Awake()
     {
@@ -25,35 +25,36 @@ public class ZomerLevel1 : ZomerBasisStaat
     {
         regelaarOpslag.speler2.GetComponent<Botsing>().alsBots.AddListener(BotsCheck);
         GetComponent<ZomerAgent>().huidigeStaat = ZomerAgent.ZomerFsmStaten.ZomerLevel1;
-        regelaarOpslag.knopIndicatoren1Init(knoppenSpeler1);
-        regelaarOpslag.knopIndicatoren2Init(knoppenSpeler2);
+
+        StartCoroutine(startRoutine());
+    }
+
+    IEnumerator startRoutine()
+    {
+        yield return new WaitForSeconds(2f);
+        regelaarOpslag.knopIndicator1Init(knopSpeler1);
+        regelaarOpslag.knopIndicator2Init(knopSpeler2);
     }
 
     public override void OnUpdate()
     {
-
-        speler1Drukt = regelaarOpslag.spelerDruktKnoppenInCheck(knoppenSpeler1);
-        speler2Drukt = regelaarOpslag.spelerDruktKnoppenInCheck(knoppenSpeler2);
-     
+        speler1Drukt = regelaarOpslag.spelerDruktKnopInCheck(knopSpeler1);
+        speler2Drukt = regelaarOpslag.spelerDruktKnopInCheck(knopSpeler2);
     }
 
     public void BotsCheck()
     {
-        //Debug.Log("Bots Check vanuit : " + this.GetType().ToString());
-        if (speler1Drukt && speler2Drukt)
-        {
-            Debug.Log("Met knoppen gebotst!");
-            StartCoroutine(eindeRoutine());
-        }
-        else
-        {
-            Debug.Log("zonder knoppen gebotst");
-        }
+        ////Debug.Log("Bots Check vanuit : " + this.GetType().ToString());
+        regelaarOpslag.BotsCheckGeneric(speler1Drukt, speler2Drukt, botsRoutine());
     }
 
-    IEnumerator eindeRoutine()
+    IEnumerator botsRoutine()
     {
-        yield return new WaitForSeconds(1f);
+        //bots effect!
+        //spelers vliegen terug
+        regelaarOpslag.spelersTerugVliegen();
+        regelaarOpslag.knopIndicatorsUitZetten(1);
+        yield return new WaitForSeconds(1.5f);
         owner.SwitchState(typeof(ZomerLevel2));
     }
 

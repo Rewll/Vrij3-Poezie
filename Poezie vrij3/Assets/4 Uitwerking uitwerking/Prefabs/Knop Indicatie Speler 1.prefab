@@ -52,8 +52,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knop: 0
-  knopLetter: {fileID: 7892948750160458273}
+  actief: 0
+  kleurVlak: {fileID: 2937320333753851168}
   indicatieVlak: {fileID: 2052038146880913325}
+  knopLetter: {fileID: 7892948750160458273}
 --- !u!1 &2052038146880913325
 GameObject:
   m_ObjectHideFlags: 0

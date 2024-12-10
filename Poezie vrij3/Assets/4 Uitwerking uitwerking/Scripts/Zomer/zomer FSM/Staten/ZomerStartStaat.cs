@@ -19,7 +19,7 @@ public class ZomerStartStaat : ZomerBasisStaat
     public override void OnEnter()
     {
         GetComponent<ZomerAgent>().huidigeStaat = ZomerAgent.ZomerFsmStaten.ZomerStartStaat;
-        regelaarOpslag.knopIndicatorsUitZetten();
+        regelaarOpslag.knopIndicatorsUitZetten(0.001f);
 
         StartCoroutine(beginCoroutine());
     }

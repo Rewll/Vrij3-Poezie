@@ -1,66 +1,73 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using DG.Tweening;
+using TMPro;
+using UnityEngine.UI;
+using UnityEngine.Events;
+
 
 public class ZomerOpslag : MonoBehaviour
 {
     public GameObject speler1;
     public GameObject speler2;
     [Space]
-    public List<GameObject> knopIndicatoren1 = new List<GameObject>();
-    public List<GameObject> knopIndicatoren2 = new List<GameObject>();
+    public GameObject knopIndicator1;
+    public GameObject knopIndicator2;
+    [Space]
+    public Transform terugVliegPlek1;
+    public Transform terugVliegPlek2;
 
-    public bool spelerDruktKnoppenInCheck(List<KeyCode> knoppenLijst)
+    public bool spelerDruktKnopInCheck(KeyCode knop)
     {
-        foreach (KeyCode knop in knoppenLijst)
+        if (Input.GetKey(knop))
         {
-            if (!Input.GetKey(knop))
-            {
-                return false;
-            }
+            return true;
         }
-        return true;
-    }
-
-    public void knopIndicatorsUitZetten()
-    {
-        foreach (GameObject knopIndicator in knopIndicatoren1)
+        else
         {
-            knopIndicator.SetActive(false);
-        }
-        foreach (GameObject knopIndicator in knopIndicatoren2)
-        {
-            knopIndicator.SetActive(false);
+            return false;
         }
     }
 
-    public void knopIndicatoren1Init(List<KeyCode> knopLijst)
+    public void spelersTerugVliegen()
     {
-        foreach (GameObject indicator in knopIndicatoren1)
-        {
-            indicator.SetActive(false);
-        }
-
-        for (int i = 0; i < knopLijst.Count; i++)
-        {
-            knopIndicatoren1[i].GetComponent<IndicatorOpslag>().knop = knopLijst[i];
-            knopIndicatoren1[i].GetComponent<IndicatorOpslag>().indicatorInstel();
-            knopIndicatoren1[i].SetActive(true);
-        }
+        speler1.transform.DOMoveX(terugVliegPlek1.position.x, 1f);
+        speler2.transform.DOMoveX(terugVliegPlek2.position.x, 1f);
     }
 
-    public void knopIndicatoren2Init(List<KeyCode> knopLijst)
+    public void knopIndicatorsUitZetten(float fadeSnelHeid)
     {
-        foreach (GameObject indicator in knopIndicatoren2)
-        {
-            indicator.SetActive(false);
-        }
+        knopIndicator1.GetComponent<IndicatorOpslag>().fadeUitMethod(fadeSnelHeid);
+        knopIndicator2.GetComponent<IndicatorOpslag>().fadeUitMethod(fadeSnelHeid);
+    }
 
-        for (int i = 0; i < knopLijst.Count; i++)
+    public void knopIndicator1Init(KeyCode knop)
+    {
+        knopIndicator1.GetComponent<IndicatorOpslag>().knop = knop;
+        knopIndicator1.GetComponent<IndicatorOpslag>().indicatorInstel();
+        knopIndicator1.GetComponent<IndicatorOpslag>().fadeInMethod(1);
+    }
+
+    public void knopIndicator2Init(KeyCode knop)
+    {
+        knopIndicator2.GetComponent<IndicatorOpslag>().knop = knop;
+        knopIndicator2.GetComponent<IndicatorOpslag>().indicatorInstel();
+        knopIndicator2.GetComponent<IndicatorOpslag>().fadeInMethod(1);
+    }
+
+    public void BotsCheckGeneric(bool speler1, bool speler2, IEnumerator botsRoutine)
+    {
+        //Debug.Log("Bots Check vanuit : " + this.GetType().ToString());
+        if (speler1 && speler2)
         {
-            knopIndicatoren2[i].GetComponent<IndicatorOpslag>().knop = knopLijst[i];
-            knopIndicatoren2[i].GetComponent<IndicatorOpslag>().indicatorInstel();
-            knopIndicatoren2[i].SetActive(true);
+            Debug.Log("Met knoppen gebotst!");
+            StartCoroutine(botsRoutine);
+        }
+        else
+        {
+            Debug.Log("zonder knoppen gebotst");
         }
     }
 }

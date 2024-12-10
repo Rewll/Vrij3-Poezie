@@ -14,7 +14,7 @@ public class ZomerEinde : ZomerBasisStaat
     public override void OnEnter()
     {
         GetComponent<ZomerAgent>().huidigeStaat = ZomerAgent.ZomerFsmStaten.ZomerEinde;
-        regelaarOpslag.knopIndicatorsUitZetten();
+        regelaarOpslag.knopIndicatorsUitZetten(1);
     }
     public override void OnUpdate()
     {
