@@ -528,7 +528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &953431567
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -611,7 +611,7 @@ Transform:
   m_GameObject: {fileID: 953431566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.17, z: -6.104585}
+  m_LocalPosition: {x: 0.19, y: 1.54, z: -6.104585}
   m_LocalScale: {x: 0.71361935, y: 0.71361935, z: 0.71361935}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -882,6 +882,7 @@ MonoBehaviour:
   speler2: {fileID: 2061313004}
   knopIndicator1: {fileID: 891933488}
   knopIndicator2: {fileID: 337906080}
+  hartAnimator: {fileID: 953431568}
 --- !u!114 &1210445408
 MonoBehaviour:
   m_ObjectHideFlags: 0

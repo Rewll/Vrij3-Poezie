@@ -15,6 +15,8 @@ public class ZomerOpslag : MonoBehaviour
     [Space]
     public GameObject knopIndicator1;
     public GameObject knopIndicator2;
+    [Space]
+    public Animator hartAnimator;
 
     public bool spelerDruktKnopInCheck(KeyCode knop)
     {

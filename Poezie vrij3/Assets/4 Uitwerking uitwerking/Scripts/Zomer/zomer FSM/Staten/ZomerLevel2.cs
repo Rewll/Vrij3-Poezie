@@ -53,6 +53,8 @@ public class ZomerLevel2 : ZomerBasisStaat
         //bots effect!
         regelaarOpslag.spelersTerugVliegen();
         regelaarOpslag.knopIndicatorsUitZetten(1);
+        //hartSnellerGaan!
+        regelaarOpslag.hartAnimator.SetInteger("AnimatieNummer", 2);
         yield return new WaitForSeconds(1.5f);
         owner.SwitchState(typeof(ZomerLevel3));
     }
