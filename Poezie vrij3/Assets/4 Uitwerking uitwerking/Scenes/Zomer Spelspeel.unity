@@ -895,6 +895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c89397dad9484d40bfa8d76f7229c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeVlak: {fileID: 315367284}
 --- !u!1001 &1312901283
 PrefabInstance:
   m_ObjectHideFlags: 0

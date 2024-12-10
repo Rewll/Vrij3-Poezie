@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
+using DG.Tweening;
+using TMPro;
+using UnityEngine.UI;
 public class ZomerEinde : ZomerBasisStaat
 {
     ZomerOpslag regelaarOpslag;
+    public Image fadeVlak;
 
     private void Awake()
     {
@@ -14,8 +18,19 @@ public class ZomerEinde : ZomerBasisStaat
     public override void OnEnter()
     {
         GetComponent<ZomerAgent>().huidigeStaat = ZomerAgent.ZomerFsmStaten.ZomerEinde;
-        regelaarOpslag.knopIndicatorsUitZetten(1);
+        StartCoroutine(eindeRoutine());
     }
+
+    IEnumerator eindeRoutine()
+    {
+        regelaarOpslag.knopIndicatorsUitZetten(1);
+        yield return new WaitForSeconds(1);
+        Tween fadeUit = fadeVlak.DOFade(1, 5);
+        yield return fadeUit.WaitForCompletion();
+        //zomer afgelopen
+        Debug.Log("Zomer afgelopen doei");
+    }
+
     public override void OnUpdate()
     {
 
