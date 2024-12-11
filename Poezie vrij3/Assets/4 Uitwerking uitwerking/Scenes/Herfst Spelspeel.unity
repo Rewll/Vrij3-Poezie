@@ -200,12 +200,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31378423}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.43, y: 2.36, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.43, y: 0.28999996, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 719541344}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &117720672
 GameObject:
@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 122972523}
   - component: {fileID: 122972522}
   - component: {fileID: 122972521}
+  - component: {fileID: 122972524}
   m_Layer: 0
   m_Name: SpelRegelaar
   m_TagString: Untagged
@@ -399,6 +400,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &122972524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122972520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e5e1ab1717a8934f9bb2df4d5d1d5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &176190520
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +700,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4051858436773714983, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+      propertyPath: andereSpeler
+      value: 
+      objectReference: {fileID: 977895335}
     - target: {fileID: 7252195248704095739, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
       propertyPath: m_Name
       value: Speler1
@@ -696,6 +713,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+--- !u!1 &627461575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7252195248704095739, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+  m_PrefabInstance: {fileID: 627461574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &719541343
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +751,8 @@ Transform:
   - {fileID: 1277654840}
   - {fileID: 1167063563}
   - {fileID: 1455734884}
+  - {fileID: 1446528788}
+  - {fileID: 31378425}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &977895334
@@ -779,6 +803,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4051858436773714983, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+      propertyPath: andereSpeler
+      value: 
+      objectReference: {fileID: 627461575}
     - target: {fileID: 7252195248704095739, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
       propertyPath: m_Name
       value: Speler2
@@ -1124,12 +1152,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446528786}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.92, y: 2.52, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.92, y: 0.45000005, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 719541344}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1455734883
 GameObject:
@@ -1623,12 +1651,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 122972523}
+  - {fileID: 176190524}
   - {fileID: 606671490}
   - {fileID: 977895334}
   - {fileID: 627461574}
   - {fileID: 2140698854640231586}
   - {fileID: 719541344}
-  - {fileID: 176190524}
   - {fileID: 1121591388}
-  - {fileID: 1446528788}
-  - {fileID: 31378425}

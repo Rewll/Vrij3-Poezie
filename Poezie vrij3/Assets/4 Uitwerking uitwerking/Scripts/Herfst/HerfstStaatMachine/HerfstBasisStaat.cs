@@ -7,6 +7,7 @@ public abstract class HerfstBasisStaat : MonoBehaviour
     {
         this.owner = owner;
     }
+
     public abstract void OnEnter();
     public abstract void OnUpdate();
     public abstract void OnExit();
