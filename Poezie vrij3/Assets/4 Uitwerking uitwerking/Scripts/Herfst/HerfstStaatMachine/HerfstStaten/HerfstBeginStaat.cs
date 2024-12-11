@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HerfstBeginStaat : MonoBehaviour
+public class HerfstBeginStaat : HerfstBasisStaat
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnEnter()
     {
-        
+        throw new System.NotImplementedException();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnExit()
     {
-        
+        throw new System.NotImplementedException();
+    }
+
+    public override void OnUpdate()
+    {
+        throw new System.NotImplementedException();
     }
 }
