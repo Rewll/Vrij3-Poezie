@@ -7,9 +7,7 @@ public class HerfstAgent : MonoBehaviour
     public System.Type startState;
     private HerfstFSM fsm;
     public enum herfstStaten
-    {
-        HerfstStartStaat
-    }
+    {HerfstStartStaat, HerfstGroei1, HerfstGroei2, HerfstGroei3}
 
     public herfstStaten huidigeStaat;
 

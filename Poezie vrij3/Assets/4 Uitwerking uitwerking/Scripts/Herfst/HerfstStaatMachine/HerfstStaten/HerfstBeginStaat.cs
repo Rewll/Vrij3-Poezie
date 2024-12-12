@@ -9,13 +9,18 @@ public class HerfstBeginStaat : HerfstBasisStaat
     private void Start()
     {
         herfstRegelRef = GetComponent<HerfstRegelaar>();
+        GetComponent<HerfstAgent>().huidigeStaat = HerfstAgent.herfstStaten.HerfstStartStaat;
     }
 
     public override void OnEnter()
     {
-        
-        
-
+        StartCoroutine(beginRoutine());
+    }
+    IEnumerator beginRoutine()
+    {
+        //fade in
+        yield return new WaitForSeconds(1f);
+        owner.SwitchState(typeof(HerfstGroei1));
     }
 
     public override void OnExit()

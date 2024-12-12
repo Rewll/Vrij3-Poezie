@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using DG.Tweening;
+public enum bloemVersies { Speler1Bloem, Speler2Bloem};
 
 public class HalfBloemLogica : MonoBehaviour
 {
     public HerfstRegelaar herfstRegelRef;
-    public enum bloemVersies { Speler1Bloem, Speler2Bloem};
+    public Vector3 hartPlek;
     public Sprite speler1Bloem;
     public Sprite speler2Bloem;
     [Space]
@@ -17,6 +18,7 @@ public class HalfBloemLogica : MonoBehaviour
     public SpriteRenderer SP;
     [Space]
     public bool vormGenomen;
+    public bool alGevlogen;
     public bloemVersies bloemVersie;
     public KeyCode knopVanBloem;
 
@@ -25,15 +27,38 @@ public class HalfBloemLogica : MonoBehaviour
         canvas.SetActive(false);
     }
 
-    private void Update()
+    public bool magVliegen()
     {
         if (vormGenomen)
         {
-            if (Input.GetKey(knopVanBloem))
+            if (Input.GetKeyDown(knopVanBloem) && !alGevlogen)
             {
-                Debug.Log("vlieg naar de hart!");
+                alGevlogen = true;
+                hartPlekBepalen();
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
+        else
+        {
+            return false;
+        }
+    }
+
+    void hartPlekBepalen()
+    {
+        if (bloemVersie == bloemVersies.Speler1Bloem)
+        {
+            hartPlek = herfstRegelRef.hartPlek1.position;
+        }
+        else if (bloemVersie == bloemVersies.Speler2Bloem)
+        {
+            hartPlek = herfstRegelRef.hartPlek2.position;
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
