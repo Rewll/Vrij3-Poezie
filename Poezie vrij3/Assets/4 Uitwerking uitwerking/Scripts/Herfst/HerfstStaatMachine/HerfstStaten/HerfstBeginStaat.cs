@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class HerfstBeginStaat : HerfstBasisStaat
 {
+    HerfstRegelaar herfstRegelRef;
+
+    private void Start()
+    {
+        herfstRegelRef = GetComponent<HerfstRegelaar>();
+    }
+
     public override void OnEnter()
     {
         
+        
+
     }
 
     public override void OnExit()
