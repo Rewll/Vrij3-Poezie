@@ -18,6 +18,15 @@ public class HerfstAgent : MonoBehaviour
             case herfstStaten.HerfstStartStaat:
                 startState = typeof(HerfstBeginStaat);
                 break;
+            case herfstStaten.HerfstGroei1:
+                startState = typeof(HerfstGroei1);
+                break;
+            case herfstStaten.HerfstGroei2:
+                startState = typeof(HerfstGroei2);
+                break;
+            case herfstStaten.HerfstGroei3:
+                startState = typeof(HerfstGroei3);
+                break;
         }
         fsm = new HerfstFSM(startState, GetComponents<HerfstBasisStaat>()); //Starting state, with getcomponentSSS because multiple states are being used
     }
