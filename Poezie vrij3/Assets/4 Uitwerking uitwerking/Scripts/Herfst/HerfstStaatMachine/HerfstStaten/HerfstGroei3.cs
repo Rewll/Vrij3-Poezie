@@ -35,7 +35,7 @@ public class HerfstGroei3 : HerfstBasisStaat
 
     IEnumerator vliegRoutine()
     {
-        Tween vliegTween = huidigeHalfBloem.transform.DOMove(halfBloemLogicaRef.hartPlek, 1f);
+        Tween vliegTween = huidigeHalfBloem.transform.DOMove(halfBloemLogicaRef.hartPlek, .6f);
         yield return vliegTween.WaitForCompletion();
         huidigeHalfBloem.SetActive(false);
         herfstRegelRef.bloemResultaat(halfBloemLogicaRef.bloemVersie);

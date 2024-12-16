@@ -17,12 +17,16 @@ public class HerfstRegelaar : MonoBehaviour
     public Transform minBloemPlek;
     [Space]
     public GameObject hart;
+    public Image fadeVlak;
     [Space]
     public List<KeyCode> speler1KnoppenLijst = new List<KeyCode>();
     public List<KeyCode> speler2KnoppenLijst = new List<KeyCode>();
     [Space]
     public Transform hartPlek1;
     public Transform hartPlek2;
+    [Space]
+    public Animator hartAnim;
+    private int animatieTeller = 1;
     [Space]
     public bool routineKlaar;
     
@@ -62,6 +66,8 @@ public class HerfstRegelaar : MonoBehaviour
             Debug.Log("Bloem 2 groei!");
         }
         //Hartanimatie vooruit
+        animatieTeller++;
+        hartAnim.SetInteger("AnimatieTeller", animatieTeller);
         yield return new WaitForSeconds(1);
         routineKlaar = true;
     }
