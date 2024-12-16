@@ -13,28 +13,46 @@ public class winterStukOppak : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.GetComponent<winterStukken>().voorWieStukIs == speler)
+        if (!handGevuld)
         {
-            if (Input.GetKey(opraapKnop) && !handGevuld)
+            if (collision.GetComponent<winterStukken>())
             {
-                stukInHanden = collision.gameObject;
-                stukInHanden.transform.parent = transform;
-                handGevuld = true;
+                if (collision.GetComponent<winterStukken>().voorWieStukIs == speler)
+                {
+                    if (Input.GetKey(opraapKnop))
+                    {
+                        stukInHanden = collision.gameObject;
+                        stukInHanden.transform.parent = transform;
+                        handGevuld = true;
+                    }
+                }
+            }
+        }
+        else if (handGevuld)
+        {
+            if (collision.gameObject.GetComponent<winterBloemen>())
+            {
+                if (bloemSoortSpeler == collision.gameObject.GetComponent<winterBloemen>().bloemSoort)
+                {
+                    handGevuld = false;
+                    collision.gameObject.GetComponent<winterBloemen>().plaatsStukje(stukInHanden);
+                    stukInHanden = null;
+                }
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.GetComponent<winterBloemen>() && handGevuld)
-        {
-            if (bloemSoortSpeler == collision.gameObject.GetComponent<winterBloemen>().bloemSoort)
-            {
-                handGevuld = false;
-                collision.gameObject.GetComponent<winterBloemen>().plaatsStukje(stukInHanden);
-                stukInHanden = null;
-            }
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.GetComponent<winterBloemen>() && handGevuld)
+    //    {
+    //        if (bloemSoortSpeler == collision.gameObject.GetComponent<winterBloemen>().bloemSoort)
+    //        {
+    //            handGevuld = false;
+    //            collision.gameObject.GetComponent<winterBloemen>().plaatsStukje(stukInHanden);
+    //            stukInHanden = null;
+    //        }
+    //    }
+    //}
     public void leegHand()
     {
         if (transform.GetChild(0))

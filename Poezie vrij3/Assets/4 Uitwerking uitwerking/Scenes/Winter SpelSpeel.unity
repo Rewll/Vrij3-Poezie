@@ -393,6 +393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 302009297}
   - component: {fileID: 302009298}
+  - component: {fileID: 302009299}
   m_Layer: 0
   m_Name: Anjer stuk3
   m_TagString: Untagged
@@ -429,6 +430,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voorWieStukIs: 0
+--- !u!58 &302009299
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302009296}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.25
 --- !u!1 &371696287
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371696288}
   - component: {fileID: 371696289}
+  - component: {fileID: 371696290}
   m_Layer: 0
   m_Name: Narcis stuk4
   m_TagString: Untagged
@@ -475,6 +512,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voorWieStukIs: 1
+--- !u!58 &371696290
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371696287}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.25
 --- !u!1 &388918340
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 501464731}
   - component: {fileID: 501464732}
+  - component: {fileID: 501464733}
   m_Layer: 0
   m_Name: Anjer stuk2
   m_TagString: Untagged
@@ -624,6 +697,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voorWieStukIs: 0
+--- !u!58 &501464733
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501464730}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.25
 --- !u!1 &804520705
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 804520706}
   - component: {fileID: 804520707}
+  - component: {fileID: 804520708}
   m_Layer: 0
   m_Name: Narcis stuk2
   m_TagString: Untagged
@@ -670,6 +779,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voorWieStukIs: 1
+--- !u!58 &804520708
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804520705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.25
 --- !u!1 &821227713
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 954113945}
   - component: {fileID: 954113946}
+  - component: {fileID: 954113947}
   m_Layer: 0
   m_Name: Anjer Stuk1
   m_TagString: Untagged
@@ -822,6 +967,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voorWieStukIs: 0
+--- !u!58 &954113947
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954113944}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.25
 --- !u!1 &1083194904
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,6 +1118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1095535253}
   - component: {fileID: 1095535254}
+  - component: {fileID: 1095535255}
   m_Layer: 0
   m_Name: Narcis stuk1
   m_TagString: Untagged
@@ -974,6 +1155,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voorWieStukIs: 1
+--- !u!58 &1095535255
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095535252}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.25
 --- !u!1 &1315077066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,6 +1272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloemSoort: 0
+  stukjesInBloem: []
+  alleStukjesGeplaatst: 0
 --- !u!1 &1418391777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1356,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloemSoort: 1
+  stukjesInBloem: []
+  alleStukjesGeplaatst: 0
 --- !u!1 &1459447202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,6 +1619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1625491940}
   - component: {fileID: 1625491941}
+  - component: {fileID: 1625491942}
   m_Layer: 0
   m_Name: Narcis stuk3
   m_TagString: Untagged
@@ -1435,6 +1656,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voorWieStukIs: 1
+--- !u!58 &1625491942
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625491939}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.25
 --- !u!1 &1628409134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,6 +2066,7 @@ GameObject:
   - component: {fileID: 1747589222}
   - component: {fileID: 1747589221}
   - component: {fileID: 1747589220}
+  - component: {fileID: 1747589223}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1891,6 +2148,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1747589223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747589219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &1756004281
 GameObject:
   m_ObjectHideFlags: 0
@@ -2119,6 +2420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1792338809}
   - component: {fileID: 1792338810}
+  - component: {fileID: 1792338811}
   m_Layer: 0
   m_Name: Anjer stuk4
   m_TagString: Untagged
@@ -2155,6 +2457,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voorWieStukIs: 0
+--- !u!58 &1792338811
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792338808}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.25
 --- !u!1 &1835909562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2368,8 +2705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   opraapKnop: 101
-  speler: 0
-  bloemSoortSpeler: 0
+  speler: 1
+  bloemSoortSpeler: 1
   stukInHanden: {fileID: 0}
   handGevuld: 0
 --- !u!1 &2066854765
