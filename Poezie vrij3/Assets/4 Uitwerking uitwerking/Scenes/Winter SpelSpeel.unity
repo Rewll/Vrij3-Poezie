@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 219776569}
   - component: {fileID: 219776568}
   m_Layer: 0
-  m_Name: anjer_stukje1
+  m_Name: anjer_stukje1 Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,11 +221,11 @@ Transform:
   m_GameObject: {fileID: 219776566}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.21, y: 3.52, z: 4.1770473}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.42487, y: 0.42487, z: 0.42487}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1549935833}
+  m_Father: {fileID: 954113945}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &219776568
 Animator:
@@ -352,11 +352,129 @@ PrefabInstance:
       propertyPath: m_Name
       value: Speler1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5073729009833522032, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7252195248704095739, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 290287263}
   m_SourcePrefab: {fileID: 100100000, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+--- !u!1 &290287262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7252195248704095739, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+  m_PrefabInstance: {fileID: 290287261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &290287263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290287262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0827d86edd9270049bbb0a2316e9afb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opraapKnop: 101
+  speler: 0
+  bloemSoortSpeler: 0
+  stukInHanden: {fileID: 0}
+  handGevuld: 0
+--- !u!1 &302009296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302009297}
+  - component: {fileID: 302009298}
+  m_Layer: 0
+  m_Name: Anjer stuk3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302009297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302009296}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.42, y: 0.84, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1575730807}
+  m_Father: {fileID: 1549935833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &302009298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302009296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24e8330e1ed9bc4f95b0284738f9928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voorWieStukIs: 0
+--- !u!1 &371696287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371696288}
+  - component: {fileID: 371696289}
+  m_Layer: 0
+  m_Name: Narcis stuk4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &371696288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371696287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.99, y: -1.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1459447205}
+  m_Father: {fileID: 1549935833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &371696289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371696287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24e8330e1ed9bc4f95b0284738f9928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voorWieStukIs: 1
 --- !u!1 &388918340
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +578,98 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &501464730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 501464731}
+  - component: {fileID: 501464732}
+  m_Layer: 0
+  m_Name: Anjer stuk2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &501464731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501464730}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.029999973, y: 1.62, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1083194905}
+  m_Father: {fileID: 1549935833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &501464732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501464730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24e8330e1ed9bc4f95b0284738f9928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voorWieStukIs: 0
+--- !u!1 &804520705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804520706}
+  - component: {fileID: 804520707}
+  m_Layer: 0
+  m_Name: Narcis stuk2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804520706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804520705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5899999, y: 0.29999998, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1699247766}
+  m_Father: {fileID: 1549935833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &804520707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804520705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24e8330e1ed9bc4f95b0284738f9928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voorWieStukIs: 1
 --- !u!1 &821227713
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +682,7 @@ GameObject:
   - component: {fileID: 821227715}
   - component: {fileID: 821227714}
   m_Layer: 0
-  m_Name: narcis_stukje3_1
+  m_Name: narcis_stukje3_1 Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,12 +770,58 @@ Transform:
   m_GameObject: {fileID: 821227713}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -2.85, z: 4.1770473}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.39858332, y: 0.39858332, z: 0.39858332}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 1625491940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &954113944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 954113945}
+  - component: {fileID: 954113946}
+  m_Layer: 0
+  m_Name: Anjer Stuk1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &954113945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954113944}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.21, y: 3.52, z: 4.1770473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 219776567}
   m_Father: {fileID: 1549935833}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &954113946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954113944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24e8330e1ed9bc4f95b0284738f9928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voorWieStukIs: 0
 --- !u!1 &1083194904
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +834,7 @@ GameObject:
   - component: {fileID: 1083194907}
   - component: {fileID: 1083194906}
   m_Layer: 0
-  m_Name: anjer_stukje2
+  m_Name: anjer_stukje2 Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,11 +849,11 @@ Transform:
   m_GameObject: {fileID: 1083194904}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 1.62, z: 4.1770473}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2070604, y: 0.2070604, z: 0.2070604}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1549935833}
+  m_Father: {fileID: 501464731}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1083194906
 Animator:
@@ -672,6 +928,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1095535252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1095535253}
+  - component: {fileID: 1095535254}
+  m_Layer: 0
+  m_Name: Narcis stuk1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1095535253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095535252}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.79, y: 2.9799998, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1628409137}
+  m_Father: {fileID: 1549935833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1095535254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095535252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24e8330e1ed9bc4f95b0284738f9928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voorWieStukIs: 1
 --- !u!1 &1315077066
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,6 +983,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1315077067}
+  - component: {fileID: 1315077068}
+  - component: {fileID: 1315077069}
   m_Layer: 0
   m_Name: Bloem1
   m_TagString: Untagged
@@ -704,6 +1008,54 @@ Transform:
   - {fileID: 1737958587}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1315077068
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315077066}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.9
+--- !u!114 &1315077069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315077066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad14acc45a0e7b44993be8c39513890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloemSoort: 0
 --- !u!1 &1418391777
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +1065,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1418391778}
+  - component: {fileID: 1418391779}
+  - component: {fileID: 1418391780}
   m_Layer: 0
   m_Name: Bloem2
   m_TagString: Untagged
@@ -736,6 +1090,54 @@ Transform:
   - {fileID: 1756004282}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1418391779
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418391777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.9
+--- !u!114 &1418391780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418391777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad14acc45a0e7b44993be8c39513890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloemSoort: 1
 --- !u!1 &1459447202
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +1150,7 @@ GameObject:
   - component: {fileID: 1459447204}
   - component: {fileID: 1459447203}
   m_Layer: 0
-  m_Name: narcis_stukje4_1
+  m_Name: narcis_stukje4_1 Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -836,11 +1238,11 @@ Transform:
   m_GameObject: {fileID: 1459447202}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.99, y: -1.68, z: 4.1770473}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.30845565, y: 0.30845565, z: 0.30845565}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1549935833}
+  m_Father: {fileID: 371696288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1549935832
 GameObject:
@@ -871,14 +1273,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 219776567}
-  - {fileID: 1083194905}
-  - {fileID: 1575730807}
-  - {fileID: 2066854766}
-  - {fileID: 1628409137}
-  - {fileID: 1699247766}
-  - {fileID: 821227716}
-  - {fileID: 1459447205}
+  - {fileID: 954113945}
+  - {fileID: 501464731}
+  - {fileID: 302009297}
+  - {fileID: 1792338809}
+  - {fileID: 1095535253}
+  - {fileID: 804520706}
+  - {fileID: 1625491940}
+  - {fileID: 371696288}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1575730806
@@ -893,7 +1295,7 @@ GameObject:
   - component: {fileID: 1575730809}
   - component: {fileID: 1575730808}
   m_Layer: 0
-  m_Name: anjer_stukje3
+  m_Name: anjer_stukje3 Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -908,11 +1310,11 @@ Transform:
   m_GameObject: {fileID: 1575730806}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.42, y: 0.84, z: 4.1770473}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.34225404, y: 0.34225404, z: 0.34225404}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1549935833}
+  m_Father: {fileID: 302009297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1575730808
 Animator:
@@ -987,6 +1389,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1625491939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1625491940}
+  - component: {fileID: 1625491941}
+  m_Layer: 0
+  m_Name: Narcis stuk3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1625491940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625491939}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.01, y: -2.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 821227716}
+  m_Father: {fileID: 1549935833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625491941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625491939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24e8330e1ed9bc4f95b0284738f9928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voorWieStukIs: 1
 --- !u!1 &1628409134
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +1447,7 @@ GameObject:
   - component: {fileID: 1628409136}
   - component: {fileID: 1628409135}
   m_Layer: 0
-  m_Name: narcis_stukje1_1
+  m_Name: narcis_stukje1_1 Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1087,11 +1535,11 @@ Transform:
   m_GameObject: {fileID: 1628409134}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.79, y: 2.98, z: 4.1770473}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.27465722, y: 0.27465722, z: 0.27465722}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1549935833}
+  m_Father: {fileID: 1095535253}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699247763
 GameObject:
@@ -1105,7 +1553,7 @@ GameObject:
   - component: {fileID: 1699247765}
   - component: {fileID: 1699247764}
   m_Layer: 0
-  m_Name: narcis_stukje2_1
+  m_Name: narcis_stukje2_1 Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1193,11 +1641,11 @@ Transform:
   m_GameObject: {fileID: 1699247763}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5899999, y: 0.29999998, z: 4.1770473}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2671455, y: 0.2671455, z: 0.2671455}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1549935833}
+  m_Father: {fileID: 804520706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703798191
 GameObject:
@@ -1293,7 +1741,7 @@ Transform:
   m_GameObject: {fileID: 1737958586}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.83, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.6452, y: 1.6452, z: 1.6452}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1661,6 +2109,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790616193}
   m_CullTransparentMesh: 1
+--- !u!1 &1792338808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792338809}
+  - component: {fileID: 1792338810}
+  m_Layer: 0
+  m_Name: Anjer stuk4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1792338809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792338808}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.29, y: -1.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2066854766}
+  m_Father: {fileID: 1549935833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1792338810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792338808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24e8330e1ed9bc4f95b0284738f9928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voorWieStukIs: 0
 --- !u!1 &1835909562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,11 +2341,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Speler2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5073729009833522032, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7252195248704095739, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1902107847}
   m_SourcePrefab: {fileID: 100100000, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+--- !u!1 &1902107846 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7252195248704095739, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+  m_PrefabInstance: {fileID: 1902107845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1902107847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902107846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0827d86edd9270049bbb0a2316e9afb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opraapKnop: 101
+  speler: 0
+  bloemSoortSpeler: 0
+  stukInHanden: {fileID: 0}
+  handGevuld: 0
 --- !u!1 &2066854765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,7 +2384,7 @@ GameObject:
   - component: {fileID: 2066854768}
   - component: {fileID: 2066854767}
   m_Layer: 0
-  m_Name: anjer_stukje4
+  m_Name: anjer_stukje4 Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1879,11 +2399,11 @@ Transform:
   m_GameObject: {fileID: 2066854765}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.29, y: -1.3, z: 4.1770473}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.33474234, y: 0.33474234, z: 0.33474234}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1549935833}
+  m_Father: {fileID: 1792338809}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2066854767
 Animator:
