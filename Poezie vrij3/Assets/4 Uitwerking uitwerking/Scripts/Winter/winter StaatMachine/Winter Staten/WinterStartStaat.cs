@@ -23,10 +23,10 @@ public class WinterStartStaat : WinterBasisStaat
         
     }
 
-    void tellerRegel()
+    public void tellerRegel()
     {
         bloemKlaarTeller++;
-        if (bloemKlaarTeller >=2)
+        if (bloemKlaarTeller == 2)
         {
             Debug.Log("Alles is geplaatst");
             //stukjes laten vallen

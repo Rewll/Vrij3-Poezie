@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using DG.Tweening;
+
 
 public class SpelerBeweging : MonoBehaviour
 {
@@ -12,11 +14,14 @@ public class SpelerBeweging : MonoBehaviour
     public GameObject andereSpeler;
     private bool magBewegen = true;
 
+    SpriteRenderer SP;
+
     Rigidbody2D RB;
 
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
+        SP = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -46,5 +51,15 @@ public class SpelerBeweging : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         magBewegen = true;
+    }
+
+    public void wordtTransparant()
+    {
+        SP.DOFade(.2f, .6f);
+    }
+
+    public void wordtOpague()
+    {
+        SP.DOFade(1, .6f);
     }
 }

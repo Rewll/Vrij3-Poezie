@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74aa822be1a4dac4cb091a2c2cbc5ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloemKlaarTeller: 0
 --- !u!114 &11334159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,9 +349,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 594951725297979026, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7252195248704095739, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
       propertyPath: m_Name
       value: Speler1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7252195248704095739, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5073729009833522032, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
@@ -383,6 +392,17 @@ MonoBehaviour:
   bloemSoortSpeler: 0
   stukInHanden: {fileID: 0}
   handGevuld: 0
+--- !u!114 &290287264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4051858436773714983, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+  m_PrefabInstance: {fileID: 290287261}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290287262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30dd6a30b57feaf4ba67a7823bfe43cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &302009296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,6 +1292,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloemSoort: 0
+  alsStukjesCompleet:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11334158}
+        m_TargetAssemblyTypeName: WinterStartStaat, Assembly-CSharp
+        m_MethodName: tellerRegel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   stukjesInBloem: []
   alleStukjesGeplaatst: 0
 --- !u!1 &1418391777
@@ -1356,6 +1391,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloemSoort: 1
+  alsStukjesCompleet:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11334158}
+        m_TargetAssemblyTypeName: WinterStartStaat, Assembly-CSharp
+        m_MethodName: tellerRegel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   stukjesInBloem: []
   alleStukjesGeplaatst: 0
 --- !u!1 &1459447202
@@ -2674,9 +2724,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 594951725297979026, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7252195248704095739, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
       propertyPath: m_Name
       value: Speler2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7252195248704095739, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5073729009833522032, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
@@ -2686,6 +2744,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7252195248704095739, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1902107847}
+    - targetCorrespondingSourceObject: {fileID: 7252195248704095739, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1902107854}
+    - targetCorrespondingSourceObject: {fileID: 7252195248704095739, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1902107855}
   m_SourcePrefab: {fileID: 100100000, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
 --- !u!1 &1902107846 stripped
 GameObject:
@@ -2709,6 +2773,101 @@ MonoBehaviour:
   bloemSoortSpeler: 1
   stukInHanden: {fileID: 0}
   handGevuld: 0
+--- !u!114 &1902107848 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4051858436773714983, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+  m_PrefabInstance: {fileID: 1902107845}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902107846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30dd6a30b57feaf4ba67a7823bfe43cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1902107854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902107846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5d1b617dcb69349a16a37e810a678d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alsBots:
+    m_PersistentCalls:
+      m_Calls: []
+  alsBotsVerlaat:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1902107855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902107846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb7fd2f49737024face505c64058c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alsTriggerBots:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 290287264}
+        m_TargetAssemblyTypeName: SpelerBeweging, Assembly-CSharp
+        m_MethodName: wordtTransparant
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1902107848}
+        m_TargetAssemblyTypeName: SpelerBeweging, Assembly-CSharp
+        m_MethodName: wordtTransparant
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  alsTriggerBotsVerlaat:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 290287264}
+        m_TargetAssemblyTypeName: SpelerBeweging, Assembly-CSharp
+        m_MethodName: wordtOpague
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1902107848}
+        m_TargetAssemblyTypeName: SpelerBeweging, Assembly-CSharp
+        m_MethodName: wordtOpague
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2066854765
 GameObject:
   m_ObjectHideFlags: 0

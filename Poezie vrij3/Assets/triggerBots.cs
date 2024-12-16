@@ -3,26 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Botsing : MonoBehaviour
+public class triggerBots : MonoBehaviour
 {
-    public UnityEvent alsBots;
-    public UnityEvent alsBotsVerlaat;
+    public UnityEvent alsTriggerBots;
+    public UnityEvent alsTriggerBotsVerlaat;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<SpelerBeweging>())
         {
             //Debug.Log("Bots!");
-            alsBots.Invoke();
+            alsTriggerBots.Invoke();
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<SpelerBeweging>())
         {
             //Debug.Log("Bots!");
-            alsBotsVerlaat.Invoke();
+            alsTriggerBotsVerlaat.Invoke();
         }
     }
 }

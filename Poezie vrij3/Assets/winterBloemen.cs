@@ -19,11 +19,12 @@ public class winterBloemen : MonoBehaviour
             stukje.transform.parent = transform;
             stukje.transform.position = transform.position;
             stukjesInBloem.Add(stukje);
+            if (stukjesInBloem.Count == 4)
+            {
+                alleStukjesGeplaatst = true;
+                alsStukjesCompleet.Invoke();
+            }
         }
-        if (stukjesInBloem.Count == 4)
-        {
-            alleStukjesGeplaatst = true;
-            alsStukjesCompleet.Invoke();
-        }
+
     }
 }
