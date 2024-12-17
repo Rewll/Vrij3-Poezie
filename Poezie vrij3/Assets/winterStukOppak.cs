@@ -5,60 +5,68 @@ using UnityEngine;
 public class winterStukOppak : MonoBehaviour
 {
     public KeyCode opraapKnop;
+    public KeyCode bloemPlaatsKnop;
     public stukjeSpeler speler;
     public winterBloem bloemSoortSpeler;
     [Space]
     public GameObject stukInHanden;
     public bool handGevuld;
+    [Space]
+    public bool stukjesCompleet;
+    [Space]
+    public GameObject bloemInHanden;
+    public bool bloemGeplaatst;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!handGevuld)
+        if (!stukjesCompleet)
         {
-            if (collision.GetComponent<winterStukken>())
+            if (!handGevuld)
             {
-                if (collision.GetComponent<winterStukken>().voorWieStukIs == speler)
+                if (collision.GetComponent<winterStukken>())
                 {
-                    if (Input.GetKey(opraapKnop))
+                    if (collision.GetComponent<winterStukken>().voorWieStukIs == speler)
                     {
-                        stukInHanden = collision.gameObject;
-                        stukInHanden.transform.parent = transform;
-                        handGevuld = true;
+                        if (Input.GetKey(opraapKnop))
+                        {
+                            stukInHanden = collision.gameObject;
+                            stukInHanden.transform.parent = transform;
+                            handGevuld = true;
+                        }
+                    }
+                }
+            }
+            else if (handGevuld)
+            {
+                if (collision.gameObject.GetComponent<winterBloemen>())
+                {
+                    if (bloemSoortSpeler == collision.gameObject.GetComponent<winterBloemen>().bloemSoort)
+                    {
+                        handGevuld = false;
+                        collision.gameObject.GetComponent<winterBloemen>().plaatsStukje(stukInHanden);
+                        stukInHanden = null;
                     }
                 }
             }
         }
-        else if (handGevuld)
+        else if (stukjesCompleet && !bloemGeplaatst)
         {
             if (collision.gameObject.GetComponent<winterBloemen>())
             {
-                if (bloemSoortSpeler == collision.gameObject.GetComponent<winterBloemen>().bloemSoort)
+                if (Input.GetKey(bloemPlaatsKnop))
                 {
-                    handGevuld = false;
-                    collision.gameObject.GetComponent<winterBloemen>().plaatsStukje(stukInHanden);
-                    stukInHanden = null;
+                    if (bloemSoortSpeler == collision.gameObject.GetComponent<winterBloemen>().bloemSoort)
+                    {
+                        bloemGeplaatst = true;
+                        collision.gameObject.GetComponent<winterBloemen>().plaatsBloem(bloemInHanden);
+                    }
                 }
             }
         }
     }
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.GetComponent<winterBloemen>() && handGevuld)
-    //    {
-    //        if (bloemSoortSpeler == collision.gameObject.GetComponent<winterBloemen>().bloemSoort)
-    //        {
-    //            handGevuld = false;
-    //            collision.gameObject.GetComponent<winterBloemen>().plaatsStukje(stukInHanden);
-    //            stukInHanden = null;
-    //        }
-    //    }
-    //}
-    public void leegHand()
+
+    public void compleetOpTrue()
     {
-        if (transform.GetChild(0))
-        {
-            Destroy(transform.GetChild(0).gameObject);
-        }
-        handGevuld = false;
+        stukjesCompleet = true;
     }
 }

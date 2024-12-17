@@ -1,11 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public enum winterBloem
-{
-    Rood,
-    Geel
-}
+public enum winterBloem { Anjer, Narcis }
 public class winterBloemLogica : MonoBehaviour
 {
     public winterBloem bloemVariant;
