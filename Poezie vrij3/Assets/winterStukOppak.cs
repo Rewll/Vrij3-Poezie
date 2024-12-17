@@ -9,6 +9,9 @@ public class winterStukOppak : MonoBehaviour
     public stukjeSpeler speler;
     public winterBloem bloemSoortSpeler;
     [Space]
+    public GameObject tutorialTekst1;
+    public GameObject tutorialTekst2;
+    [Space]
     public GameObject stukInHanden;
     public bool handGevuld;
     [Space]
@@ -68,5 +71,7 @@ public class winterStukOppak : MonoBehaviour
     public void compleetOpTrue()
     {
         stukjesCompleet = true;
+        tutorialTekst1.SetActive(false);
+        tutorialTekst2.SetActive(true);
     }
 }

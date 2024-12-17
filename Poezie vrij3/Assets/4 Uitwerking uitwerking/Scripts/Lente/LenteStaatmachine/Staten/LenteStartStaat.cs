@@ -104,7 +104,9 @@ public class LenteStartStaat : LenteBasisStaat
 
     IEnumerator eindeStaat()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitUntil(() => DOTween.TotalPlayingTweens() == 0);
+        Debug.Log("Tweens klaar");
+        yield return new WaitForSeconds(1f);
         owner.SwitchState(typeof(LenteStuk1Staat));
     }
 

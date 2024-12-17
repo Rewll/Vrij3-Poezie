@@ -71,9 +71,15 @@ public class LenteStuk1Staat : LenteBasisStaat
 
     public void VolgendeStukkie()
     {
+        StartCoroutine(volgendeStaatRoutine());
+    }
+    IEnumerator volgendeStaatRoutine()
+    {
+        yield return new WaitUntil(() => DOTween.TotalPlayingTweens() == 0);
+        Debug.Log("Tweens klaar");
+        yield return new WaitForSeconds(1f);
         owner.SwitchState(typeof(LenteVeldStaat));
     }
-
     public override void OnExit()
     {
         kamera.SetActive(false);

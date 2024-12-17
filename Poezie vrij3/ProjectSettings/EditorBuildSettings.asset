@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/1 Eerste vonk prototype/Scenes/PrototypeScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/2 Groffe uitwerking/Scenes/Lente.unity
-    guid: 1af4c40d882c57e4786ffa6437129629
+    path: Assets/4 Uitwerking uitwerking/Scenes/Lente Spelspeel.unity
+    guid: 9422134837626c54085de2d1bfdf33dc
   - enabled: 1
-    path: Assets/3 Machine uitwerking/Scenes/MachineZomer.unity
-    guid: 16e801a2e0dfbc846a02f74360f53d60
+    path: Assets/4 Uitwerking uitwerking/Scenes/Zomer Spelspeel.unity
+    guid: 34e3c6ec792101c4e94d6df23aa70de0
+  - enabled: 1
+    path: Assets/4 Uitwerking uitwerking/Scenes/Herfst Spelspeel.unity
+    guid: 494b6d357236b9a4cb5e2c7e05f48c37
+  - enabled: 1
+    path: Assets/4 Uitwerking uitwerking/Scenes/Winter SpelSpeel.unity
+    guid: cc4262f3d33d7874ba176408a9f5b94c
   m_configObjects: {}

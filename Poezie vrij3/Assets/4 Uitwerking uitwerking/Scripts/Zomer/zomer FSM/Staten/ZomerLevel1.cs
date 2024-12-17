@@ -10,7 +10,8 @@ using UnityEngine.Events;
 public class ZomerLevel1 : ZomerBasisStaat
 {
     ZomerOpslag regelaarOpslag;
-
+    public TMP_Text tutorialTekst;
+    [Space]
     [SerializeField] private bool speler1Drukt;
     [SerializeField] private bool speler2Drukt;
     public KeyCode knopSpeler1;
@@ -19,6 +20,7 @@ public class ZomerLevel1 : ZomerBasisStaat
     private void Awake()
     {
         regelaarOpslag = GetComponent<ZomerOpslag>();
+        tutorialTekst.DOFade(0, 0.0001f);
     }
 
     public override void OnEnter()
@@ -32,6 +34,7 @@ public class ZomerLevel1 : ZomerBasisStaat
     IEnumerator startRoutine()
     {
         yield return new WaitForSeconds(2f);
+        Tween fadeTween = tutorialTekst.DOFade(1, 1f);
         regelaarOpslag.knopIndicator1Init(knopSpeler1);
         regelaarOpslag.knopIndicator2Init(knopSpeler2);
     }
@@ -51,6 +54,7 @@ public class ZomerLevel1 : ZomerBasisStaat
     IEnumerator botsRoutine()
     {
         //bots effect!
+        tutorialTekst.DOFade(0, 0.5f);
         regelaarOpslag.spelersTerugVliegen();
         regelaarOpslag.knopIndicatorsUitZetten(1);
         //hartSnellerGaan!

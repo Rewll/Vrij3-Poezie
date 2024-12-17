@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+
 
 public class HerfstBeginStaat : HerfstBasisStaat
 {
@@ -8,6 +10,7 @@ public class HerfstBeginStaat : HerfstBasisStaat
 
     private void Start()
     {
+        DOTween.SetTweensCapacity(2000, 100);
         herfstRegelRef = GetComponent<HerfstRegelaar>();
         GetComponent<HerfstAgent>().huidigeStaat = HerfstAgent.herfstStaten.HerfstStartStaat;
     }

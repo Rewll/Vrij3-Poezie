@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using DG.Tweening;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class ZomerEinde : ZomerBasisStaat
 {
     ZomerOpslag regelaarOpslag;
@@ -29,6 +30,7 @@ public class ZomerEinde : ZomerBasisStaat
         yield return fadeUit.WaitForCompletion();
         //zomer afgelopen
         Debug.Log("Zomer afgelopen doei");
+        SceneManager.LoadScene(2);
     }
 
     public override void OnUpdate()
