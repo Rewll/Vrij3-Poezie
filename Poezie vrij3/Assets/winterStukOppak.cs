@@ -33,7 +33,7 @@ public class winterStukOppak : MonoBehaviour
                         if (Input.GetKey(opraapKnop))
                         {
                             stukInHanden = collision.gameObject;
-                            stukInHanden.transform.parent = transform;
+                            stukInHanden.transform.parent = transform;                            
                             handGevuld = true;
                         }
                     }
@@ -47,6 +47,7 @@ public class winterStukOppak : MonoBehaviour
                     {
                         handGevuld = false;
                         collision.gameObject.GetComponent<winterBloemen>().plaatsStukje(stukInHanden);
+                        tutorialTekst1.SetActive(false);
                         stukInHanden = null;
                     }
                 }
