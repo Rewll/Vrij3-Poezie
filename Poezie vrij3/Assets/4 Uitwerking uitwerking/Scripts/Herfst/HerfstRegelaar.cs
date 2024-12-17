@@ -60,10 +60,12 @@ public class HerfstRegelaar : MonoBehaviour
         if (bloemVersie == bloemVersies.Speler1Bloem)
         {
             Debug.Log("Bloem 1 groei!");
+            //anjeranimatie++
         }
         else if (bloemVersie == bloemVersies.Speler2Bloem)
         {
             Debug.Log("Bloem 2 groei!");
+            //narcisanimatie++
         }
         //Hartanimatie vooruit
         animatieTeller++;
