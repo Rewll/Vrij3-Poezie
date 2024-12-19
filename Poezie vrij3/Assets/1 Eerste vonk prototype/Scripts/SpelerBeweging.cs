@@ -41,7 +41,7 @@ public class SpelerBeweging : MonoBehaviour
     {
         RB.velocity = Vector2.zero;
         magBewegen = false;
-        Debug.Log("BeweegtTerug");
+        //Debug.Log("BeweegtTerug");
         Vector2 richting = (andereSpeler.transform.position - transform.position).normalized;
         RB.AddForce(-richting * beweegHoeveelheid, ForceMode2D.Impulse);
         StartCoroutine(bewegingWachter());

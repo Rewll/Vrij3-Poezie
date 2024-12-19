@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using DG.Tweening;
-using TMPro;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 
 public class LenteBloemPlaatsStaat : LenteBasisStaat
 {
     GameManagerOpslag GO;
-
+    public Image fadeVlak1;
     public Transform speler1StartPlek;
     public Transform speler2StartPlek;
     [Space]
@@ -58,6 +58,9 @@ public class LenteBloemPlaatsStaat : LenteBasisStaat
         yield return new WaitForSeconds(1f);
         hartAnim.SetBool("HartMagBewegen", true);
         yield return new WaitForSeconds(5f);
+        Tween fadeTween = fadeVlak1.DOFade(1, 2f);
+        yield return fadeTween.WaitForCompletion();
+        yield return new WaitForSeconds(1f);
         Debug.Log("Volgende scene !");
         SceneManager.LoadScene(1);
     }

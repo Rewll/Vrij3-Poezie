@@ -38,6 +38,8 @@ public class hartPlaatser : MonoBehaviour
     {
         if (Klaar1 && Klaar2)
         {
+            Klaar1 = false;
+            Klaar2 = false;
             alsbloemGeplaatst.Invoke();
         }
     }

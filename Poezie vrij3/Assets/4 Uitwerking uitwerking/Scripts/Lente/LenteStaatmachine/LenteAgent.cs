@@ -14,11 +14,11 @@ public class LenteAgent : MonoBehaviour
         LenteBloemPlaatsStaat
     }
 
-    public LenteFsmStaten startStaat;
+    public LenteFsmStaten huidigeStaat;
 
     void Start()
     {
-        switch (startStaat)
+        switch (huidigeStaat)
         {
             case LenteFsmStaten.LenteStartStaat:
                 startState = typeof(LenteStartStaat);

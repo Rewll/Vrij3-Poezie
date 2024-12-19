@@ -21,6 +21,12 @@ public class LenteStuk1Staat : LenteBasisStaat
     [Space]
     public int opraapTeller;
 
+    private void Start()
+    {
+        Tween fade1 = fadeVlak1.DOFade(1, 0.0001f);
+        Tween fade2 = fadeVlak2.DOFade(1, 0.0001f);
+    }
+
     public override void OnEnter()
     {
         kamera.SetActive(true);

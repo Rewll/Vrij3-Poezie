@@ -30,6 +30,7 @@ public class LenteVeldStaat : LenteBasisStaat
 
     private void Start()
     {
+        fadeVlak1.DOFade(1, 0.0001f);
         foreach (GameObject stuk in hartOnderdelen)
         {
             stuk.SetActive(false);
