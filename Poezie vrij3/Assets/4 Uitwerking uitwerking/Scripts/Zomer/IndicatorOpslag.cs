@@ -31,10 +31,10 @@ public class IndicatorOpslag : MonoBehaviour
                 indicatieVlak.SetActive(false);
             }
         }
-        else
-        {
-            indicatieVlak.SetActive(false);
-        }
+        //else
+        //{
+        //    indicatieVlak.SetActive(false);
+        //}
     }
 
     public void fadeInMethod(float fadeSnelHeid)
