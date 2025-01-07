@@ -67,7 +67,7 @@ public class PoezieSceneRegelaar : MonoBehaviour
 
     void knoppenBedoeling()
     {
-        if (!sceneIsKlaar)
+        if (sceneIsGestart && !sceneIsKlaar)
         {
             if (Input.GetKey(speler1Knop))
             {
