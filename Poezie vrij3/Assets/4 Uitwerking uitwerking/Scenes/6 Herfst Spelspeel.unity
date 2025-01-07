@@ -333,6 +333,8 @@ MonoBehaviour:
   hartPlek1: {fileID: 1548155887}
   hartPlek2: {fileID: 745073000}
   hartAnim: {fileID: 684099433}
+  anjerAnimator: {fileID: 1061753700}
+  narcisAnimator: {fileID: 1337394299}
   routineKlaar: 0
 --- !u!114 &122972529
 MonoBehaviour:

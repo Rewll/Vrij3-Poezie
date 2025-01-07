@@ -40,6 +40,8 @@ public class HerfstBreek : HerfstBasisStaat
         Tween beweegTween = oppakBloem2.transform.DOMove(vliegPlek2.position, .75f);
         yield return beweegTween.WaitForCompletion();
         yield return new WaitForSeconds(1f);
+        herfstRegelRef.anjerAnimator.SetInteger("anjerTeller", 0);
+        herfstRegelRef.narcisAnimator.SetInteger("narcisTeller", 0);
         oppakTekst.DOFade(1, 1f);
         oppakBloem1.GetComponent<CircleCollider2D>().enabled = true;
         oppakBloem2.GetComponent<CircleCollider2D>().enabled = true;

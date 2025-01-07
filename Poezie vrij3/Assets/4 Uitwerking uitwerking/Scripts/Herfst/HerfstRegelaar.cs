@@ -27,6 +27,12 @@ public class HerfstRegelaar : MonoBehaviour
     [Space]
     public Animator hartAnim;
     private int animatieTeller = 1;
+
+    public Animator anjerAnimator;
+    [HideInInspector] public int anjerAnimatieTeller = 0;
+
+    public Animator narcisAnimator;
+    [HideInInspector] public int narcisAnimatieTeller = 0;
     [Space]
     public bool routineKlaar;
     
@@ -60,11 +66,15 @@ public class HerfstRegelaar : MonoBehaviour
         if (bloemVersie == bloemVersies.Speler1Bloem)
         {
             Debug.Log("Bloem 1 groei!");
+            anjerAnimatieTeller++;
+            anjerAnimator.SetInteger("anjerTeller", anjerAnimatieTeller);
             //anjeranimatie++
         }
         else if (bloemVersie == bloemVersies.Speler2Bloem)
         {
             Debug.Log("Bloem 2 groei!");
+            narcisAnimatieTeller++;
+            narcisAnimator.SetInteger("narcisTeller", narcisAnimatieTeller);
             //narcisanimatie++
         }
         //Hartanimatie vooruit
