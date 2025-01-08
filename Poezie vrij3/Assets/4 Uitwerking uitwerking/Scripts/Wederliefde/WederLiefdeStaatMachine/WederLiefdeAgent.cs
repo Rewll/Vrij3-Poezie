@@ -11,7 +11,8 @@ public class WederLiefdeAgent : MonoBehaviour
                                        WederliefdeRepareer2, 
                                        WederliefdeRepareer3,
                                        WederliefdeRepareer4, 
-                                       WederliefdeVereniging }
+                                       WederliefdeVereniging,
+                                       WederliefdeBloem}
 
     public WederLiefdeFSMStaten huidigeStaat;
 

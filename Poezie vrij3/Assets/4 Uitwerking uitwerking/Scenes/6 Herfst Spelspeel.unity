@@ -334,7 +334,9 @@ MonoBehaviour:
   hartPlek2: {fileID: 745073000}
   hartAnim: {fileID: 684099433}
   anjerAnimator: {fileID: 1061753700}
+  anjerAnimatieTeller: 0
   narcisAnimator: {fileID: 1337394299}
+  narcisAnimatieTeller: 0
   routineKlaar: 0
 --- !u!114 &122972529
 MonoBehaviour:
@@ -1291,7 +1293,7 @@ GameObject:
   - component: {fileID: 1061753701}
   - component: {fileID: 1061753700}
   m_Layer: 0
-  m_Name: anjer_niveau1
+  m_Name: anjer_geanimeerd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1593,7 +1595,7 @@ GameObject:
   - component: {fileID: 1337394300}
   - component: {fileID: 1337394299}
   m_Layer: 0
-  m_Name: narcis_niveau1
+  m_Name: narcis_geanimeerd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

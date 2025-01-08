@@ -15,6 +15,9 @@ public class WederliefdeRepareer4 : WederLiefdeBasisStaat
     [Space]
     public float spelerTerugSlagHoeveelHeid;
     public float stukjesKlikDuur;
+    [Space]
+    public Transform terugVliegPlek1;
+    public Transform terugVliegPlek2;
 
     private void Start()
     {
@@ -50,14 +53,22 @@ public class WederliefdeRepareer4 : WederLiefdeBasisStaat
 
     IEnumerator botsRoutine()
     {
-        regelaarRef.spelersTerugSlag(spelerTerugSlagHoeveelHeid);
+        //regelaarRef.spelersTerugSlag(spelerTerugSlagHoeveelHeid);
+        regelaarRef.speler1.transform.DOMove(terugVliegPlek1.position,2);
+        regelaarRef.speler2.transform.DOMove(terugVliegPlek2.position, 2);
+
         yield return new WaitForSeconds(.5f);
         regelaarRef.knopIndicatorsUitZetten(1f);
         regelaarRef.stukjesRepareer(regelaarRef.stuk4A, regelaarRef.stuk4B,
                                     regelaarRef.plek4A, regelaarRef.plek4B,
                                     stukjesKlikDuur);
         yield return new WaitUntil(() => DOTween.TotalActiveTweens() == 0);
-        yield return new WaitForSeconds(3f);
+
+        regelaarRef.stuk4.SetActive(true);
+        regelaarRef.stuk4A.SetActive(false);
+        regelaarRef.stuk4B.SetActive(false);
+
+        yield return new WaitForSeconds(1f);
         owner.SwitchState(typeof(WederliefdeVereniging));
     }
 

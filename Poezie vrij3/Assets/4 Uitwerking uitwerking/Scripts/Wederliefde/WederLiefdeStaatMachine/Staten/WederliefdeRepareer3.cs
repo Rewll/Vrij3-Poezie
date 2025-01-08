@@ -57,7 +57,12 @@ public class WederliefdeRepareer3 : WederLiefdeBasisStaat
                                     regelaarRef.plek3A, regelaarRef.plek3B,
                                     stukjesKlikDuur);
         yield return new WaitUntil(() => DOTween.TotalActiveTweens() == 0);
-        yield return new WaitForSeconds(3f);
+
+        regelaarRef.stuk3.SetActive(true);
+        regelaarRef.stuk3A.SetActive(false);
+        regelaarRef.stuk3B.SetActive(false);
+
+        yield return new WaitForSeconds(1f);
         owner.SwitchState(typeof(WederliefdeRepareer4));
     }
 

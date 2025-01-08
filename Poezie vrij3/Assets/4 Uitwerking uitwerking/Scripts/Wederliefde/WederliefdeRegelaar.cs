@@ -17,15 +17,19 @@ public class WederliefdeRegelaar : MonoBehaviour
     [Space]
     [Space]
     [Header("Stukken hart")]
+    public GameObject stuk1;
     public GameObject stuk1A;
     public GameObject stuk1B;
     [Space]
+    public GameObject stuk2;
     public GameObject stuk2A;
     public GameObject stuk2B;
     [Space]
+    public GameObject stuk3;
     public GameObject stuk3A;
     public GameObject stuk3B;
     [Space]
+    public GameObject stuk4;
     public GameObject stuk4A;
     public GameObject stuk4B;
     [Space]
@@ -44,7 +48,6 @@ public class WederliefdeRegelaar : MonoBehaviour
     public Transform plek4B;
     [Space]
     public List<MonoBehaviour> metaWeetJeDitNogNietVergetenDus;
-
 
     public void spelersTerugSlag(float terugSlagHoeveelHeid)
     {
@@ -87,18 +90,17 @@ public class WederliefdeRegelaar : MonoBehaviour
         knopIndicator2.GetComponent<IndicatorOpslag>().indicatorInstel();
         knopIndicator2.GetComponent<IndicatorOpslag>().fadeInMethod(1);
     }
-    float lerpUitrekenaar(Transform pos1, Transform pos2)
+    public float lerpUitrekenaar(Transform pos1, Transform pos2, float maxAfstand)
     {
-        float maxAfstand = 5;
-        float afstand = (Vector2.Distance(speler1.transform.position,
-                                          speler2.transform.position));
+        float afstand = (Vector2.Distance(pos1.position,
+                                          pos2.position));
         float afstand2 = Mathf.Min(afstand, maxAfstand);
 
         return (afstand2 / maxAfstand);
     }
 
-    Vector2 lerper(Vector2 plek1, Vector2 plek2)
+    public Vector2 lerper(Vector2 begin, Vector2 bestemming, float maxAfstand)
     {
-        return Vector2.Lerp(plek1, plek2, lerpUitrekenaar(speler1.transform, speler2.transform));
+        return Vector2.Lerp(begin, bestemming, lerpUitrekenaar(speler1.transform, speler2.transform, maxAfstand));
     }
 }

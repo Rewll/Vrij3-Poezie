@@ -12,6 +12,10 @@ public class WederliefdeStartStaat : WederLiefdeBasisStaat
     private void Start()
     {
         regelaarRef = GetComponent<WederliefdeRegelaar>();
+        regelaarRef.stuk1.SetActive(false);
+        regelaarRef.stuk2.SetActive(false);
+        regelaarRef.stuk3.SetActive(false);
+        regelaarRef.stuk4.SetActive(false);
     }
 
     public override void OnEnter()
