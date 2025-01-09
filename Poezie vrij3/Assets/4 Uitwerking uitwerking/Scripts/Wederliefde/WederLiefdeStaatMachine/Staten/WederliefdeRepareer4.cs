@@ -62,7 +62,8 @@ public class WederliefdeRepareer4 : WederLiefdeBasisStaat
         regelaarRef.stukjesRepareer(regelaarRef.stuk4A, regelaarRef.stuk4B,
                                     regelaarRef.plek4A, regelaarRef.plek4B,
                                     stukjesKlikDuur);
-        yield return new WaitUntil(() => DOTween.TotalActiveTweens() == 0);
+        yield return new WaitForSeconds(stukjesKlikDuur);
+        //yield return new WaitUntil(() => DOTween.TotalActiveTweens() == 0);
 
         regelaarRef.stuk4.SetActive(true);
         regelaarRef.stuk4A.SetActive(false);
