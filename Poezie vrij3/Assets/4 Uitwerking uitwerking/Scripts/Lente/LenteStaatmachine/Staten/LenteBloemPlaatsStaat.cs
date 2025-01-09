@@ -86,6 +86,6 @@ public class LenteBloemPlaatsStaat : LenteBasisStaat
             child.SetActive(false);
         }
 
-        Debug.Log(parent.transform.childCount);
+        //Debug.Log(parent.transform.childCount);
     }
 }
