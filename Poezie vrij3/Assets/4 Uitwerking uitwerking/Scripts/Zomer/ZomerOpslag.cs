@@ -17,6 +17,8 @@ public class ZomerOpslag : MonoBehaviour
     public GameObject knopIndicator2;
     [Space]
     public Animator hartAnimator;
+    [Space]
+    public UnityEvent alsSuccesVolleBots;
 
     public bool spelerDruktKnopInCheck(KeyCode knop)
     {

@@ -53,6 +53,7 @@ public class WederliefdeRepareer4 : WederLiefdeBasisStaat
 
     IEnumerator botsRoutine()
     {
+        regelaarRef.alsSuccesVolleBots.Invoke();
         //regelaarRef.spelersTerugSlag(spelerTerugSlagHoeveelHeid);
         regelaarRef.speler1.transform.DOMove(terugVliegPlek1.position,2);
         regelaarRef.speler2.transform.DOMove(terugVliegPlek2.position, 2);

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.Events;
 
 public class WederliefdeRegelaar : MonoBehaviour
 {
@@ -47,7 +48,10 @@ public class WederliefdeRegelaar : MonoBehaviour
     public Transform plek4A;
     public Transform plek4B;
     [Space]
+    public UnityEvent alsSuccesVolleBots;
+    [Space]
     public List<MonoBehaviour> metaWeetJeDitNogNietVergetenDus;
+
 
     public void spelersTerugSlag(float terugSlagHoeveelHeid)
     {

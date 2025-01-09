@@ -56,6 +56,7 @@ public class WederliefdeVereniging : WederLiefdeBasisStaat
 
     IEnumerator botsRoutine()
     {
+        regelaarRef.alsSuccesVolleBots.Invoke();
         regelaarRef.spelersTerugSlag(spelerTerugSlagHoeveelHeid);
         regelaarRef.stuk1.SetActive(false);
         regelaarRef.stuk2.SetActive(false);
