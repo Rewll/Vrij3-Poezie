@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class PoezieStukRegelaar : MonoBehaviour
 {
-    public TMP_Text stukjePoezie;
+    public SpriteRenderer stukjePoezie;
     public bool klaar;
     //public UnityEvent poezieInloop;
     private void Start()
