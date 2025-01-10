@@ -494,6 +494,11 @@ MonoBehaviour:
   alsOpgepakt:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &280671881 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 312754350242825114, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+  m_PrefabInstance: {fileID: 280671873}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &295148186
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,7 +3041,6 @@ MonoBehaviour:
   alsBotsVerlaat:
     m_PersistentCalls:
       m_Calls: []
-  midden: {x: 0, y: 0}
 --- !u!114 &1296842681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3066,6 +3070,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   botsParticlesObject: {fileID: 1535939773}
+  speler1: {fileID: 280671881}
+  speler2: {fileID: 1296842688}
+  midden: {x: 0, y: 0}
+--- !u!4 &1296842688 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 312754350242825114, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+  m_PrefabInstance: {fileID: 421106744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1300393338
 GameObject:
   m_ObjectHideFlags: 0
@@ -3975,11 +3987,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7762383906165218419, guid: 65c8a11be6e99b045a7bd8db95ace5bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.89
       objectReference: {fileID: 0}
     - target: {fileID: 7762383906165218419, guid: 65c8a11be6e99b045a7bd8db95ace5bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -4.01
       objectReference: {fileID: 0}
     - target: {fileID: 7762383906165218419, guid: 65c8a11be6e99b045a7bd8db95ace5bb, type: 3}
       propertyPath: m_LocalPosition.z

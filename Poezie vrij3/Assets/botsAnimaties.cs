@@ -10,6 +10,9 @@ public class botsAnimaties : MonoBehaviour
 
     Animator botsAnim;
     private Botsing botsingRef;
+    public Transform speler1;
+    public Transform speler2;
+    public Vector2 midden;
 
     void Start()
     {
@@ -19,14 +22,17 @@ public class botsAnimaties : MonoBehaviour
 
     public void zomerBotsAnimatie()
     {
-        botsParticlesObject.transform.position = botsingRef.midden;
+        midden = middenBerekenaar();
+        botsParticlesObject.transform.position = midden;
         botsAnim.SetTrigger("AnimTrig");
         botsAnim.SetInteger("BotsingAnimatieTel", 4);
     }
 
     public void wederLiefdeBotsAnimatie()
     {
-        botsParticlesObject.transform.position = botsingRef.midden;
+        Debug.Log("Hoi");
+        midden = middenBerekenaar();
+        botsParticlesObject.transform.position = midden;
         botsTeller++;
         switch (botsTeller)
         {
@@ -53,7 +59,8 @@ public class botsAnimaties : MonoBehaviour
 
     public void lenteBotsAnimatie()
     {
-        botsParticlesObject.transform.position = botsingRef.midden;
+        midden = middenBerekenaar();
+        botsParticlesObject.transform.position = midden;
         botsTeller++;
         switch (botsTeller)
         {
@@ -82,5 +89,10 @@ public class botsAnimaties : MonoBehaviour
                 botsAnim.SetInteger("BotsingAnimatieTel", 3);
                 break;
         }
+    }
+
+    Vector2 middenBerekenaar()
+    {
+        return speler1.position - (speler1.position - speler2.position) / 2;
     }
 }
