@@ -18,11 +18,19 @@ public class LenteBloemPlaatsStaat : LenteBasisStaat
     public GameObject bloemPlaatsTekst;
     public Animator hartAnim;
     public Transform hartPlek;
-    public GameObject hartMetKleur;
     public GameObject laatsteZonderKleur;
+    public GameObject hartmetKleurStilstaand;
     public GameObject bloemenParent;
     [Space]
+    public AnimatieRegelBedoeling animScriptRef;
+    [Space]
     public UnityEvent bloemSmeltNaar1;
+
+    private void Start()
+    {
+        animScriptRef.animatieStart();
+    }
+
     public override void OnEnter()
     {
         GO = GetComponent<GameManagerOpslag>();
@@ -52,15 +60,14 @@ public class LenteBloemPlaatsStaat : LenteBasisStaat
 
     IEnumerator machineStartRoutine()
     {
-        yield return new WaitForSeconds(1f);
-        laatsteZonderKleur.SetActive(false);
-        hartMetKleur.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        hartAnim.SetBool("HartMagBewegen", true);
-        yield return new WaitForSeconds(5f);
+        animScriptRef.crossfade(1, 1.5f);
+        yield return new WaitForSeconds(3f);
+        animScriptRef.crossfade(2, 1.5f);
+        //hartAnim.SetBool("HartMagBewegen", true);
+        yield return new WaitForSeconds(7f);
         Tween fadeTween = fadeVlak1.DOFade(1, 2f);
         yield return fadeTween.WaitForCompletion();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         Debug.Log("Volgende scene !");
         SceneManager.LoadScene(1);
     }

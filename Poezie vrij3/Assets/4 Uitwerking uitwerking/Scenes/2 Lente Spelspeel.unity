@@ -1843,7 +1843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &330445916
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3561,11 +3561,12 @@ MonoBehaviour:
   speler2StartPlek: {fileID: 533524895}
   hart: {fileID: 1967918078}
   bloemPlaatsTekst: {fileID: 2188285262740879556}
-  hartAnim: {fileID: 1050217215}
+  hartAnim: {fileID: 0}
   hartPlek: {fileID: 1051826239}
-  hartMetKleur: {fileID: 1050217214}
   laatsteZonderKleur: {fileID: 291858727}
+  hartmetKleurStilstaand: {fileID: 1050217214}
   bloemenParent: {fileID: 991914626}
+  animScriptRef: {fileID: 1967918080}
   bloemSmeltNaar1:
     m_PersistentCalls:
       m_Calls:
@@ -5472,35 +5473,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1050217217}
   - component: {fileID: 1050217216}
-  - component: {fileID: 1050217215}
   m_Layer: 0
-  m_Name: 0001
+  m_Name: HartKleurStil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!95 &1050217215
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050217214}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f2a6fe0163d48d4ebb779c9d40be5bd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_IsActive: 1
 --- !u!212 &1050217216
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5975,6 +5954,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e186379fb4d0c48b95527ec7899e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1134735327 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 312754350242825114, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+  m_PrefabInstance: {fileID: 545379948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1135374345
 GameObject:
   m_ObjectHideFlags: 0
@@ -7813,6 +7797,112 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b56bdeaeb5b0564a8fd42b1955d2c23, type: 3}
+--- !u!1 &1723155696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1723155697}
+  - component: {fileID: 1723155699}
+  - component: {fileID: 1723155698}
+  m_Layer: 0
+  m_Name: HartKleurGeanimeerd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1723155697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723155696}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.099999905, y: -0.050000012, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1967918079}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1723155698
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723155696}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f2a6fe0163d48d4ebb779c9d40be5bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &1723155699
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723155696}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d9d0194ef8dcb894f96058cc055cedad, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1766976459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8622,6 +8712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1967918079}
+  - component: {fileID: 1967918080}
   m_Layer: 0
   m_Name: Hart Nieuw
   m_TagString: Untagged
@@ -8653,8 +8744,27 @@ Transform:
   - {fileID: 1661647750}
   - {fileID: 291858728}
   - {fileID: 1050217217}
+  - {fileID: 1723155697}
   m_Father: {fileID: 1544842285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1967918080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967918078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69f7a6a12be35c4bb9db188d9f1bb0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animaties:
+  - {fileID: 291858727}
+  - {fileID: 1050217214}
+  - {fileID: 1723155696}
+  startClip: 0
+  huidigeAnimatieNummer: 0
 --- !u!1001 &1990651636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8746,6 +8856,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   botsParticlesObject: {fileID: 1147665389}
+  speler1: {fileID: 1134735327}
+  speler2: {fileID: 1990651649}
+  midden: {x: 0, y: 0}
 --- !u!114 &1990651644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8812,7 +8925,11 @@ MonoBehaviour:
   alsBotsVerlaat:
     m_PersistentCalls:
       m_Calls: []
-  midden: {x: 0, y: 0}
+--- !u!4 &1990651649 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 312754350242825114, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+  m_PrefabInstance: {fileID: 1990651636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2021707380
 GameObject:
   m_ObjectHideFlags: 0

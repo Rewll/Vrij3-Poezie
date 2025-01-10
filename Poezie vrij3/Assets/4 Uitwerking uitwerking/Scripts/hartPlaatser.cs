@@ -21,6 +21,7 @@ public class hartPlaatser : MonoBehaviour
     {
         if (collision.gameObject.tag == "Speler1")
         {
+            Debug.Log("Test");
             Destroy(collision.transform.GetChild(0).gameObject);
             bloem1.SetActive(true);
             Klaar1 = true;
@@ -40,7 +41,15 @@ public class hartPlaatser : MonoBehaviour
         {
             Klaar1 = false;
             Klaar2 = false;
-            alsbloemGeplaatst.Invoke();
+            StartCoroutine(eindeRoutine());
         }
+    }
+
+    IEnumerator eindeRoutine()
+    {
+        yield return new WaitForSeconds(1f);
+        bloem1.SetActive(false);
+        bloem2.SetActive(false);
+        alsbloemGeplaatst.Invoke();
     }
 }
