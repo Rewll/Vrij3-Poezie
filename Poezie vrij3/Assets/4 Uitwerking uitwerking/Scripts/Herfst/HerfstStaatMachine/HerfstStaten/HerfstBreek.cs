@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 public class HerfstBreek : HerfstBasisStaat
 {
     HerfstRegelaar herfstRegelRef;
-
+    public AnimatieRegelBedoeling animatieRegelRef;
     public GameObject oppakBloem1;
     public GameObject oppakBloem2;
     [Space]

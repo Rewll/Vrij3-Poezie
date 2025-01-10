@@ -23,6 +23,11 @@ public class AnimatieRegelBedoeling : MonoBehaviour
         bewegendBloem.GetComponent<SpriteRenderer>().DOFade(1, crossFadeTijd);
     }
 
+    public void herfstCrossfade()
+    {
+
+    }
+
     public void animatieStart()
     {
         huidigeAnimatieNummer = startClip;

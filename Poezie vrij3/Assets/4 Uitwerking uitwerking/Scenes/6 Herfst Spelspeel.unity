@@ -350,6 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9e2f772ba34c6479f8020bbba47e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animatieRegelRef: {fileID: 0}
   oppakBloem1: {fileID: 1446528786}
   oppakBloem2: {fileID: 31378423}
   oppakTekst: {fileID: 2105082705}
@@ -1008,6 +1009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 719541344}
+  - component: {fileID: 719541345}
   m_Layer: 0
   m_Name: Hart
   m_TagString: Untagged
@@ -1034,6 +1036,21 @@ Transform:
   - {fileID: 31378425}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &719541345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719541343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69f7a6a12be35c4bb9db188d9f1bb0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animaties: []
+  startClip: 0
+  huidigeAnimatieNummer: 0
 --- !u!1001 &731068773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1269,7 +1286,6 @@ MonoBehaviour:
   alsBotsVerlaat:
     m_PersistentCalls:
       m_Calls: []
-  midden: {x: 0, y: 0}
 --- !u!114 &977895337
 MonoBehaviour:
   m_ObjectHideFlags: 0
