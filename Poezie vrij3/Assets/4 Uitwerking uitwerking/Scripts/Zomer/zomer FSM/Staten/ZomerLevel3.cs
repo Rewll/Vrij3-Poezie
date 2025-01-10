@@ -49,7 +49,8 @@ public class ZomerLevel3 : ZomerBasisStaat
         regelaarOpslag.spelersTerugVliegen();
         regelaarOpslag.knopIndicatorsUitZetten(1);
         //hartSnellerGaan!
-        regelaarOpslag.hartAnimator.SetInteger("AnimatieNummer", 3);
+        //regelaarOpslag.hartAnimator.SetInteger("AnimatieNummer", 3);
+        regelaarOpslag.animatieRegelRef.crossfade(3, 1f);
         regelaarOpslag.alsSuccesVolleBots.Invoke();
 
         yield return new WaitForSeconds(1.5f);

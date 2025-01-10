@@ -20,6 +20,7 @@ public class ZomerStartStaat : ZomerBasisStaat
     {
         GetComponent<ZomerAgent>().huidigeStaat = ZomerAgent.ZomerFsmStaten.ZomerStartStaat;
         regelaarOpslag.knopIndicatorsUitZetten(0.001f);
+        regelaarOpslag.animatieRegelRef.animatieStart();
 
         StartCoroutine(beginCoroutine());
     }

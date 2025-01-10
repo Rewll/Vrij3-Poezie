@@ -16,7 +16,8 @@ public class ZomerOpslag : MonoBehaviour
     public GameObject knopIndicator1;
     public GameObject knopIndicator2;
     [Space]
-    public Animator hartAnimator;
+    //public Animator hartAnimator;
+    public AnimatieRegelBedoeling animatieRegelRef;
     [Space]
     public UnityEvent alsSuccesVolleBots;
 
