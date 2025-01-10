@@ -11,9 +11,15 @@ public class WederliefdeBloem : WederLiefdeBasisStaat
     public GameObject narcis;
     public GameObject anjer;
     [Space]
+    public AnimatieRegelBedoeling animRegelRef;
+    [Space]
+    public TMP_Text instructieTekst;
+    [Space]
     public GameObject heelHartStilStaandParent;
     public GameObject heelHartStilStaand;
     public GameObject hartBewegend;
+    public GameObject bloemBewegend;
+
 
     private void Start()
     {
@@ -21,6 +27,8 @@ public class WederliefdeBloem : WederLiefdeBasisStaat
         narcis.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(0, 0.00001f);
         anjer.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(0, 0.00001f);
         heelHartStilStaandParent.GetComponent<BoxCollider2D>().enabled = false;
+        hartBewegend.GetComponent<SpriteRenderer>().DOFade(0, 0.00001f);
+        bloemBewegend.GetComponent<SpriteRenderer>().DOFade(0, 0.00001f);
     }
 
     public override void OnEnter()
@@ -37,7 +45,6 @@ public class WederliefdeBloem : WederLiefdeBasisStaat
         narcis.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(1, 1f);
         anjer.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(1, 1f);
         heelHartStilStaandParent.GetComponent<BoxCollider2D>().enabled = true;
-
     }
 
     public void hartBewegenEinde()
@@ -46,9 +53,11 @@ public class WederliefdeBloem : WederLiefdeBasisStaat
     }
 
     IEnumerator hartBewegen()
-    {       
-        heelHartStilStaand.SetActive(false);
-        hartBewegend.SetActive(true);
+    {
+        instructieTekst.DOFade(0, 0.5f);
+        animRegelRef.WederCrossFade(heelHartStilStaand, hartBewegend, bloemBewegend, 1f);
+        //heelHartStilStaand.SetActive(false);
+        //hartBewegend.SetActive(true);
         yield return new WaitForSeconds(6f);
     }
 

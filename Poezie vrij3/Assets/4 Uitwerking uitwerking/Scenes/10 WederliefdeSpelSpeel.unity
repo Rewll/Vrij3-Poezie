@@ -1053,7 +1053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &612646657
 Animator:
   serializedVersion: 5
@@ -1854,6 +1854,7 @@ GameObject:
   - component: {fileID: 1045005610}
   - component: {fileID: 1045005611}
   - component: {fileID: 1045005612}
+  - component: {fileID: 1045005613}
   m_Layer: 0
   m_Name: Machine Compleet
   m_TagString: Untagged
@@ -1956,6 +1957,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1045005613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045005609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69f7a6a12be35c4bb9db188d9f1bb0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animaties: []
+  startClip: 0
+  huidigeAnimatieNummer: 0
 --- !u!1 &1083314379
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,9 +2192,12 @@ MonoBehaviour:
   oppakTekst: {fileID: 2080421202}
   narcis: {fileID: 2001971906}
   anjer: {fileID: 120270721}
+  animRegelRef: {fileID: 1045005613}
+  instructieTekst: {fileID: 2080421202}
   heelHartStilStaandParent: {fileID: 1045005609}
   heelHartStilStaand: {fileID: 2144687658}
   hartBewegend: {fileID: 612646656}
+  bloemBewegend: {fileID: 103328784}
 --- !u!1 &1086182895
 GameObject:
   m_ObjectHideFlags: 0

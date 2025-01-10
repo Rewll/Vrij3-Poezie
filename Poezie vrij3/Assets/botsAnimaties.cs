@@ -30,7 +30,7 @@ public class botsAnimaties : MonoBehaviour
 
     public void wederLiefdeBotsAnimatie()
     {
-        Debug.Log("Hoi");
+        //Debug.Log("Hoi");
         midden = middenBerekenaar();
         botsParticlesObject.transform.position = midden;
         botsTeller++;

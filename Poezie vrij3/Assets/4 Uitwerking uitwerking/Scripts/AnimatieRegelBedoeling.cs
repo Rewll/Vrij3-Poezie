@@ -16,6 +16,13 @@ public class AnimatieRegelBedoeling : MonoBehaviour
         huidigeAnimatieNummer = animatieNummerOmNaarTeCrossFaden;
     }
 
+    public void WederCrossFade(GameObject stilstaand, GameObject bewegendHart, GameObject bewegendBloem, float crossFadeTijd)
+    {
+        stilstaand.GetComponent<SpriteRenderer>().DOFade(0, crossFadeTijd);
+        bewegendHart.GetComponent<SpriteRenderer>().DOFade(1, crossFadeTijd);
+        bewegendBloem.GetComponent<SpriteRenderer>().DOFade(1, crossFadeTijd);
+    }
+
     public void animatieStart()
     {
         huidigeAnimatieNummer = startClip;
