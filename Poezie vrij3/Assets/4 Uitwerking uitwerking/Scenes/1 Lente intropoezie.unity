@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189, y: -131}
+  m_AnchoredPosition: {x: 48, y: -125}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135043785
@@ -182,15 +182,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'En de ander op deze:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 88e1ec0925ab6f94db8e448264ba65f7, type: 2}
+  m_sharedMaterial: {fileID: 5087235473406317444, guid: 88e1ec0925ab6f94db8e448264ba65f7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279966676
-  m_fontColor: {r: 0.8301887, g: 0.10629099, b: 0.10629099, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -207,8 +207,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.65
-  m_fontSizeBase: 26.65
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -734,7 +734,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 24e47178a4d943b4e880e32c6f9565e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -856,11 +856,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 3d2cac202332962468c412a29818c165, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 361
+      value: 280
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 3d2cac202332962468c412a29818c165, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -167
+      value: -157
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 3d2cac202332962468c412a29818c165, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1028,11 +1028,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -33
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -177
+      value: -157
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1272,7 +1272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -232, y: -118}
+  m_AnchoredPosition: {x: -267, y: -118}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1385135949
@@ -1295,17 +1295,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Als jullie er klaar voor zijn, dan mag 1 iemand op deze knop drukken.
+  m_text: "Als jullie er klaar voor zijn, dan mag de \xE9\xE9n op deze knop drukken:"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 88e1ec0925ab6f94db8e448264ba65f7, type: 2}
+  m_sharedMaterial: {fileID: 5087235473406317444, guid: 88e1ec0925ab6f94db8e448264ba65f7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281597181
-  m_fontColor: {r: 0.990566, g: 0.9888691, b: 0.20158418, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1322,8 +1322,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.65
-  m_fontSizeBase: 26.65
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -67.96568, w: -65.30036}
+  m_margin: {x: 0, y: 0, z: -83.14543, w: -65.30036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

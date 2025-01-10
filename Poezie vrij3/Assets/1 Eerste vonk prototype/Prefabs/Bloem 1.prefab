@@ -53,6 +53,10 @@ PrefabInstance:
       value: Bloem 1
       objectReference: {fileID: 0}
     - target: {fileID: 7330082697846822484, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
+      propertyPath: m_fontSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330082697846822484, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -62,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7330082697846822484, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: m_fontColor.r
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7330082697846822484, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: m_fontSizeBase
@@ -70,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7330082697846822484, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190080
+      value: 4278190208
       objectReference: {fileID: 0}
     - target: {fileID: 7642116819769183987, guid: 589e9678456fa23499f38e7d2eeb011e, type: 3}
       propertyPath: m_Sprite
