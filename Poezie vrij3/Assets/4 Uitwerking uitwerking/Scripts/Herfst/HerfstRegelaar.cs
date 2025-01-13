@@ -37,19 +37,15 @@ public class HerfstRegelaar : MonoBehaviour
     [Space]
     //public Animator anjerAnimator;
     public AnimatieRegelBedoeling anjerAnimatieRegelaar;
-    [HideInInspector] public int anjerAnimatieTeller = 1;
+    public int anjerAnimatieTeller;
     [Space]
     //public Animator narcisAnimator;
     public AnimatieRegelBedoeling narcisAnimatieRegelaar;
-    [HideInInspector] public int narcisAnimatieTeller = 1;
+    public int narcisAnimatieTeller;
 
     [HideInInspector] public bool routineKlaar;
-
-    private void Start()
-    {
-        narcisAnimatieTeller = 1;
-        anjerAnimatieTeller = 1;
-    }
+    [Space]
+    public schermSchudder schudderRef;
 
     public void SpelersTerugRecoil()
     {
@@ -98,5 +94,4 @@ public class HerfstRegelaar : MonoBehaviour
         yield return new WaitForSeconds(1);
         routineKlaar = true;
     }
-
 }

@@ -38,9 +38,11 @@ public class HerfstGroei3 : HerfstBasisStaat
         Tween vliegTween = huidigeHalfBloem.transform.DOMove(halfBloemLogicaRef.hartPlek, .6f);
         yield return vliegTween.WaitForCompletion();
         huidigeHalfBloem.SetActive(false);
+        herfstRegelRef.schudderRef.schermSchudStop();
         herfstRegelRef.bloemResultaat(halfBloemLogicaRef.bloemVersie);
         yield return new WaitUntil(() => herfstRegelRef.routineKlaar);
-        herfstRegelRef.routineKlaar = false;
+        Debug.Log("klaar ermee");
+        herfstRegelRef.routineKlaar = false;      
         owner.SwitchState(typeof(HerfstBreek));
     }
 

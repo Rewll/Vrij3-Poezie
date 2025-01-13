@@ -39,6 +39,7 @@ public class HerfstGroei2 : HerfstBasisStaat
         yield return vliegTween.WaitForCompletion();
         huidigeHalfBloem.SetActive(false);
         herfstRegelRef.bloemResultaat(halfBloemLogicaRef.bloemVersie);
+        herfstRegelRef.schudderRef.SchermSchudden();
         yield return new WaitUntil(() => herfstRegelRef.routineKlaar);
         herfstRegelRef.routineKlaar = false;
         owner.SwitchState(typeof(HerfstGroei3));
