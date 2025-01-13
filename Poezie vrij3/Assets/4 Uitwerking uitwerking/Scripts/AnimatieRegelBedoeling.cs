@@ -11,6 +11,7 @@ public class AnimatieRegelBedoeling : MonoBehaviour
 
     public void crossfade(int animatieNummerOmNaarTeCrossFaden, float crossFadeTijd)
     {
+        //Debug.Log("gaat crossfaden van: " + huidigeAnimatieNummer + "naar " + animatieNummerOmNaarTeCrossFaden);
         animaties[huidigeAnimatieNummer].GetComponent<SpriteRenderer>().DOFade(0, crossFadeTijd);
         animaties[animatieNummerOmNaarTeCrossFaden].GetComponent<SpriteRenderer>().DOFade(1, crossFadeTijd);
         huidigeAnimatieNummer = animatieNummerOmNaarTeCrossFaden;

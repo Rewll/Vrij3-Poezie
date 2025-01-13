@@ -10,32 +10,47 @@ public class HerfstRegelaar : MonoBehaviour
     public GameObject Speler1;
     public GameObject Speler2;
     [Space]
+
     public Transform terugVliegPlek1;
     public Transform terugVliegPlek2;
     [Space]
+
     public Transform maxBloemPlek;
     public Transform minBloemPlek;
     [Space]
+
     public GameObject hart;
     public Image fadeVlak;
     [Space]
+
     public List<KeyCode> speler1KnoppenLijst = new List<KeyCode>();
     public List<KeyCode> speler2KnoppenLijst = new List<KeyCode>();
     [Space]
+
     public Transform hartPlek1;
     public Transform hartPlek2;
     [Space]
+
+    [Header("Animatie dingen")]
     public Animator hartAnim;
-    private int animatieTeller = 1;
-
-    public Animator anjerAnimator;
-    [HideInInspector] public int anjerAnimatieTeller = 0;
-
-    public Animator narcisAnimator;
-    [HideInInspector] public int narcisAnimatieTeller = 0;
+    private int hartAnimatieTeller = 1;
     [Space]
-    public bool routineKlaar;
-    
+    //public Animator anjerAnimator;
+    public AnimatieRegelBedoeling anjerAnimatieRegelaar;
+    [HideInInspector] public int anjerAnimatieTeller = 1;
+    [Space]
+    //public Animator narcisAnimator;
+    public AnimatieRegelBedoeling narcisAnimatieRegelaar;
+    [HideInInspector] public int narcisAnimatieTeller = 1;
+
+    [HideInInspector] public bool routineKlaar;
+
+    private void Start()
+    {
+        narcisAnimatieTeller = 1;
+        anjerAnimatieTeller = 1;
+    }
+
     public void SpelersTerugRecoil()
     {
         Speler1.transform.DOMove(terugVliegPlek1.position, .5f);
@@ -67,19 +82,19 @@ public class HerfstRegelaar : MonoBehaviour
         {
             Debug.Log("Bloem 1 groei!");
             anjerAnimatieTeller++;
-            anjerAnimator.SetInteger("anjerTeller", anjerAnimatieTeller);
-            //anjeranimatie++
+            //anjerAnimator.SetInteger("anjerTeller", anjerAnimatieTeller);
+            anjerAnimatieRegelaar.crossfade(anjerAnimatieTeller, 1f);
         }
         else if (bloemVersie == bloemVersies.Speler2Bloem)
         {
             Debug.Log("Bloem 2 groei!");
             narcisAnimatieTeller++;
-            narcisAnimator.SetInteger("narcisTeller", narcisAnimatieTeller);
-            //narcisanimatie++
+            //narcisAnimator.SetInteger("narcisTeller", narcisAnimatieTeller);
+            narcisAnimatieRegelaar.crossfade(narcisAnimatieTeller, 1f);
         }
         //Hartanimatie vooruit
-        animatieTeller++;
-        hartAnim.SetInteger("AnimatieTeller", animatieTeller);
+        hartAnimatieTeller++;
+        hartAnim.SetInteger("AnimatieTeller", hartAnimatieTeller);
         yield return new WaitForSeconds(1);
         routineKlaar = true;
     }

@@ -13,6 +13,9 @@ public class HerfstBeginStaat : HerfstBasisStaat
         DOTween.SetTweensCapacity(2000, 100);
         herfstRegelRef = GetComponent<HerfstRegelaar>();
         GetComponent<HerfstAgent>().huidigeStaat = HerfstAgent.herfstStaten.HerfstStartStaat;
+
+        herfstRegelRef.anjerAnimatieRegelaar.animatieStart();
+        herfstRegelRef.narcisAnimatieRegelaar.animatieStart();
     }
 
     public override void OnEnter()
