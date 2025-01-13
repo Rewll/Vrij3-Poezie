@@ -19,6 +19,13 @@ public class LenteVeldStaat : LenteBasisStaat
     [Space]
     public SpriteRenderer bloemtjs;
     [Space]
+    public GameObject poeziestuk;
+    public GameObject eersteNarcis;
+    public GameObject eersteAnjer;
+    private SpriteRenderer eersteAnjSR;
+    private SpriteRenderer eersteNarcSR;
+    private int teller;
+    [Space]
     public float maxAfstand;
     public float afstand;
     [Space]
@@ -30,7 +37,16 @@ public class LenteVeldStaat : LenteBasisStaat
 
     private void Start()
     {
+        eersteAnjSR = eersteAnjer.transform.GetChild(0).GetComponent<SpriteRenderer>();
+        eersteNarcSR = eersteNarcis.transform.GetChild(0).GetComponent<SpriteRenderer>();
+
         fadeVlak1.DOFade(1, 0.0001f);
+
+        eersteAnjer.GetComponent<bloem>().uitFaden(0.0001f);
+        eersteNarcis.GetComponent<bloem>().uitFaden(0.0001f);
+
+        poeziestuk.GetComponent<SpriteRenderer>().DOFade(0, 0.0001f);
+
         foreach (GameObject stuk in hartOnderdelen)
         {
             stuk.SetActive(false);
@@ -42,9 +58,30 @@ public class LenteVeldStaat : LenteBasisStaat
         kamera.SetActive(true);
         GO = GetComponent<GameManagerOpslag>();
         GO.verplaatsSpelers(speler1StartPlek.position, speler2StartPlek.position);
-        fadeVlak1.DOFade(0, 2);
+        StartCoroutine(startRoutine());
     }
 
+    IEnumerator startRoutine()
+    {
+        Tween fadeTween = fadeVlak1.DOFade(0, 2);
+        yield return fadeTween.WaitForCompletion();
+        yield return new WaitForSeconds(1f);
+        Tween poezieFade = poeziestuk.GetComponent<SpriteRenderer>().DOFade(1, 1);
+        yield return poezieFade.WaitForCompletion();
+        yield return new WaitForSeconds(3f);
+        eersteNarcis.GetComponent<bloem>().faden();
+        eersteAnjer.GetComponent<bloem>().faden();
+    }
+
+    public void terugFade()
+    {
+        teller++;
+        if (teller > 1 && teller < 3)
+        {
+            Tween poezieFade = poeziestuk.GetComponent<SpriteRenderer>().DOFade(0, 1);
+        }
+    }
+    
     public override void OnUpdate()
     {
         afstand = Vector2.Distance(GO.speler1.transform.position, GO.speler2.transform.position);

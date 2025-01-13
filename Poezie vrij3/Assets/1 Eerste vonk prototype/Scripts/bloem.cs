@@ -112,4 +112,10 @@ public class bloem : MonoBehaviour
         knopTekst.DOFade(1, 2);
         SR.DOFade(1, 2);
     }
+
+    public void uitFaden(float fadeTijd)
+    {
+        knopTekst.DOFade(0, fadeTijd);
+        SR.DOFade(0, fadeTijd);
+    }
 }

@@ -709,10 +709,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
@@ -720,7 +724,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1648688023}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 609206335}
+    - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
@@ -728,11 +740,23 @@ PrefabInstance:
       value: plukTellen
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: terugFade
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: SamenBloemChecker, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: LenteVeldStaat, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
@@ -749,11 +773,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.21
+      value: 4.9
       objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.45415
+      value: -2.31
       objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1843,7 +1867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &330445916
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3420,7 +3444,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpelRegelaar
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3529,6 +3553,9 @@ MonoBehaviour:
   speler2StartPlek: {fileID: 533524895}
   fadeVlak1: {fileID: 330445917}
   bloemtjs: {fileID: 1931143901}
+  poeziestuk: {fileID: 1389390035}
+  eersteNarcis: {fileID: 772316195}
+  eersteAnjer: {fileID: 1376119013}
   maxAfstand: 2
   afstand: 0
   hartOnderdelen:
@@ -4199,6 +4226,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 479268629}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.101}
+--- !u!1 &772316195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1092308134234397898, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+  m_PrefabInstance: {fileID: 955367595}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &780746018 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6008401904821330869, guid: 9b56bdeaeb5b0564a8fd42b1955d2c23, type: 3}
@@ -4628,8 +4660,7 @@ Transform:
   m_LocalPosition: {x: -19.874702, y: -2.1600513, z: -0.13671398}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1389390037}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &926095991
@@ -4684,10 +4715,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
@@ -4695,7 +4730,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1648688023}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 609206335}
+    - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
@@ -4703,11 +4746,23 @@ PrefabInstance:
       value: plukTellen
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: terugFade
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: SamenBloemChecker, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: LenteVeldStaat, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
@@ -4724,11 +4779,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.3
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8283
+      value: -2.19
       objectReference: {fileID: 0}
     - target: {fileID: 6887873180136802430, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6430,6 +6485,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6887873180136802430, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
   m_PrefabInstance: {fileID: 1054444844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1376119013 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1092308134234397898, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+  m_PrefabInstance: {fileID: 198593135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1389390035
 GameObject:
   m_ObjectHideFlags: 0
@@ -6508,12 +6568,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389390035}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.064703, y: -7.4113083, z: 0.13671398}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
   m_LocalScale: {x: 0.7923492, y: 0.82322, z: 0.82322}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 904247564}
+  m_Father: {fileID: 1544842285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1389390038
 Animator:
@@ -6951,6 +7011,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1389390037}
   - {fileID: 1263126634}
   - {fileID: 926095992}
   - {fileID: 523162937}
@@ -8913,6 +8974,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1990651643}
         m_TargetAssemblyTypeName: botsAnimaties, Assembly-CSharp
         m_MethodName: lenteBotsAnimatie
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 609206335}
+        m_TargetAssemblyTypeName: LenteVeldStaat, Assembly-CSharp
+        m_MethodName: terugFade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
