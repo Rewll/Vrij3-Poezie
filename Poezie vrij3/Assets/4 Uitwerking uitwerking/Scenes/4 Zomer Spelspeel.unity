@@ -831,6 +831,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7305991576155158699, guid: 65c8a11be6e99b045a7bd8db95ace5bb, type: 3}
   m_PrefabInstance: {fileID: 1782776995}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1034810330 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6946477274034605347, guid: d68453b5955d2f74e84b86b323dfcf40, type: 3}
+  m_PrefabInstance: {fileID: 8301692649989215415}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1053943695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,6 +1459,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4051858436773714983, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+      propertyPath: middenPunt
+      value: 
+      objectReference: {fileID: 1034810330}
+    - target: {fileID: 4051858436773714983, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
       propertyPath: andereSpeler
       value: 
       objectReference: {fileID: 2061313004}
@@ -1801,6 +1810,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4051858436773714983, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+      propertyPath: middenPunt
+      value: 
+      objectReference: {fileID: 1034810330}
     - target: {fileID: 4051858436773714983, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
       propertyPath: andereSpeler
       value: 

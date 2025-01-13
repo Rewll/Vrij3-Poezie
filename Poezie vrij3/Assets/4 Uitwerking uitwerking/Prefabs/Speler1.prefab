@@ -207,6 +207,13 @@ MonoBehaviour:
   beweegRichting: {x: 0, y: 0}
   beweegSnelheid: 2
   andereSpeler: {fileID: 0}
+  middenPunt: {fileID: 0}
+  terugBeweegSnelheid: 10
+  xAfstandTotMidden: 0
+  maxX: 8.5
+  yAfstandTotMidden: 0
+  maxY: 5
+  spelerInZicht: 0
 --- !u!114 &5073729009833522032
 MonoBehaviour:
   m_ObjectHideFlags: 0

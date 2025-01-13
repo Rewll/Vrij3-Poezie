@@ -457,9 +457,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4051858436773714983, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+      propertyPath: middenPunt
+      value: 
+      objectReference: {fileID: 1241548170}
+    - target: {fileID: 4051858436773714983, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
       propertyPath: andereSpeler
       value: 
       objectReference: {fileID: 1296842672}
+    - target: {fileID: 4051858436773714983, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
+      propertyPath: moetTerugVliegen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7252195248704095739, guid: ae5b1f7c40c5eb0469701ce3fa3fe230, type: 3}
       propertyPath: m_Name
       value: Speler1
@@ -717,9 +725,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4051858436773714983, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+      propertyPath: middenPunt
+      value: 
+      objectReference: {fileID: 1241548170}
+    - target: {fileID: 4051858436773714983, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
       propertyPath: andereSpeler
       value: 
       objectReference: {fileID: 280671874}
+    - target: {fileID: 4051858436773714983, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
+      propertyPath: moetTerugVliegen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7252195248704095739, guid: b0b4cdc332db30d49a9b25bb4c251213, type: 3}
       propertyPath: m_Name
       value: Speler2
@@ -2802,6 +2818,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 527709061}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1241548170 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1790062502042870596, guid: cfcc73132f8c29349bbf46041afe3156, type: 3}
+  m_PrefabInstance: {fileID: 5491077477952719016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1271102982
 GameObject:
   m_ObjectHideFlags: 0
