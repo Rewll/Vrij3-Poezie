@@ -20,6 +20,7 @@ public class IndicatorOpslag : MonoBehaviour
     }
     public void indicatorInstel()
     {
+        indicatieVlak.SetActive(false);
         knopLetter.text = knop.ToString();
     }
     private void Update()

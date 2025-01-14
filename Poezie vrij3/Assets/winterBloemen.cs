@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
+using TMPro;
 
 public class winterBloemen : MonoBehaviour
 {
@@ -15,10 +16,15 @@ public class winterBloemen : MonoBehaviour
     public bool alleStukjesGeplaatst;
     public int stukjeTeller;
     [Space]
-    public GameObject instructieTekst;
+    public GameObject instructieTekstObject;
+    public TMP_Text instructieTekst;
+    public TMP_Text plaatsTekst;
 
     private void Start()
     {
+        instructieTekst.DOFade(0, 0.0001f);
+        plaatsTekst.DOFade(0, 0.0001f);
+
         foreach (GameObject stukje in geplaatsteStukjes)
         {
             stukje.SetActive(false);
@@ -36,15 +42,23 @@ public class winterBloemen : MonoBehaviour
             stukjeTeller++;
             if (stukjeTeller == 1)
             {
-                instructieTekst.SetActive(false);
+                StartCoroutine(tekstUitFader());
             }
             if (stukjeTeller == 4)
             {
                 alleStukjesGeplaatst = true;
+                plaatsTekst.DOFade(1, 2f);
                 alsStukjesCompleet.Invoke();
             }
         }
 
+    }
+
+    IEnumerator tekstUitFader()
+    {
+        Tween fadeTween = instructieTekst.DOFade(0, 1f);
+        yield return fadeTween.WaitForCompletion();
+        instructieTekstObject.SetActive(false);
     }
 
     void activeerStukje(stukjeVarianten variant)
@@ -77,7 +91,8 @@ public class winterBloemen : MonoBehaviour
 
     IEnumerator machineUitElkaarVallen()
     {
-        yield return new WaitForSeconds(.5f);
+        plaatsTekst.DOFade(0, 2f);
+        yield return new WaitForSeconds(1.5f);
         foreach (GameObject stukje in geplaatsteStukjes)
         {
             stukje.GetComponent<Animator>().speed = 5f;

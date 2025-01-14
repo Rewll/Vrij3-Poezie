@@ -158,7 +158,6 @@ MonoBehaviour:
   bouwUitlegTekst: {fileID: 2079642550}
   knopTekst1: {fileID: 1107225529}
   knopTekst2: {fileID: 1835909564}
-  eindeTekst: {fileID: 0}
   anjerMachineKlaar: 0
   narcisMachineKlaar: 0
 --- !u!114 &11334159
@@ -407,8 +406,6 @@ MonoBehaviour:
   bloemPlaatsKnop: 101
   speler: 0
   bloemSoortSpeler: 0
-  tutorialTekst1: {fileID: 2079642548}
-  tutorialTekst2: {fileID: 770333927}
   stukInHanden: {fileID: 0}
   handGevuld: 0
   stukjesCompleet: 0
@@ -720,7 +717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &428192203
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1717,7 +1714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &770333928
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3488,7 +3485,9 @@ MonoBehaviour:
   - {fileID: 1253264297}
   alleStukjesGeplaatst: 0
   stukjeTeller: 0
-  instructieTekst: {fileID: 1835909562}
+  instructieTekstObject: {fileID: 1835909562}
+  instructieTekst: {fileID: 1835909564}
+  plaatsTekst: {fileID: 428192204}
 --- !u!1 &1320365154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3780,7 +3779,9 @@ MonoBehaviour:
   - {fileID: 868537222}
   alleStukjesGeplaatst: 0
   stukjeTeller: 0
-  instructieTekst: {fileID: 1107225527}
+  instructieTekstObject: {fileID: 1107225527}
+  instructieTekst: {fileID: 1107225529}
+  plaatsTekst: {fileID: 770333929}
 --- !u!1 &1459447202
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,8 +5082,6 @@ MonoBehaviour:
   bloemPlaatsKnop: 305
   speler: 1
   bloemSoortSpeler: 1
-  tutorialTekst1: {fileID: 1835909562}
-  tutorialTekst2: {fileID: 428192202}
   stukInHanden: {fileID: 0}
   handGevuld: 0
   stukjesCompleet: 0

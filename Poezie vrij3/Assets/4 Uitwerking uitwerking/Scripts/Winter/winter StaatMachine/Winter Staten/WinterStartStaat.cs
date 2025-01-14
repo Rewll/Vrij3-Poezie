@@ -49,7 +49,7 @@ public class WinterStartStaat : WinterBasisStaat
     {
         if (!knopTekst1.gameObject.activeInHierarchy && !knopTekst2.gameObject.activeInHierarchy)
         {
-            bouwUitlegTekst.gameObject.SetActive(false);
+            bouwUitlegTekst.DOFade(0,2f);
         }
         if (anjerMachineKlaar && narcisMachineKlaar)
         {

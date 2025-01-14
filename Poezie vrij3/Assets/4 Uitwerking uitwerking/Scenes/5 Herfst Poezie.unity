@@ -719,6 +719,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8802421298611906976, guid: 3d2cac202332962468c412a29818c165, type: 3}
+      propertyPath: actief
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802421298611906976, guid: 3d2cac202332962468c412a29818c165, type: 3}
+      propertyPath: poezieIndicator
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -890,6 +898,14 @@ PrefabInstance:
     - target: {fileID: 2696273125784032678, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802421298611906976, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
+      propertyPath: actief
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802421298611906976, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
+      propertyPath: poezieIndicator
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

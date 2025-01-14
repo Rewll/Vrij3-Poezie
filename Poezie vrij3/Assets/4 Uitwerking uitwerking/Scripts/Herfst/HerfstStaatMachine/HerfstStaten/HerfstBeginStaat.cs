@@ -16,6 +16,7 @@ public class HerfstBeginStaat : HerfstBasisStaat
 
         herfstRegelRef.anjerAnimatieRegelaar.animatieStart();
         herfstRegelRef.narcisAnimatieRegelaar.animatieStart();
+        Tween fadeTween = herfstRegelRef.fadeVlak.DOFade(1, 0.000001f);
     }
 
     public override void OnEnter()
@@ -24,8 +25,9 @@ public class HerfstBeginStaat : HerfstBasisStaat
     }
     IEnumerator beginRoutine()
     {
-        //fade in
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2);
+        Tween fadeTween = herfstRegelRef.fadeVlak.DOFade(0, 3f);
+        yield return fadeTween.WaitForCompletion();
         owner.SwitchState(typeof(HerfstGroei1));
     }
 
