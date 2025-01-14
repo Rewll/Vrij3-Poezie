@@ -7,18 +7,35 @@ using DG.Tweening;
 
 public class IndicatorOpslag : MonoBehaviour
 {
-    public KeyCode knop;
+    public bool poezieIndicator;
     [Space]
     public bool actief;
+    public KeyCode knop;
     public Image kleurVlak;
     public GameObject indicatieVlak;
     public TMP_Text knopLetter;
-
+    private void Start()
+    {
+        indicatieVlak.SetActive(false);
+    }
     public void indicatorInstel()
     {
         knopLetter.text = knop.ToString();
     }
     private void Update()
+    {
+        if (!poezieIndicator)
+        {
+            realtimeLogica();
+        }
+        else if (poezieIndicator)
+        {
+            poezieIndicatorLogica();
+        }
+
+    }
+
+    void realtimeLogica()
     {
         if (actief)
         {
@@ -26,15 +43,23 @@ public class IndicatorOpslag : MonoBehaviour
             {
                 indicatieVlak.SetActive(true);
             }
-            else
+            if (Input.GetKeyUp(knop))
             {
                 indicatieVlak.SetActive(false);
             }
         }
-        //else
-        //{
-        //    indicatieVlak.SetActive(false);
-        //}
+    }
+
+    void poezieIndicatorLogica()
+    {
+        if (actief)
+        {
+            if (Input.GetKey(knop))
+            {
+                indicatieVlak.SetActive(true);
+                actief = false;
+            }
+        }
     }
 
     public void fadeInMethod(float fadeSnelHeid)

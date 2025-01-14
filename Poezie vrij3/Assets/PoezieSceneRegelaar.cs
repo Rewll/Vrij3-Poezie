@@ -72,12 +72,10 @@ public class PoezieSceneRegelaar : MonoBehaviour
             if (Input.GetKey(speler1Knop))
             {
                 speler1Klaar = true;
-                indicatorRef1.actief = false;
             }
             if (Input.GetKey(speler2Knop))
             {
                 speler2Klaar = true;
-                indicatorRef2.actief = false;
             }
 
             if (speler1Klaar && speler2Klaar)
