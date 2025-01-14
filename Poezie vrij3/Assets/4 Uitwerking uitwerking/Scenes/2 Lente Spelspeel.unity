@@ -3141,7 +3141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1776560067433252196, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.083
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 1776560067433252196, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3172,8 +3172,12 @@ PrefabInstance:
       value: 64.832
       objectReference: {fileID: 0}
     - target: {fileID: 2582396840986132352, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
+      propertyPath: m_fontSize
+      value: 3.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2582396840986132352, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 3.15
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: bloemKnop
@@ -3537,7 +3541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82bf8a5565ea4a443867de0d6ae44b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  huidigeStaat: 2
+  huidigeStaat: 0
 --- !u!114 &609206333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5230,10 +5234,6 @@ PrefabInstance:
     - target: {fileID: 2582396840986132352, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: m_text
       value: E
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582396840986132352, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
-      propertyPath: m_fontSize
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2582396840986132352, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: m_fontSizeBase
@@ -7204,7 +7204,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345270323484610589, guid: 9b56bdeaeb5b0564a8fd42b1955d2c23, type: 3}
       propertyPath: m_text
-      value: "Pluk deze bloemen:\t\nmet de knop die eropstaat"
+      value: 'Pluk deze bloemen
+
+        met de knop die eropstaat'
       objectReference: {fileID: 0}
     - target: {fileID: 3345270323484610589, guid: 9b56bdeaeb5b0564a8fd42b1955d2c23, type: 3}
       propertyPath: m_fontSize
@@ -7320,7 +7322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6008401904821330869, guid: 9b56bdeaeb5b0564a8fd42b1955d2c23, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.67
+      value: -0.84
       objectReference: {fileID: 0}
     - target: {fileID: 6008401904821330869, guid: 9b56bdeaeb5b0564a8fd42b1955d2c23, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -9422,7 +9424,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345270323484610589, guid: 9b56bdeaeb5b0564a8fd42b1955d2c23, type: 3}
       propertyPath: m_text
-      value: "Pluk deze bloemen:\t\tmet de knop die eropstaat"
+      value: 'Pluk deze bloemen
+
+        met de knop die eropstaat'
       objectReference: {fileID: 0}
     - target: {fileID: 3345270323484610589, guid: 9b56bdeaeb5b0564a8fd42b1955d2c23, type: 3}
       propertyPath: m_fontSize
@@ -9526,7 +9530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6008401904821330869, guid: 9b56bdeaeb5b0564a8fd42b1955d2c23, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.98
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6008401904821330869, guid: 9b56bdeaeb5b0564a8fd42b1955d2c23, type: 3}
       propertyPath: m_AnchoredPosition.y

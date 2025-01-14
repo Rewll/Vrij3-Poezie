@@ -30,6 +30,7 @@ public class WederliefdeVereniging : WederLiefdeBasisStaat
     private void Start()
     {
         regelaarRef = GetComponent<WederliefdeRegelaar>();
+        hartHeelStilstaand.SetActive(false);
     }
 
     public override void OnEnter()
@@ -46,7 +47,6 @@ public class WederliefdeVereniging : WederLiefdeBasisStaat
         stuk2Start = regelaarRef.stuk2.transform.position;
         stuk3Start = regelaarRef.stuk3.transform.position;
         stuk4Start = regelaarRef.stuk4.transform.position;
-
     }
 
     public void BotsUitvoer()

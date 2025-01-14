@@ -47,7 +47,7 @@ public class winterStukOppak : MonoBehaviour
                     {
                         handGevuld = false;
                         collision.gameObject.GetComponent<winterBloemen>().plaatsStukje(stukInHanden);
-                        tutorialTekst1.SetActive(false);
+                        //tutorialTekst1.SetActive(false);
                         stukInHanden = null;
                     }
                 }
@@ -72,7 +72,7 @@ public class winterStukOppak : MonoBehaviour
     public void compleetOpTrue()
     {
         stukjesCompleet = true;
-        tutorialTekst1.SetActive(false);
-        tutorialTekst2.SetActive(true);
+        //tutorialTekst1.SetActive(false);
+        //tutorialTekst2.SetActive(true);
     }
 }

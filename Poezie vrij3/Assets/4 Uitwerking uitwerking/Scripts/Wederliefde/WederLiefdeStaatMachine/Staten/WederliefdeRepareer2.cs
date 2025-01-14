@@ -50,6 +50,7 @@ public class WederliefdeRepareer2 : WederLiefdeBasisStaat
 
     IEnumerator botsRoutine()
     {
+        magBotsen = false;
         regelaarRef.alsSuccesVolleBots.Invoke();
         regelaarRef.spelersTerugSlag(spelerTerugSlagHoeveelHeid);
         yield return new WaitForSeconds(.5f);

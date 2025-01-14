@@ -14,6 +14,8 @@ public class winterBloemen : MonoBehaviour
     public List<GameObject> geplaatsteStukjes = new List<GameObject>();
     public bool alleStukjesGeplaatst;
     public int stukjeTeller;
+    [Space]
+    public GameObject instructieTekst;
 
     private void Start()
     {
@@ -32,6 +34,10 @@ public class winterBloemen : MonoBehaviour
             activeerStukje(stukje.GetComponent<winterStukken>().stukjeVariant);
             Destroy(stukje);
             stukjeTeller++;
+            if (stukjeTeller == 1)
+            {
+                instructieTekst.SetActive(false);
+            }
             if (stukjeTeller == 4)
             {
                 alleStukjesGeplaatst = true;
@@ -63,7 +69,7 @@ public class winterBloemen : MonoBehaviour
     }
 
     public void plaatsBloem(GameObject bloemInKwestie)
-    {
+    {        
         bloemInKwestie.transform.parent = transform;
         bloemInKwestie.transform.position = transform.position;
         StartCoroutine(machineUitElkaarVallen());

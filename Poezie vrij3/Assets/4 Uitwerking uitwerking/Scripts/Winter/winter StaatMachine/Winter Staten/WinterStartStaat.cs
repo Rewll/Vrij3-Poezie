@@ -5,15 +5,15 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using DG.Tweening;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class WinterStartStaat : WinterBasisStaat
 {
     public Image fadeVlak;
     [Space]
-    public TMP_Text tutorialTekst1;
-    public TMP_Text tutorialTekst2;
-    [Space]
-    public TMP_Text eindeTekst;
+    public TMP_Text bouwUitlegTekst;
+    public TMP_Text knopTekst1;
+    public TMP_Text knopTekst2;
     [Space]
     public bool anjerMachineKlaar;
     public bool narcisMachineKlaar;
@@ -21,10 +21,10 @@ public class WinterStartStaat : WinterBasisStaat
     private void Start()
     {
         DOTween.SetTweensCapacity(2000, 100);
-        tutorialTekst1.DOFade(0, 0.00001f);
-        tutorialTekst2.DOFade(0, 0.00001f);
+        bouwUitlegTekst.DOFade(0, 0.00001f);
+        knopTekst1.DOFade(0, 0.00001f);
+        knopTekst2.DOFade(0, 0.00001f);
         fadeVlak.DOFade(1, 0.00001f);
-        eindeTekst.DOFade(0, 0.00001f);
     }
 
     public override void OnEnter()
@@ -40,12 +40,17 @@ public class WinterStartStaat : WinterBasisStaat
         Tween fadeTween = fadeVlak.DOFade(0, 2f);
         yield return fadeTween.WaitForCompletion();
         yield return new WaitForSeconds(1f);
-        tutorialTekst1.DOFade(1, 1f);
-        tutorialTekst2.DOFade(1, 1f);
+        bouwUitlegTekst.DOFade(1, 1f);
+        knopTekst1.DOFade(1, 1f);
+        knopTekst2.DOFade(1, 1f);
     }
 
     public override void OnUpdate()
     {
+        if (!knopTekst1.gameObject.activeInHierarchy && !knopTekst2.gameObject.activeInHierarchy)
+        {
+            bouwUitlegTekst.gameObject.SetActive(false);
+        }
         if (anjerMachineKlaar && narcisMachineKlaar)
         {
             narcisMachineKlaar = false;
@@ -59,8 +64,7 @@ public class WinterStartStaat : WinterBasisStaat
         yield return new WaitForSeconds(2f);
         Tween fadeTween = fadeVlak.DOFade(1, 4f);
         yield return fadeTween.WaitForCompletion();
-        Debug.Log("Scene Klaar!");
-        eindeTekst.DOFade(1, .5f);
+        SceneManager.LoadScene(9);
     }
 
     public override void OnExit()

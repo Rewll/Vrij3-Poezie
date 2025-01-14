@@ -31,7 +31,6 @@ public class WederliefdeStartStaat : WederLiefdeBasisStaat
         yield return new WaitForSeconds(2f);
         Tween fadeTween = regelaarRef.fadeVlak.DOFade(0, 2f);
         yield return fadeTween.WaitForCompletion();
-        //stukjes laten zien
         yield return new WaitForSeconds(1f);
         owner.SwitchState(typeof(WederliefdeRepareer1));
     }

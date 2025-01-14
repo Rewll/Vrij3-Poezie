@@ -62,7 +62,7 @@ public class PoezieSceneRegelaar : MonoBehaviour
         Tween fadeTween = fadeVlak.DOFade(1, 2);
         yield return fadeTween.WaitForCompletion();
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(volgendeSceneNummer - 1);
+        SceneManager.LoadScene(volgendeSceneNummer);
     }
 
     void knoppenBedoeling()

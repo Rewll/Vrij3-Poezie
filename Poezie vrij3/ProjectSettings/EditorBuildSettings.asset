@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/4 Uitwerking uitwerking/Scenes/0 Startscherm.unity
+    guid: 46892e17017c349498940ff779e85768
+  - enabled: 1
     path: Assets/4 Uitwerking uitwerking/Scenes/1 Lente intropoezie.unity
     guid: 963434c0d5abd624d83370f72fb7cdec
   - enabled: 1

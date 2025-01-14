@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class WederliefdeBloem : WederLiefdeBasisStaat
 {
+    WederliefdeRegelaar regelaarRef;
     public TMP_Text oppakTekst;
     public GameObject narcis;
     public GameObject anjer;
@@ -23,11 +25,14 @@ public class WederliefdeBloem : WederLiefdeBasisStaat
 
     private void Start()
     {
+        regelaarRef = GetComponent<WederliefdeRegelaar>();
         oppakTekst.DOFade(0, 0.00001f);
+
         narcis.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(0, 0.00001f);
         anjer.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(0, 0.00001f);
         heelHartStilStaandParent.GetComponent<BoxCollider2D>().enabled = false;
         hartBewegend.GetComponent<SpriteRenderer>().DOFade(0, 0.00001f);
+
         bloemBewegend.GetComponent<SpriteRenderer>().DOFade(0, 0.00001f);
     }
 
@@ -56,9 +61,11 @@ public class WederliefdeBloem : WederLiefdeBasisStaat
     {
         instructieTekst.DOFade(0, 0.5f);
         animRegelRef.WederCrossFade(heelHartStilStaand, hartBewegend, bloemBewegend, 1f);
-        //heelHartStilStaand.SetActive(false);
-        //hartBewegend.SetActive(true);
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(15f);
+        Tween fadeTween = regelaarRef.fadeVlak.DOFade(1, 2);
+        yield return fadeTween.WaitForCompletion();
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(11);
     }
 
     public override void OnUpdate()

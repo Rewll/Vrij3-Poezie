@@ -69,7 +69,7 @@ public class LenteBloemPlaatsStaat : LenteBasisStaat
         yield return fadeTween.WaitForCompletion();
         yield return new WaitForSeconds(2f);
         Debug.Log("Volgende scene !");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
 
     public void OverigeBloemenUitZetten(GameObject parent)

@@ -30,7 +30,7 @@ public class ZomerEinde : ZomerBasisStaat
         yield return fadeUit.WaitForCompletion();
         //zomer afgelopen
         Debug.Log("Zomer afgelopen doei");
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(5);
     }
 
     public override void OnUpdate()

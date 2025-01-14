@@ -66,7 +66,7 @@ public class HerfstBreek : HerfstBasisStaat
         yield return fadeTween.WaitForCompletion();
         yield return new WaitForSeconds(1);
         //Debug.Log("Volgende bitch");
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(7);
     }
 
     public override void OnExit()
