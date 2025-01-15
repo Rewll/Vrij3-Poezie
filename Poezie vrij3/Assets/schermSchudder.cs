@@ -13,6 +13,7 @@ public class schermSchudder : MonoBehaviour
     private void Start()
     {
         perlin = cinVirtCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        perlin.m_AmplitudeGain = 0;
     }
 
     public void SchermSchudden()

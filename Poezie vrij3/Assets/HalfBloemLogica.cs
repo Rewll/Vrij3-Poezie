@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -98,28 +98,27 @@ public class HalfBloemLogica : MonoBehaviour
 
 
     void knopInit(KeyCode knopInKwestie)
-    {
-        knopTekst.text = knopInKwestie.ToString();
+    {    
         canvas.SetActive(true);
-        //if (knopInKwestie == KeyCode.UpArrow)
-        //{
-        //    //pijltje logo
-        //}
-        //if (knopInKwestie == KeyCode.DownArrow)
-        //{
-        //    //pijltje logo
-        //}
-        //if (knopInKwestie == KeyCode.RightArrow)
-        //{
-        //    //pijltje logo
-        //}
-        //if (knopInKwestie == KeyCode.LeftArrow)
-        //{
-        //    //pijltje logo
-        //}
-        //else
-        //{
-
-        //}
+        if (knopInKwestie == KeyCode.UpArrow)
+        {
+            knopTekst.text = "↑";
+        }
+        else if (knopInKwestie == KeyCode.DownArrow)
+        {
+            knopTekst.text = "↓";
+        }
+        else if(knopInKwestie == KeyCode.RightArrow)
+        {
+            knopTekst.text = "→";
+        }
+        else if(knopInKwestie == KeyCode.LeftArrow)
+        {
+            knopTekst.text = "←";
+        }
+        else
+        {
+            knopTekst.text = knopInKwestie.ToString();
+        }
     }
 }

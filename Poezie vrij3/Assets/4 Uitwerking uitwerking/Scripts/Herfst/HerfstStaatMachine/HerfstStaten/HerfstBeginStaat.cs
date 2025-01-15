@@ -13,7 +13,6 @@ public class HerfstBeginStaat : HerfstBasisStaat
         DOTween.SetTweensCapacity(2000, 100);
         herfstRegelRef = GetComponent<HerfstRegelaar>();
         GetComponent<HerfstAgent>().huidigeStaat = HerfstAgent.herfstStaten.HerfstStartStaat;
-
         herfstRegelRef.anjerAnimatieRegelaar.animatieStart();
         herfstRegelRef.narcisAnimatieRegelaar.animatieStart();
         Tween fadeTween = herfstRegelRef.fadeVlak.DOFade(1, 0.000001f);

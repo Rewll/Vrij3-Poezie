@@ -50,7 +50,7 @@ public class hartHeelLogica : MonoBehaviour
 
     IEnumerator alsBloemPlaatsLogica()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         anjerOpHart.SetActive(false);
         narcisOpHart.SetActive(false);
         alsBloemenGeplaatst.Invoke();

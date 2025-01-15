@@ -9,7 +9,6 @@ using UnityEngine.SceneManagement;
 public class WederliefdeBloem : WederLiefdeBasisStaat
 {
     WederliefdeRegelaar regelaarRef;
-    public TMP_Text oppakTekst;
     public GameObject narcis;
     public GameObject anjer;
     [Space]
@@ -26,7 +25,7 @@ public class WederliefdeBloem : WederLiefdeBasisStaat
     private void Start()
     {
         regelaarRef = GetComponent<WederliefdeRegelaar>();
-        oppakTekst.DOFade(0, 0.00001f);
+        instructieTekst.DOFade(0, 0.00001f);
 
         narcis.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(0, 0.00001f);
         anjer.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(0, 0.00001f);
@@ -39,13 +38,14 @@ public class WederliefdeBloem : WederLiefdeBasisStaat
     public override void OnEnter()
     {
         GetComponent<WederLiefdeAgent>().huidigeStaat = WederLiefdeAgent.WederLiefdeFSMStaten.WederliefdeBloem;
-        
+
         StartCoroutine(startRoutine());
     }
 
     IEnumerator startRoutine()
     {
-        Tween fadeTween = oppakTekst.DOFade(1, 1);
+        Debug.Log("test");
+        Tween fadeTween = instructieTekst.DOFade(1, 1);
         yield return fadeTween.WaitForCompletion();
         narcis.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(1, 1f);
         anjer.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(1, 1f);
@@ -54,12 +54,19 @@ public class WederliefdeBloem : WederLiefdeBasisStaat
 
     public void hartBewegenEinde()
     {
+        StartCoroutine(tekstVerdwijnen());
         StartCoroutine(hartBewegen());
+    }
+
+    IEnumerator tekstVerdwijnen()
+    {
+        Tween tekstFadeTween = instructieTekst.DOFade(0, 0.5f);
+        yield return tekstFadeTween.WaitForCompletion();
+        instructieTekst.gameObject.SetActive(false);
     }
 
     IEnumerator hartBewegen()
     {
-        instructieTekst.DOFade(0, 0.5f);
         animRegelRef.WederCrossFade(heelHartStilStaand, hartBewegend, bloemBewegend, 1f);
         yield return new WaitForSeconds(15f);
         Tween fadeTween = regelaarRef.fadeVlak.DOFade(1, 2);

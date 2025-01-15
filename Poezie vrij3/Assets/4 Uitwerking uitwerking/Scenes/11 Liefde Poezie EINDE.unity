@@ -369,17 +369,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2696273125784032678, guid: 3d2cac202332962468c412a29818c165, type: 3}
   m_PrefabInstance: {fileID: 1007182263}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &326703674 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8802421298611906976, guid: 3d2cac202332962468c412a29818c165, type: 3}
-  m_PrefabInstance: {fileID: 1007182263}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e86a1ac7a8682e4a8b5b752cb2b5aaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &436345566
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,17 +442,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2696273125784032678, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
   m_PrefabInstance: {fileID: 1142032491}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &691244650 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8802421298611906976, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
-  m_PrefabInstance: {fileID: 1142032491}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e86a1ac7a8682e4a8b5b752cb2b5aaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &772942995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,32 +1056,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1292707862}
-  - component: {fileID: 1292707861}
+  - component: {fileID: 1292707863}
   m_Layer: 0
   m_Name: PoezieSceneRegelaar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1292707861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292707860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e4f46f564b2a0b4ab6bf7a3e4b54edc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeVlak: {fileID: 1131170264}
-  indicatorRef1: {fileID: 326703674}
-  indicatorRef2: {fileID: 691244650}
-  volgendeSceneNummer: 1
-  speler1Knop: 9
-  speler2Knop: 127
+  m_IsActive: 1
 --- !u!4 &1292707862
 Transform:
   m_ObjectHideFlags: 0
@@ -1119,6 +1079,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1292707863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292707860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57330eea05f7c2e429238f0f1c5c5d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeVlak: {fileID: 1131170264}
 --- !u!1 &1292755818
 GameObject:
   m_ObjectHideFlags: 0
