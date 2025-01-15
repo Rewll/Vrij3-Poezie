@@ -757,7 +757,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Plaats je bloem in je machine om deze te starten, wederom met RControl.
+  m_text: Plaats je bloem in je machine om deze te starten, wederom met R Shift.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 88e1ec0925ab6f94db8e448264ba65f7, type: 2}
   m_sharedMaterial: {fileID: 5087235473406317444, guid: 88e1ec0925ab6f94db8e448264ba65f7, type: 2}

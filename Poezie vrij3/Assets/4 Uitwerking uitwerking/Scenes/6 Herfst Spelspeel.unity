@@ -512,7 +512,7 @@ MonoBehaviour:
   - {fileID: 808748610}
   - {fileID: 411740637}
   - {fileID: 1545952255}
-  startClip: 1
+  startClip: 0
   huidigeAnimatieNummer: 0
 --- !u!1 &383460227
 GameObject:
@@ -2624,7 +2624,7 @@ MonoBehaviour:
   - {fileID: 1786688390}
   - {fileID: 2061700242}
   - {fileID: 1096713507}
-  startClip: 1
+  startClip: 0
   huidigeAnimatieNummer: 0
 --- !u!1 &2061700242
 GameObject:
