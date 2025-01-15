@@ -4968,7 +4968,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -55.170197, y: 0, z: -115.414505, w: -91.3671}
+  m_margin: {x: -55.170197, y: 0, z: 146.98204, w: -6.959776}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5078,8 +5078,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0827d86edd9270049bbb0a2316e9afb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  opraapKnop: 305
-  bloemPlaatsKnop: 305
+  opraapKnop: 303
+  bloemPlaatsKnop: 303
   speler: 1
   bloemSoortSpeler: 1
   stukInHanden: {fileID: 0}

@@ -1036,7 +1036,7 @@ MonoBehaviour:
   indicatorRef2: {fileID: 691244650}
   volgendeSceneNummer: 8
   speler1Knop: 101
-  speler2Knop: 305
+  speler2Knop: 303
 --- !u!4 &1292707862
 Transform:
   m_ObjectHideFlags: 0

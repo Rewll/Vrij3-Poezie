@@ -3181,7 +3181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: bloemKnop
-      value: 305
+      value: 303
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: verstoppen
@@ -3541,7 +3541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82bf8a5565ea4a443867de0d6ae44b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  huidigeStaat: 2
+  huidigeStaat: 0
 --- !u!114 &609206333
 MonoBehaviour:
   m_ObjectHideFlags: 0

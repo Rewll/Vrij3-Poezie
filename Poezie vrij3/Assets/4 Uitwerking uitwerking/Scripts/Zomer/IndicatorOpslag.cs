@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -27,7 +27,11 @@ public class IndicatorOpslag : MonoBehaviour
         }
         else if (knop == KeyCode.RightArrow)
         {
-            knopLetter.text = "Rechter\nPijltje";
+            knopLetter.text = "→";
+        }
+        else if (knop == KeyCode.RightShift)
+        {
+            knopLetter.text = "R\nShift";
         }
         else
         {
