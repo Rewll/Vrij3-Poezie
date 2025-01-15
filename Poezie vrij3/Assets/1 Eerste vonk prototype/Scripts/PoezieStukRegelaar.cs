@@ -20,7 +20,7 @@ public class PoezieStukRegelaar : MonoBehaviour
         if (collision.GetComponent<bloemOpraap>() && !klaar)
         {
             //poezieInloop.Invoke();
-            stukjePoezie.DOFade(1, 3);
+            stukjePoezie.DOFade(1, 2);
             klaar = true;
         }
     }

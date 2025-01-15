@@ -731,7 +731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: bloemKnop
-      value: 116
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.size
@@ -958,7 +958,7 @@ Transform:
   m_GameObject: {fileID: 213499291}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.21, y: -0.48, z: 0}
+  m_LocalPosition: {x: -29.21, y: -0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -996,7 +996,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15870953, y: 1.555028}
+  m_Offset: {x: 0, y: 0.44}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1007,7 +1007,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.0877895, y: 3.1663713}
+  m_Size: {x: 8, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &213499294
 MonoBehaviour:
@@ -3541,7 +3541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82bf8a5565ea4a443867de0d6ae44b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  huidigeStaat: 0
+  huidigeStaat: 2
 --- !u!114 &609206333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3598,7 +3598,7 @@ MonoBehaviour:
   poeziestuk: {fileID: 1389390035}
   eersteNarcis: {fileID: 772316195}
   eersteAnjer: {fileID: 1376119013}
-  maxAfstand: 2
+  maxAfstand: 5
   afstand: 0
   hartOnderdelen:
   - {fileID: 606318440}
@@ -3776,6 +3776,10 @@ PrefabInstance:
     - target: {fileID: 2283899022496998043, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -57.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
+      propertyPath: bloemKnop
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: e61c2544f4c162e4bb6db626c3cc6a37, type: 3}
       propertyPath: verstoppen
@@ -4312,7 +4316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: bloemKnop
-      value: 305
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: verstoppen
@@ -4753,7 +4757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: bloemKnop
-      value: 121
+      value: 106
       objectReference: {fileID: 0}
     - target: {fileID: 3766664545888840417, guid: 74da13863ab668d4a964a62d8191d284, type: 3}
       propertyPath: onOpraap.m_PersistentCalls.m_Calls.Array.size
@@ -8980,7 +8984,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12470007, y: 0.14300716}
+  m_Offset: {x: 0, y: 1.84}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8991,7 +8995,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.6570044, y: 3.3072574}
+  m_Size: {x: 8, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &2027566521
 MonoBehaviour:

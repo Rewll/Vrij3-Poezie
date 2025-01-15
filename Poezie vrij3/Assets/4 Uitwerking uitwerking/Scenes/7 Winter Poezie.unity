@@ -642,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 3d2cac202332962468c412a29818c165, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 132
+      value: -157.9999
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 3d2cac202332962468c412a29818c165, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -818,11 +818,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -157.99994
+      value: 132
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -165
+      value: -166
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 1f88ec8502250004795c47a6ab34de8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1015,8 +1015,8 @@ MonoBehaviour:
   indicatorRef1: {fileID: 326703674}
   indicatorRef2: {fileID: 691244650}
   volgendeSceneNummer: 8
-  speler1Knop: 9
-  speler2Knop: 127
+  speler1Knop: 101
+  speler2Knop: 305
 --- !u!4 &1292707862
 Transform:
   m_ObjectHideFlags: 0

@@ -38,14 +38,12 @@ public class LenteStuk1Staat : LenteBasisStaat
 
     IEnumerator bloemFadeCoroutine()
     {
-        Tween fade1 = fadeVlak1.DOFade(0, 2);
-        Tween fade2 = fadeVlak2.DOFade(0, 2);
-        //Debug.Log(DOTween.TotalActiveSequences());
-        //yield return new WaitUntil(() => fade1.() && fade2.IsComplete());
+        Tween fade1 = fadeVlak1.DOFade(0, 1);
+        Tween fade2 = fadeVlak2.DOFade(0, 1);
         yield return fade1.WaitForCompletion();
         bloem1.GetComponent<bloem>().faden();
         bloem2.GetComponent<bloem>().faden();
-        Debug.Log("bloem tijd");
+        //Debug.Log("bloem tijd");
     }
 
     public override void OnUpdate()

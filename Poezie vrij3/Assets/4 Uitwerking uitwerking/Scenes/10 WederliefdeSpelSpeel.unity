@@ -2093,8 +2093,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0615293679b85c740a47a083bc6e0c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speler1Knop: 98
-  Speler2Knop: 110
+  Speler1Knop: 104
+  Speler2Knop: 106
   spelerTerugSlagHoeveelHeid: 12
   stukjesKlikDuur: 0.5
   terugVliegPlek1: {fileID: 721737240}
@@ -2112,7 +2112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speler1Knop: 103
-  Speler2Knop: 104
+  Speler2Knop: 107
   spelerTerugSlagHoeveelHeid: 6
   stukjesKlikDuur: 1
 --- !u!114 &1083314384
@@ -2127,8 +2127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e239f1349f4584983061542eabbae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speler1Knop: 116
-  Speler2Knop: 121
+  Speler1Knop: 102
+  Speler2Knop: 108
   spelerTerugSlagHoeveelHeid: 4
   stukjesKlikDuur: 2
 --- !u!114 &1083314385
@@ -3459,7 +3459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 3d2cac202332962468c412a29818c165, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -331.7
+      value: -335
       objectReference: {fileID: 0}
     - target: {fileID: 2696273125784032678, guid: 3d2cac202332962468c412a29818c165, type: 3}
       propertyPath: m_AnchoredPosition.y

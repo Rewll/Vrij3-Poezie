@@ -21,7 +21,18 @@ public class IndicatorOpslag : MonoBehaviour
     public void indicatorInstel()
     {
         indicatieVlak.SetActive(false);
-        knopLetter.text = knop.ToString();
+        if (knop == KeyCode.RightControl)
+        {
+            knopLetter.text = "R \n Control";
+        }
+        else if (knop == KeyCode.RightArrow)
+        {
+            knopLetter.text = "Rechter\nPijltje";
+        }
+        else
+        {
+            knopLetter.text = knop.ToString();
+        }
     }
     private void Update()
     {

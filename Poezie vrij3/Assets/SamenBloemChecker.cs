@@ -27,5 +27,29 @@ public class SamenBloemChecker : MonoBehaviour
     {
         anjer.transform.position = anjerPlek;
         narcis.transform.position = narcisPlek;
+        kiesKnoppen();
+    }
+
+    void kiesKnoppen()
+    {
+        int random = Random.Range(0, 2);
+        if (random == 0)
+        {
+            anjer.GetComponent<bloem>().bloemKnop = KeyCode.N;
+            anjer.GetComponent<bloem>().tekstKnopSet();
+            narcis.GetComponent<bloem>().bloemKnop = KeyCode.M;
+            narcis.GetComponent<bloem>().tekstKnopSet();
+        }
+        else if (random == 1)
+        {
+            anjer.GetComponent<bloem>().bloemKnop = KeyCode.Y;
+            anjer.GetComponent<bloem>().tekstKnopSet();
+            narcis.GetComponent<bloem>().bloemKnop = KeyCode.U;
+            narcis.GetComponent<bloem>().tekstKnopSet();
+        }
+        else
+        {
+            Debug.Log("Klopt niet, random is groter dan 1");
+        }
     }
 }

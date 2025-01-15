@@ -1160,8 +1160,8 @@ MonoBehaviour:
   tutorialTekst: {fileID: 984192929}
   speler1Drukt: 0
   speler2Drukt: 0
-  knopSpeler1: 103
-  knopSpeler2: 104
+  knopSpeler1: 117
+  knopSpeler2: 105
 --- !u!114 &1210445405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,8 +1176,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speler1Drukt: 0
   speler2Drukt: 0
-  knopSpeler1: 116
-  knopSpeler2: 121
+  knopSpeler1: 110
+  knopSpeler2: 109
 --- !u!114 &1210445406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,8 +1192,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speler1Drukt: 0
   speler2Drukt: 0
-  knopSpeler1: 98
-  knopSpeler2: 110
+  knopSpeler1: 106
+  knopSpeler2: 107
 --- !u!114 &1210445407
 MonoBehaviour:
   m_ObjectHideFlags: 0
